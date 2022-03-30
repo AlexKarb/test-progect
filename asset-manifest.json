@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/test-progect.git/static/css/main.dd1ccf31.css",
-    "main.js": "/test-progect.git/static/js/main.6c732b43.js",
-    "static/js/787.a6d51bb8.chunk.js": "/test-progect.git/static/js/787.a6d51bb8.chunk.js",
-    "index.html": "/test-progect.git/index.html",
-    "main.dd1ccf31.css.map": "/test-progect.git/static/css/main.dd1ccf31.css.map",
-    "main.6c732b43.js.map": "/test-progect.git/static/js/main.6c732b43.js.map",
-    "787.a6d51bb8.chunk.js.map": "/test-progect.git/static/js/787.a6d51bb8.chunk.js.map"
+    "main.css": "/test-progect/static/css/main.dd1ccf31.css",
+    "main.js": "/test-progect/static/js/main.724f2a2e.js",
+    "static/js/787.a6d51bb8.chunk.js": "/test-progect/static/js/787.a6d51bb8.chunk.js",
+    "index.html": "/test-progect/index.html",
+    "main.dd1ccf31.css.map": "/test-progect/static/css/main.dd1ccf31.css.map",
+    "main.724f2a2e.js.map": "/test-progect/static/js/main.724f2a2e.js.map",
+    "787.a6d51bb8.chunk.js.map": "/test-progect/static/js/787.a6d51bb8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dd1ccf31.css",
-    "static/js/main.6c732b43.js"
+    "static/js/main.724f2a2e.js"
   ]
 }
