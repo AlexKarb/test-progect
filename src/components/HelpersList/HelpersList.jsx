@@ -1,5 +1,5 @@
 import Filter from 'components/Filter/Filter';
-import { ModalW } from 'components/Modal/Modal';
+// import { ModalW } from 'components/Modal/Modal';
 import { getPublicationOfHelper } from 'components/Service/api-service';
 import { useEffect, useState } from 'react';
 import { useOutletContext } from 'react-router-dom';
@@ -101,6 +101,7 @@ const Helpers = () => {
   const [data, setData] = useState([]);
 
   const [modalIsOpen, setIsOpen] = useOutletContext();
+
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -117,6 +118,7 @@ const Helpers = () => {
 
   return (
     <>
+      {console.log('~ modalIsOpen', modalIsOpen)}
       <Filter setFilter={setFilter} filter={filters} />
       {/* <ModalW
         onClose={() => setIsOpen(false)}

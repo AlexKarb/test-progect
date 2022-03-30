@@ -35,7 +35,7 @@ export const LoginPage = () => {
       .then(data => {
         dispatch(logIn(data));
         notifySuccess(name, data.role);
-        // navigate('/home', { replace: true });
+        navigate('/home', { replace: true });
       })
       .catch(notifyError);
     form.reset();

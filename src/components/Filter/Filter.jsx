@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { Container, Label, Line } from './Filter.styled';
 
 const Filter = ({ setFilter, filter }) => {
