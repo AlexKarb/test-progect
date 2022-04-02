@@ -1,0 +1,50 @@
+// import { Suspense } from 'react';
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { Outlet } from 'react-router-dom';
+import Header from './components/Header/Header';
+import { LoginPage } from './components/LoginPage/LoginPage';
+import { Toast } from './components/Toaster/Toaster';
+// import { ModalW } from './Modal/Modal';
+
+export const Layout = () => {
+  // const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
+
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+      <Toast />
+      {/* {!isLoggedIn && <LoginPage />}
+      {isLoggedIn && ( */}
+      <>
+        {/* <Header /> */}
+        <main>
+          <Outlet context={[modalIsOpen, setIsOpen]} />
+        </main>
+      </>
+      {/* )} */}
+    </>
+  );
+};
+
+export default Layout;
+
+// {
+//   /* <button onClick={openModal}>відкрити</button> */
+// }
+// {
+//   /* <ModalW
+//         onClose={() => setIsOpen(false)}
+//         elements={<>Modal</>}
+//         open={modalIsOpen}
+//       /> */
+// }
+
+// {
+//   /* <Suspense fallback={''}> */
+// }
+
+// {
+//   /* </Suspense> */
+// }

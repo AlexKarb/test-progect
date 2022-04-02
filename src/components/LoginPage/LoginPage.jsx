@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { logIn } from '../../redux/authSlice';
 
-import userBase from '../Service/login.json';
+import userBase from '../../Storage/login.json';
 import { notifyError, notifySuccess } from 'components/Toaster/Toaster';
 
 const userLoggining = (name, password) => {

@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  login: '',
-  role: '',
+  login: 'Гість',
+  role: 'GUEST', // "ADMIN", "VOLONTER", "GUEST"
   isLoggedIn: false,
 };
 
 export const authSlice = createSlice({
-  name: 'user',
+  name: 'auth',
   initialState,
   reducers: {
     logIn: (state, { payload }) => {
@@ -22,5 +22,9 @@ export const authSlice = createSlice({
     },
   },
 });
+
+//SELECTOR
+export const getRoleValue = state => state.auth.role;
+export const getLoginValue = state => state.auth.login;
 
 export const { logIn, logOut } = authSlice.actions;

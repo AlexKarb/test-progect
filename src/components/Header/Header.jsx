@@ -4,8 +4,7 @@ import { LogOut } from './Logout';
 const Header = () => (
   <Container>
     <Navigation>
-      <SuperLink to="/home">На головну </SuperLink>
-      <SuperLink to="/helpers-list">Помічники</SuperLink>
+      <SuperLink to="/create-help">На головну </SuperLink>
       <SuperLink to="/help-list">Потребують допомоги</SuperLink>
     </Navigation>
     <LogOut />
