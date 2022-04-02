@@ -2,7 +2,7 @@ import Layout from 'Layout';
 import { CreateApplication } from 'module/Application/component/CreateApplication/CreateApplication';
 import { SideBar } from 'module/SideBar/component/SideBar/SideBar';
 
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 const App = () => (
   <Routes>

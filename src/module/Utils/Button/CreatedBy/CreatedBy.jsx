@@ -1,6 +1,6 @@
 // MdVolunteerActivism; иконка волонтера
 
-import { CopySymbol, Link, Container, Text } from './CreatedBy.styled';
+import { CopySymbol, Link, Container } from './CreatedBy.styled';
 
 export const CreatedBy = () => (
   <Container>
