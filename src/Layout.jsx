@@ -1,15 +1,14 @@
-// import { Suspense } from 'react';
+import { SideBarElement } from 'module/SideBar';
+
 import { useState } from 'react';
 // import { useSelector } from 'react-redux';
 import { Outlet } from 'react-router-dom';
 // import Header from './components/Header/Header';
 // import { LoginPage } from './components/LoginPage/LoginPage';
 import { Toast } from './components/Toaster/Toaster';
-// import { ModalW } from './Modal/Modal';
 
 export const Layout = () => {
   // const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
-
   const [modalIsOpen, setIsOpen] = useState(false);
 
   return (
@@ -18,33 +17,24 @@ export const Layout = () => {
       {/* {!isLoggedIn && <LoginPage />}
       {isLoggedIn && ( */}
       <>
-        {/* <Header /> */}
+        <SideBarElement />
         <main>
           <Outlet context={[modalIsOpen, setIsOpen]} />
         </main>
       </>
-      {/* )} */}
     </>
   );
 };
 
 export default Layout;
 
-// {
-//   /* <button onClick={openModal}>відкрити</button> */
-// }
-// {
-//   /* <ModalW
+//  {
+//    /* {<button onClick={setIsOpen}>відкрити</button>}
+//     {
+//       <ModalW
 //         onClose={() => setIsOpen(false)}
-//         elements={<>Modal</>}
+//         elements={<SideBar />}
 //         open={modalIsOpen}
-//       /> */
-// }
-
-// {
-//   /* <Suspense fallback={''}> */
-// }
-
-// {
-//   /* </Suspense> */
-// }
+//       />
+//     } */
+//  }

@@ -14,11 +14,7 @@ export const dataItemMenu = [
     icon: <IconProfile />,
     path: '/my-profile',
   },
-  {
-    label: 'Адміністрування',
-    icon: <IconAdmin />,
-    path: '/administration',
-  },
+
   {
     label: 'Створити заявку',
     icon: <IconCreate />,
@@ -39,9 +35,16 @@ export const dataItemMenu = [
     icon: <IconArchive />,
     path: '/archive',
   },
+
   {
     label: 'Статистика',
     icon: <IconStatistic />,
     path: '/statistic',
+  },
+
+  {
+    label: 'Адміністрування',
+    icon: <IconAdmin />,
+    path: '/administration',
   },
 ];

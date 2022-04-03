@@ -28,30 +28,30 @@ export const Label = styled.span`
 `;
 
 export const IconProfile = styled(FaRegUser)`
-  width: 25px;
-  height: 25px;
-`;
-export const IconAdmin = styled(FiSettings)`
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
 `;
 export const IconCreate = styled(HiOutlineDocumentAdd)`
-  width: 27px;
-  height: 27px;
+  width: 26px;
+  height: 26px;
 `;
 export const IconPending = styled(HiOutlineShoppingCart)`
   width: 25px;
   height: 25px;
 `;
 export const IconInProgress = styled(FaRegHourglass)`
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
 `;
 export const IconArchive = styled(FiArchive)`
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
 `;
 export const IconStatistic = styled(VscGraph)`
   width: 27px;
   height: 27px;
+`;
+export const IconAdmin = styled(FiSettings)`
+  width: 25px;
+  height: 25px;
 `;

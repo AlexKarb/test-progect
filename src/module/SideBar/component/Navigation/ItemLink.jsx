@@ -1,8 +1,8 @@
 import { Label, LinkMenu } from './Navigation.styled';
 
-export const ItemLink = ({ label, icon, path }) => {
+export const ItemLink = ({ label, icon, path, onClink }) => {
   return (
-    <LinkMenu to={path}>
+    <LinkMenu to={path} onClick={onClink}>
       {icon}
       <Label> {label}</Label>
     </LinkMenu>

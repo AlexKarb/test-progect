@@ -19,6 +19,7 @@ export const LogoutButton = styled.button`
   padding: 0;
   margin: 0;
   display: flex;
+  align-items: center;
   font-size: 18px;
 `;
 
@@ -29,4 +30,26 @@ export const IconLogout = styled(FiLogOut)`
 
 export const Label = styled.span`
   margin-left: 12px;
+`;
+
+export const CreateByBlock = styled.div`
+  font-size: 10px;
+  display: flex;
+  line-height: 1.13;
+`;
+
+export const CopySymbol = styled.span`
+  margin-right: 4px;
+  font-size: 14px;
+`;
+
+export const Text = styled.a`
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+`;
+
+export const MyLink = styled.span`
+  color: #4d4df4;
+  text-decoration: underline;
 `;
