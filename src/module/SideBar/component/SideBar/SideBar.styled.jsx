@@ -9,6 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
+  position: relative;
   width: 250px;
   height: 100vh;
   font-size: 18px;

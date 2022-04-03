@@ -6,7 +6,7 @@ import { HiOutlineDocumentAdd, HiOutlineShoppingCart } from 'react-icons/hi';
 import { VscGraph } from 'react-icons/vsc';
 
 export const Container = styled.nav`
-  padding: 14px 14px 0 14px;
+  padding: 28px 14px 0 14px;
   overflow-y: auto;
 `;
 
@@ -16,7 +16,7 @@ export const List = styled.div`
 `;
 
 export const LinkMenu = styled(Link)`
-  margin-bottom: 12px;
+  margin-bottom: 28px;
   text-decoration: none;
   color: black;
   display: flex;
@@ -24,34 +24,34 @@ export const LinkMenu = styled(Link)`
 `;
 
 export const Label = styled.span`
-  margin-left: 12px;
+  margin-left: 17px;
 `;
 
 export const IconProfile = styled(FaRegUser)`
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 `;
 export const IconAdmin = styled(FiSettings)`
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 `;
 export const IconCreate = styled(HiOutlineDocumentAdd)`
-  width: 22px;
-  height: 22px;
+  width: 27px;
+  height: 27px;
 `;
 export const IconPending = styled(HiOutlineShoppingCart)`
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 `;
 export const IconInProgress = styled(FaRegHourglass)`
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 `;
 export const IconArchive = styled(FiArchive)`
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 `;
 export const IconStatistic = styled(VscGraph)`
-  width: 22px;
-  height: 22px;
+  width: 27px;
+  height: 27px;
 `;
