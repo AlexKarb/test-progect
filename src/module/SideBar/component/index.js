@@ -12,6 +12,8 @@ export const SideBarElement = () => {
       sidebar={<SideBarContext toClose={() => setSidebarOpen(false)} />}
       open={sidebarOpen}
       onSetOpen={setSidebarOpen}
+      touchHandleWidth={0}
+      dragToggleDistance={0}
       styles={{ sidebar: { background: 'white' } }}
     >
       <Header openSideBar={setSidebarOpen} />
