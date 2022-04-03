@@ -6,7 +6,7 @@ import { HiOutlineDocumentAdd, HiOutlineShoppingCart } from 'react-icons/hi';
 import { VscGraph } from 'react-icons/vsc';
 
 export const Container = styled.nav`
-  padding: 28px 14px 0 14px;
+  padding: 28px 14px 0 6px;
   overflow-y: auto;
 `;
 
@@ -16,11 +16,18 @@ export const List = styled.div`
 `;
 
 export const LinkMenu = styled(Link)`
-  margin-bottom: 28px;
+  margin-bottom: 8px;
   text-decoration: none;
-  color: black;
+  color: var(--main-text-color);
   display: flex;
   align-items: center;
+  padding: 10px 8px;
+  border-radius: 12px;
+
+  &:hover,
+  &:active {
+    background-color: var(--hover-color-bg);
+  }
 `;
 
 export const Label = styled.span`

@@ -7,10 +7,10 @@ export const Container = styled.div`
   left: 0;
   right: 0;
   padding: 12px 14px;
-  border-top: 1px solid black;
   display: flex;
   justify-content: space-between;
-  background-color: #e1e8e8;
+  background-color: var(--accent-color-bg);
+  color: var(--accent-text-color);
 `;
 
 export const LogoutButton = styled.button`
@@ -21,6 +21,8 @@ export const LogoutButton = styled.button`
   display: flex;
   align-items: center;
   font-size: 18px;
+  color: var(--accent-text-color);
+  cursor: pointer;
 `;
 
 export const IconLogout = styled(FiLogOut)`
@@ -45,11 +47,11 @@ export const CopySymbol = styled.span`
 
 export const Text = styled.a`
   text-decoration: none;
-  color: black;
+  color: var(--accent-text-color);
   cursor: pointer;
 `;
 
 export const MyLink = styled.span`
-  color: #4d4df4;
+  color: #2b45a5;
   text-decoration: underline;
 `;

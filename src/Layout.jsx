@@ -1,4 +1,4 @@
-import { SideBarElement } from 'module/SideBar';
+import { SideBarElement } from 'module/SideBar/component';
 
 import { useState } from 'react';
 // import { useSelector } from 'react-redux';
