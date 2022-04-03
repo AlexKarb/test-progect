@@ -1,11 +1,11 @@
-import { SideBarElement } from 'module/SideBar/component';
-
+import { Header } from 'module/Header/Header';
 import { useState } from 'react';
 // import { useSelector } from 'react-redux';
 import { Outlet } from 'react-router-dom';
 // import Header from './components/Header/Header';
 // import { LoginPage } from './components/LoginPage/LoginPage';
-import { Toast } from './components/Toaster/Toaster';
+import { Toast } from '../components/Toaster/Toaster';
+import { MainContainer } from './Layout.styled';
 
 export const Layout = () => {
   // const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
@@ -17,10 +17,10 @@ export const Layout = () => {
       {/* {!isLoggedIn && <LoginPage />}
       {isLoggedIn && ( */}
       <>
-        <SideBarElement />
-        <main>
+        <Header />
+        <MainContainer>
           <Outlet context={[modalIsOpen, setIsOpen]} />
-        </main>
+        </MainContainer>
       </>
     </>
   );

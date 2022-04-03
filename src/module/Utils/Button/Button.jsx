@@ -6,8 +6,10 @@ export const Button = ({
   type = 'button',
   isSubmitting = false,
   onClick,
+  children,
 }) => (
   <StyledButton type={type} onClick={onClick}>
-    {isSubmitting ? <LoaderIcon /> : text}
+    {text && (isSubmitting ? <LoaderIcon /> : text)}
+    {!text && children}
   </StyledButton>
 );

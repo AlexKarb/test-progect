@@ -1,7 +1,7 @@
 import { useSideBarOpen } from '../hooks/useSideBarOpen';
 import Sidebar from 'react-sidebar';
 import { SideBarContext } from './SideBarContext/SideBarContext';
-import { Header } from './Header/Header';
+import { Burger } from './Burger/Burger';
 // import { useState } from 'react';
 
 export const SideBarElement = () => {
@@ -14,9 +14,9 @@ export const SideBarElement = () => {
       onSetOpen={setSidebarOpen}
       touchHandleWidth={0}
       dragToggleDistance={0}
-      styles={{ sidebar: { background: 'white' } }}
+      styles={{ role: { display: 'none' } }}
     >
-      <Header openSideBar={setSidebarOpen} />
+      <Burger openSideBar={setSidebarOpen} />
     </Sidebar>
   );
 };

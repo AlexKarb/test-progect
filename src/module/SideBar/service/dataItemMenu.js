@@ -39,7 +39,7 @@ export const dataItemMenu = [
   {
     label: 'Статистика',
     icon: <IconStatistic />,
-    path: '/statistic',
+    path: '/statistics',
   },
 
   {
