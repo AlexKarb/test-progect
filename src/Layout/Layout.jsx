@@ -1,8 +1,7 @@
-import { Header } from 'module/Header/Header';
+import { SideBarElement } from 'module/SideBar/component';
 import { useState } from 'react';
 // import { useSelector } from 'react-redux';
 import { Outlet } from 'react-router-dom';
-// import Header from './components/Header/Header';
 // import { LoginPage } from './components/LoginPage/LoginPage';
 import { Toast } from '../components/Toaster/Toaster';
 import { MainContainer } from './Layout.styled';
@@ -17,10 +16,11 @@ export const Layout = () => {
       {/* {!isLoggedIn && <LoginPage />}
       {isLoggedIn && ( */}
       <>
-        <Header />
-        <MainContainer>
-          <Outlet context={[modalIsOpen, setIsOpen]} />
-        </MainContainer>
+        <SideBarElement>
+          <MainContainer>
+            <Outlet context={[modalIsOpen, setIsOpen]} />
+          </MainContainer>
+        </SideBarElement>
       </>
     </>
   );

@@ -1,10 +1,9 @@
 import { useSideBarOpen } from '../hooks/useSideBarOpen';
-import Sidebar from 'react-sidebar';
 import { SideBarContext } from './SideBarContext/SideBarContext';
-import { Burger } from './Burger/Burger';
-// import { useState } from 'react';
+import { Header } from './Header/Header';
+import Sidebar from 'react-sidebar';
 
-export const SideBarElement = () => {
+export const SideBarElement = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useSideBarOpen();
 
   return (
@@ -14,9 +13,9 @@ export const SideBarElement = () => {
       onSetOpen={setSidebarOpen}
       touchHandleWidth={0}
       dragToggleDistance={0}
-      styles={{ role: { display: 'none' } }}
     >
-      <Burger openSideBar={setSidebarOpen} />
+      <Header openSideBar={setSidebarOpen} />
+      {children}
     </Sidebar>
   );
 };

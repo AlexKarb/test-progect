@@ -3,11 +3,15 @@ import styled from 'styled-components';
 import { FaRegUser, FaRegHourglass } from 'react-icons/fa';
 import { FiSettings, FiArchive } from 'react-icons/fi';
 import { HiOutlineDocumentAdd, HiOutlineShoppingCart } from 'react-icons/hi';
-import { VscGraph } from 'react-icons/vsc';
+import { MdOutlineAnalytics } from 'react-icons/md';
 
 export const Container = styled.nav`
   padding: 28px 14px 0 6px;
   overflow-y: auto;
+
+  /* * {
+    outline: 1px solid red;
+  } */
 `;
 
 export const List = styled.div`
@@ -22,7 +26,7 @@ export const LinkMenu = styled(Link)`
   display: flex;
   align-items: center;
   padding: 10px 8px;
-  border-radius: 12px;
+  border-radius: 6px;
 
   &:hover,
   &:active {
@@ -34,6 +38,14 @@ export const Label = styled.span`
   margin-left: 17px;
 `;
 
+export const IconContainer = styled.div`
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const IconProfile = styled(FaRegUser)`
   width: 23px;
   height: 23px;
@@ -43,22 +55,22 @@ export const IconCreate = styled(HiOutlineDocumentAdd)`
   height: 26px;
 `;
 export const IconPending = styled(HiOutlineShoppingCart)`
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
 `;
 export const IconInProgress = styled(FaRegHourglass)`
+  width: 21px;
+  height: 21px;
+`;
+export const IconArchive = styled(FiArchive)`
   width: 23px;
   height: 23px;
 `;
-export const IconArchive = styled(FiArchive)`
-  width: 24px;
-  height: 24px;
-`;
-export const IconStatistic = styled(VscGraph)`
-  width: 27px;
-  height: 27px;
+export const IconStatistic = styled(MdOutlineAnalytics)`
+  width: 26px;
+  height: 26px;
 `;
 export const IconAdmin = styled(FiSettings)`
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
 `;

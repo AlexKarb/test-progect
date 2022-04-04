@@ -2,16 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import { MdOutlineVolunteerActivism } from 'react-icons/md';
 import { FaRegHeart } from 'react-icons/fa';
 
-export const HeaderContainer = styled.div`
-  height: 58px;
-  border-bottom: 1px solid var(--main-color-bg);
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  padding: 0 10px;
-`;
-
-export const Logotype = styled.div`
+export const LogoContainer = styled.div`
   position: relative;
   width: 55px;
   height: 55px;
@@ -19,6 +10,7 @@ export const Logotype = styled.div`
   padding: 5px;
   align-items: flex-end;
   justify-content: center;
+  margin-right: 25px;
 `;
 
 export const Arm = styled(MdOutlineVolunteerActivism)`

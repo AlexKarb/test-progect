@@ -1,15 +1,23 @@
 :root {
   /* Sidebar */
+
+  --Linear-bg: linear-gradient(
+    250deg,
+    rgb(109 140 231) 00%,
+    rgb(72 100 182) 80%
+  );
+
+  /* 
   --Linear-bg: linear-gradient(
     250deg,
     rgb(96 104 128) 00%,
     rgb(70 77 100) 30%,
     rgb(37 45 69 / 98%) 80%
-  );
+  ); */
 
   --main-color-bg: rgb(37, 45, 69);
   --accent-color-bg: #bfc2c9c4;
-  --hover-color-bg: #34353d8a;
+  --hover-color-bg: #444fa7ab;
 
   --main-text-color: #dcdcdcbd;
   --accent-text-color: #272727ed;
