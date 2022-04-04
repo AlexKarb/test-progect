@@ -20,7 +20,6 @@ export const LogoutButton = styled.button`
   margin: 0;
   display: flex;
   align-items: center;
-  font-size: 18px;
   color: var(--accent-text-color);
   cursor: pointer;
 `;
@@ -31,7 +30,8 @@ export const IconLogout = styled(FiLogOut)`
 `;
 
 export const Label = styled.span`
-  margin-left: 12px;
+  margin-left: 7px;
+  font-size: 17px;
 `;
 
 export const CreateByBlock = styled.div`
@@ -52,6 +52,6 @@ export const Text = styled.a`
 `;
 
 export const MyLink = styled.span`
-  color: #2b45a5;
+  color: #002fff;
   text-decoration: underline;
 `;

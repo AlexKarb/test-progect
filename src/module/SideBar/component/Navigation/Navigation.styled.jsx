@@ -6,7 +6,7 @@ import { HiOutlineDocumentAdd, HiOutlineShoppingCart } from 'react-icons/hi';
 import { MdOutlineAnalytics } from 'react-icons/md';
 
 export const Container = styled.nav`
-  padding: 28px 14px 0 6px;
+  padding: 28px 0 0 0;
   overflow-y: auto;
 
   /* * {
@@ -21,12 +21,13 @@ export const List = styled.div`
 
 export const LinkMenu = styled(Link)`
   margin-bottom: 8px;
+
   text-decoration: none;
   color: var(--main-text-color);
   display: flex;
   align-items: center;
-  padding: 10px 8px;
-  border-radius: 6px;
+  padding: 10px 28px 10px 14px;
+  /* border-radius: 6px; */
 
   &:hover,
   &:active {
