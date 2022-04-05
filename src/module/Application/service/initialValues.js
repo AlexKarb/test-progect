@@ -1,4 +1,4 @@
-import { servicesTypesObject } from 'module/Application/service/dataFromServiceType';
+import { servicesTypesObject } from 'service/dataFromServiceType';
 
 export const initialValues = {
   contacts: {

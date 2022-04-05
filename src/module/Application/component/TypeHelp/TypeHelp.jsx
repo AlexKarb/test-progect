@@ -1,4 +1,4 @@
-import { allDataServicesType } from 'module/Application/service/dataFromServiceType';
+import { allDataServicesType } from 'service/dataFromServiceType';
 import { Title } from '../Title/Title';
 import { CheckBoxes } from './CheckBoxes';
 

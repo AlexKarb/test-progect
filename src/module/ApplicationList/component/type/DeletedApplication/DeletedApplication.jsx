@@ -1,4 +1,4 @@
-import { ApplicationList } from '../ApplicationList/ApplicationList';
+import { ApplicationList } from '../../ApplicationList/ApplicationList';
 
 export const DeletedApplication = () => {
   return (

@@ -10,8 +10,8 @@
     rgb(70 77 100) 30%,
     rgb(37 45 69 / 98%) 80%
   ); */
-
-  --main-color-bg: rgb(37, 45, 69);
+  --first-color-bg: rgb(88 123 227);
+  --main-color-bg: rgb(5 44 163);
   --accent-color-bg: #beefed96;
   --hover-color-bg: #1a299f78;
 

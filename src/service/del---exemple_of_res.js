@@ -1,32 +1,40 @@
 // import { postPublication } from './api-service';
 
 export const exempleOfResponse = {
-  id: '', // ид
+  id: '1', // ид
   contacts: {
-    name: '', // имя  "текст"
-    tel: '', // контакт для связи  "текст"
-    adress: '', // адресс проживания  "текст"
+    name: 'Толя', // имя  "текст"
+    tel: '0442354499', // контакт для связи  "текст"
+    adress: 'Киев, ул. победі 125, 78кв', // адресс проживания  "текст"
   },
-  typeHelp: [],
+  typeHelp: [
+    'підгузки',
+    'засоби гігієни',
+    'одяг для дорослих',
+    'одяг для дітей',
+    'їжа',
+    'дитяче харчування',
+    'інший тип',
+  ],
 
   additional: {
-    clothes_adult: '',
-    clothes_child: '',
-    food: '',
-    children_food: '',
-    diapers: '',
-    hygiene: '',
-    otherHelp: '',
+    clothes_adult: 'М',
+    clothes_child: '120см',
+    food: 'крупа',
+    children_food: 'пюре',
+    diapers: '3',
+    hygiene: 'дезик',
+    otherHelp: 'незнаю',
   },
 
   delivery: true,
-  info: '',
+  info: 'хочу доставку зранку',
 
-  dataAdd: '', // дата создания заявки  "дата"
+  dataAdd: '24.03.25', // дата создания заявки  "дата"
   dataClose: '', // дата удаления заявки  "дата"
   deletedInfo: '', //почему удалили заявку  "текст"
 
-  status: '', //"pending", "in progress", "completed", "deleted"
+  status: 'pending', //"pending", "in progress", "completed", "deleted"
 };
 
 export const exempleOfResponse1 = {};
