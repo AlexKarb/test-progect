@@ -1,6 +1,6 @@
 import {
   Container,
-  Label,
+  // Label,
   TypeList,
   TypeItem,
 } from 'module/ApplicationList/component/TypeHelpList/TypeHelpList.styled';
