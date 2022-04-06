@@ -8,4 +8,11 @@ export const namesOfServiceTypes = servicesType.map(({ type, label }) => {
   return { type, label };
 });
 
+export const namesOfServiceTypesObject = servicesType.reduce(
+  (pV, { type, label }) => {
+    return { ...pV, [type]: label };
+  },
+  {}
+);
+
 export const allDataServicesType = servicesType;

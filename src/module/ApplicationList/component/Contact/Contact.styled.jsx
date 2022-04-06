@@ -38,5 +38,5 @@ export const Adress = styled.p`
 export const AdressIcon = styled(MdOutlineLocationOn)`
   width: 13px;
   height: 13px;
-  margin-left: -1px;
+  margin-left: -2px;
 `;

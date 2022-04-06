@@ -1,9 +1,5 @@
 import { ApplicationList } from '../../ApplicationList/ApplicationList';
 
-export const CompletedApplication = () => {
-  return (
-    <ApplicationList>
-      тут буде майбутня сторінка виконаніх замовлень
-    </ApplicationList>
-  );
+export const CompletedApplication = ({ data }) => {
+  return <ApplicationList data={data} title={'Виконані заявки '} />;
 };

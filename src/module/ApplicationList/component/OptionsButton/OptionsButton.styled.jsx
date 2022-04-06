@@ -15,10 +15,22 @@ export const IconBlock = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 5px 10px;
+  /* height: 250px; */
 
   /* * {
     outline: 1px solid red;
   } */
+
+  @media screen and (min-width: 768px) {
+    width: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+
+    /* width: 220px; */
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -27,6 +39,7 @@ export const IconContainer = styled.div`
   justify-content: center;
   align-items: center;
   color: #808080;
+  cursor: pointer;
 `;
 
 export const IconInfo = styled.div`
@@ -49,7 +62,7 @@ export const WaitIcon = styled(FaRegHourglass)`
   height: 16px;
 
   &:hover {
-    color: yellow;
+    color: #000;
   }
   &:hover ~ * {
     display: block;
@@ -62,7 +75,7 @@ export const DoneIcon = styled(HiCheck)`
   height: 18px;
 
   &:hover {
-    color: green;
+    color: #000;
   }
   &:hover ~ * {
     display: block;
@@ -75,12 +88,9 @@ export const EditIcon = styled(FiEdit2)`
   width: 18px;
   height: 18px;
 
-  cursor: pointer;
-
   &:hover {
-    color: blue;
+    color: #000;
   }
-
   &:hover ~ * {
     display: block;
   }
@@ -91,27 +101,22 @@ export const DeleteIcon = styled(TiUserDeleteOutline)`
   height: 18px;
 
   &:hover {
-    color: red;
+    color: #000;
   }
   &:hover ~ * {
     display: block;
   }
 `;
 
-export const Delivery = styled.div`
-  /* position: absolute;
-  top: 8px;
-  right: 10px; */
-`;
-
 export const DeliveryIcon = styled(FaBus)`
-  color: green;
+  color: ${({ delivery }) => delivery && 'green'};
   width: 16px;
   height: 16px;
   /* margin-bottom: 25px; */
-  /* padding: 2px; */
-  cursor: pointer;
 
+  &:hover {
+    color: #000;
+  }
   &:hover ~ * {
     display: block;
   }
@@ -121,9 +126,10 @@ export const CallIcon = styled(FiPhoneCall)`
   width: 16px;
   height: 16px;
   /* margin-bottom: 25px; */
-  /* padding: 2px; */
-  cursor: pointer;
 
+  &:hover {
+    color: #000;
+  }
   &:hover ~ * {
     display: block;
   }

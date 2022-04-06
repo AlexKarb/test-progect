@@ -25,22 +25,12 @@ export const TypeList = styled.ul`
   flex-wrap: wrap;
   /* flex-direction: column; */
   align-items: center;
-
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 220px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    width: 340px;
-  }
 `;
 export const TypeItem = styled.li`
   list-style: none;
   margin-right: 10px;
-  background: ${({ type }) => {
-    switch (type) {
+  background: ${({ color }) => {
+    switch (color) {
       case 'одяг для дорослих':
         return '#e2be4762';
       case 'одяг для дітей':

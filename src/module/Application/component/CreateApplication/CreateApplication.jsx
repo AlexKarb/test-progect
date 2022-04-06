@@ -14,6 +14,7 @@ export const CreateApplication = () => {
     postPublication({
       ...value,
       status: 'pending',
+      dataAdd: new Date(),
     });
   }, [value]);
 

@@ -2,7 +2,7 @@ import Layout from 'Layout/Layout';
 import { Administration } from 'module/Administration/component/Administration/Administration';
 import { CreateApplication } from 'module/Application/component/CreateApplication/CreateApplication';
 import { ActiveApplication } from 'module/ApplicationList/component/type/ActiveApplication/ActiveApplication';
-import { ArchiveList } from 'module/ApplicationList/component/ArchiveList/ArchiveList';
+import { ArchiveList } from 'module/ApplicationList/component/type/ArchiveList/ArchiveList';
 import { CompletedApplication } from 'module/ApplicationList/component/type/CompletedApplication/CompletedApplication';
 import { DeletedApplication } from 'module/ApplicationList/component/type/DeletedApplication/DeletedApplication';
 import { InProgressApplication } from 'module/ApplicationList/component/type/InProgressApplication/InProgressApplication';

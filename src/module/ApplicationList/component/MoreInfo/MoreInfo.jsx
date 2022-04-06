@@ -1,24 +1,37 @@
 import { namesOfServiceTypes } from 'service/dataFromServiceType';
-import { Container, Label, Info } from './MoreInfo.styled';
+import {
+  Container,
+  Block,
+  Label,
+  Info,
+  Comment,
+  CommentContainer,
+} from './MoreInfo.styled';
 
 export const MoreInfo = ({ additional, info }) => {
   return (
-    <>
-      {namesOfServiceTypes.map(({ type, label }) => {
-        return (
-          additional[type] && (
-            <Container key={type}>
-              <Label> {label} </Label>
-              <Info>{additional[type]}</Info>
-            </Container>
-          )
-        );
-      })}
+    <Block>
+      <hr />
+      <div>
+        {namesOfServiceTypes.map(({ type, label }) => {
+          return (
+            additional[type] && (
+              <Container key={type}>
+                <Label> {label} : </Label>
+                <Info>{additional[type]}</Info>
+              </Container>
+            )
+          );
+        })}
+      </div>
 
-      <Container>
-        <Label> Інформація : </Label>
-        <Info>{info}</Info>
-      </Container>
-    </>
+      <hr />
+      {info && (
+        <CommentContainer>
+          <Label> Інформація : </Label>
+          <Comment>{info}</Comment>
+        </CommentContainer>
+      )}
+    </Block>
   );
 };

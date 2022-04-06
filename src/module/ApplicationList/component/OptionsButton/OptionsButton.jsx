@@ -15,8 +15,10 @@ export const OptionButton = ({ delivery }) => {
     <>
       <IconBlock>
         <IconContainer>
-          <DeliveryIcon />
-          <IconInfo>Можлива (часткова) самодоставка</IconInfo>
+          <DeliveryIcon delivery={delivery ? 'needDel' : null} />
+          <IconInfo>
+            {delivery ? 'Потрібна доставка' : 'Доставка непотрібна'}
+          </IconInfo>
         </IconContainer>
 
         <IconContainer>

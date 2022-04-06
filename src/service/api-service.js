@@ -11,32 +11,32 @@ export const getPendingPublications = async () => {
   return data?.filter(({ status }) => status === 'pending');
 };
 
-export const getInProgressPublications = async () => {
-  const data = await getAllPublications();
-  return data?.filter(({ status }) => status === 'in progress');
-};
+// export const getInProgressPublications = async () => {
+//   const data = await getAllPublications();
+//   return data?.filter(({ status }) => status === 'in progress');
+// };
 
-export const getCompletedPublications = async () => {
-  const data = await getAllPublications();
-  return data?.filter(({ status }) => status === 'completed');
-};
+// export const getCompletedPublications = async () => {
+//   const data = await getAllPublications();
+//   return data?.filter(({ status }) => status === 'completed');
+// };
 
-export const getDeletedPublications = async () => {
-  const data = await getAllPublications();
-  return data?.filter(({ status }) => status === 'deleted');
-};
+// export const getDeletedPublications = async () => {
+//   const data = await getAllPublications();
+//   return data?.filter(({ status }) => status === 'deleted');
+// };
 
 export const postPublication = async data => {
   axios.post('/help', data).then(console.log).catch(console.log);
 };
 
-export const editPublication = async (id, data) => {
-  axios
-    .put(`/help/${id}`, data)
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-};
+// export const editPublication = async (id, data) => {
+//   axios
+//     .put(`/help/${id}`, data)
+//     .then(function (response) {
+//       console.log(response);
+//     })
+//     .catch(function (error) {
+//       console.log(error);
+//     });
+// };

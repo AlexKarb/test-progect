@@ -1,9 +1,9 @@
 import { Button, DownLine } from './MoreInfo.styled';
 
-export const OpenMoreInfoButton = ({ onClick, isClick }) => {
+export const OpenMoreInfoButton = ({ onClick, isOpen }) => {
   return (
     <Button onClick={onClick}>
-      <DownLine /> Деталі
+      <DownLine isopen={isOpen ? 'rotate(180deg)' : 'rotate(0deg)'} /> Деталі
     </Button>
   );
 };

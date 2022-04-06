@@ -24,19 +24,21 @@ export const Card = ({
   const [openMoreInfo, setOpenMoreInfo] = useState(false);
 
   return (
-    <Block>
-      <Item>
+    <Item>
+      <Block>
         <Main>
           <DataSet data={dataAdd} />
           <Contact contact={contacts} />
           <TypeHelpList types={typeHelp} />
 
-          <OpenMoreInfoButton onClick={() => setOpenMoreInfo(ps => !ps)} />
-
-          {openMoreInfo && <MoreInfo additional={additional} info={info} />}
+          <OpenMoreInfoButton
+            isOpen={openMoreInfo}
+            onClick={() => setOpenMoreInfo(ps => !ps)}
+          />
         </Main>
         <OptionButton delivery={delivery} />
-      </Item>
-    </Block>
+      </Block>
+      {openMoreInfo && <MoreInfo additional={additional} info={info} />}
+    </Item>
   );
 };

@@ -28,8 +28,7 @@ export const exempleOfResponse = {
   },
 
   delivery: true,
-  info: 'хочу доставку зранку',
-
+  info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Exercitationem blanditiis officiis aspernatur repellendus magni modi voluptatem, possimus sequi eveniet voluptate.',
   dataAdd: '24.03.25', // дата создания заявки  "дата"
   dataClose: '', // дата удаления заявки  "дата"
   deletedInfo: '', //почему удалили заявку  "текст"
