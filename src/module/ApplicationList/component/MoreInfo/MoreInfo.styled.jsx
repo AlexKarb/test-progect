@@ -38,14 +38,17 @@ export const Info = styled.p`
 export const Button = styled.button`
   background-color: var(--first-color-bg);
   border: none;
-  padding: 5px 0;
-  padding-left: 6px;
-  padding-right: 10px;
+  padding: 6px 0;
+  padding-left: 8px;
+  padding-right: 18px;
   text-align: center;
   border-radius: 5px;
-  color: var(--main-text-color);
+  color: #fff;
+  width: 160px;
+  justify-content: center;
   display: flex;
   align-items: center;
+  font-size: 14px;
 `;
 
 export const DownLine = styled(FaAngleDown)`

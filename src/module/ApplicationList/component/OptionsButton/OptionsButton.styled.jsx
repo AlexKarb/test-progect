@@ -11,8 +11,14 @@ import { FaRegHourglass } from 'react-icons/fa';
 
 export const IconBlock = styled.div`
   /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 10px;
 
-  padding: 20px 10px;
+  /* * {
+    outline: 1px solid red;
+  } */
 `;
 
 export const IconContainer = styled.div`
@@ -20,6 +26,7 @@ export const IconContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #808080;
 `;
 
 export const IconInfo = styled.div`
@@ -37,7 +44,7 @@ export const IconInfo = styled.div`
 `;
 
 export const WaitIcon = styled(FaRegHourglass)`
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   width: 16px;
   height: 16px;
 
@@ -50,7 +57,7 @@ export const WaitIcon = styled(FaRegHourglass)`
 `;
 
 export const DoneIcon = styled(HiCheck)`
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   width: 18px;
   height: 18px;
 
@@ -64,7 +71,7 @@ export const DoneIcon = styled(HiCheck)`
 
 export const EditIcon = styled(FiEdit2)`
   padding: 2px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   width: 18px;
   height: 18px;
 
@@ -79,7 +86,7 @@ export const EditIcon = styled(FiEdit2)`
   }
 `;
 export const DeleteIcon = styled(TiUserDeleteOutline)`
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   width: 18px;
   height: 18px;
 
@@ -98,10 +105,10 @@ export const Delivery = styled.div`
 `;
 
 export const DeliveryIcon = styled(FaBus)`
-  color: red;
+  color: green;
   width: 16px;
   height: 16px;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   /* padding: 2px; */
   cursor: pointer;
 
@@ -113,7 +120,7 @@ export const DeliveryIcon = styled(FaBus)`
 export const CallIcon = styled(FiPhoneCall)`
   width: 16px;
   height: 16px;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   /* padding: 2px; */
   cursor: pointer;
 

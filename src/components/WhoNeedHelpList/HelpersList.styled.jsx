@@ -43,6 +43,7 @@ export const Data = styled.span`
   text-align: center;
   border-radius: 12px;
 `;
+
 export const Contact = styled.p``;
 export const Info = styled.p`
   border: 1px solid teal;

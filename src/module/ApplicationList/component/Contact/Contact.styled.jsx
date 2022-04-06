@@ -17,20 +17,20 @@ export const Name = styled.p`
   margin: 0;
   margin-bottom: 1px;
   margin-right: 25px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
 `;
 export const Tel = styled.p`
-  font-size: 10px;
+  font-size: 12px;
   text-decoration: none;
   color: inherit;
   position: relative;
   width: 100px;
-  color: #afafaf;
+  color: #808080;
 `;
 export const Adress = styled.p`
-  font-size: 12px;
-  color: #595959;
+  font-size: 14px;
+  color: #3f3f3f;
   display: flex;
   align-items: flex-start;
 `;

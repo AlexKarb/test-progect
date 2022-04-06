@@ -30,17 +30,14 @@ export const Container = styled.div`
 `;
 
 export const Item = styled.li`
-  width: 240px;
-  height: 300px;
+  width: 325px;
+  height: 275px;
   display: flex;
   position: relative;
   border: 1px solid green;
   list-style: none;
-  /* margin: 0 auto; */
-  /* margin-right: 15px; */
   margin-bottom: 20px;
   padding: 10px 6px 10px 20px;
-  width: 250px;
   font-size: 12px;
   box-shadow: 3px 3px 5px #00000033;
 
@@ -55,5 +52,5 @@ export const Item = styled.li`
 `;
 
 export const Main = styled.div`
-  width: 184px;
+  /* width: 184px; */
 `;
