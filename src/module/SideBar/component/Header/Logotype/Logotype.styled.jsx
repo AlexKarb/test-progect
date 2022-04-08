@@ -16,6 +16,7 @@ export const LogoContainer = styled.div`
 export const Arm = styled(MdOutlineVolunteerActivism)`
   width: 35px;
   height: 35px;
+  color: white;
 `;
 
 export const WhiteBlock = styled.div`
@@ -25,7 +26,7 @@ export const WhiteBlock = styled.div`
   width: 27px;
   height: 20px;
   border-radius: 0 0 60px 60px;
-  background-color: white;
+  background-color: var(--main-color-bg);
 `;
 
 const pulseRed = keyframes`
@@ -50,12 +51,12 @@ const pulseRed = keyframes`
 `;
 
 export const Heart = styled(FaRegHeart)`
-  top: 13px;
-  left: 23px;
+  top: 15px;
+  left: 31px;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  color: red;
+  width: 13px;
+  height: 13px;
+  color: white;
   transform: scale(1);
   animation: 2s ${pulseRed} infinite;
 `;

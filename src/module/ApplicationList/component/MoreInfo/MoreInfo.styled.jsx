@@ -31,13 +31,13 @@ export const Button = styled.button`
   cursor: pointer;
   background-color: var(--first-color-bg);
   border: none;
-  padding: 6px 0;
+  padding: 8px 0;
   padding-left: 8px;
   padding-right: 18px;
   text-align: center;
   border-radius: 5px;
   color: #fff;
-  width: 160px;
+  width: 130px;
   justify-content: center;
   display: flex;
   align-items: center;

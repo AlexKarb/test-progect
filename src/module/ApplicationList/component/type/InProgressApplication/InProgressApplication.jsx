@@ -1,5 +1,5 @@
 import { ApplicationList } from '../../ApplicationList/ApplicationList';
 
-export const InProgressApplication = ({ data }) => {
-  return <ApplicationList data={data} title={'Заявки у роботі '} />;
+export const InProgressApplication = () => {
+  return <ApplicationList type="in progress" title="Заявки у роботі" />;
 };

@@ -8,6 +8,7 @@ export const Title = styled.h1`
   font-size: 20px;
   text-align: center;
   margin-bottom: 25px;
-  background-color: #a3b2dd;
+  background-color: var(--first-color-bg);
   padding: 10px;
+  color: white;
 `;

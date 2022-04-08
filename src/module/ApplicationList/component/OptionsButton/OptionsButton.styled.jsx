@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { TiUserDeleteOutline } from 'react-icons/ti';
-import { HiCheck } from 'react-icons/hi';
+import { HiCheck, HiOutlineShoppingCart } from 'react-icons/hi';
 import { FaBus } from 'react-icons/fa';
 import {
   // FiEdit,
@@ -33,12 +33,16 @@ export const IconBlock = styled.div`
   }
 `;
 
-export const IconContainer = styled.div`
+export const IconContainer = styled.button`
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #808080;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
   cursor: pointer;
 `;
 
@@ -133,4 +137,9 @@ export const CallIcon = styled(FiPhoneCall)`
   &:hover ~ * {
     display: block;
   }
+`;
+
+export const IconPending = styled(HiOutlineShoppingCart)`
+  width: 26px;
+  height: 26px;
 `;

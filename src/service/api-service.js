@@ -6,9 +6,25 @@ export const getAllPublications = async () => {
   return response?.data;
 };
 
-export const getPendingPublications = async () => {
+export const getSortedPublications = async type => {
   const data = await getAllPublications();
-  return data?.filter(({ status }) => status === 'pending');
+
+  switch (type) {
+    case 'pending':
+      return data?.filter(({ status }) => status === 'pending');
+
+    case 'in progress':
+      return data?.filter(({ status }) => status === 'in progress');
+
+    case 'completed':
+      return data?.filter(({ status }) => status === 'completed');
+
+    case 'deleted':
+      return data?.filter(({ status }) => status === 'deleted');
+
+    default:
+      return data;
+  }
 };
 
 // export const getInProgressPublications = async () => {
@@ -27,16 +43,16 @@ export const getPendingPublications = async () => {
 // };
 
 export const postPublication = async data => {
-  axios.post('/help', data).then(console.log).catch(console.log);
+  await axios.post('/help', data).then(console.log).catch(console.log);
 };
 
-// export const editPublication = async (id, data) => {
-//   axios
-//     .put(`/help/${id}`, data)
-//     .then(function (response) {
-//       console.log(response);
-//     })
-//     .catch(function (error) {
-//       console.log(error);
-//     });
-// };
+export const editPublication = async (id, data) => {
+  await axios
+    .put(`/help/${id}`, data)
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+};

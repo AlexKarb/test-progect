@@ -1,3 +1,4 @@
+import { initialValues } from 'module/Application/service/initialValues';
 import { useEffect, useState } from 'react';
 import { postPublication } from 'service/api-service';
 import { Form } from '../Form/Form';
@@ -12,6 +13,7 @@ export const CreateApplication = () => {
     }
 
     postPublication({
+      ...initialValues,
       ...value,
       status: 'pending',
       dataAdd: new Date(),

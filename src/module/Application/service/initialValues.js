@@ -10,4 +10,6 @@ export const initialValues = {
   additional: servicesTypesObject,
   delivery: false,
   info: '',
+  dataClose: '',
+  deletedInfo: '',
 };

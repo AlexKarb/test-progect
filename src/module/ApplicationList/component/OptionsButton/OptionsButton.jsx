@@ -8,9 +8,11 @@ import {
   DeleteIcon,
   CallIcon,
   DeliveryIcon,
+  IconPending,
 } from 'module/ApplicationList/component/OptionsButton/OptionsButton.styled';
+// import { editPublication } from 'service/api-service';
 
-export const OptionButton = ({ delivery }) => {
+export const OptionButton = ({ delivery, id, contacts, onChange, type }) => {
   return (
     <>
       <IconBlock>
@@ -22,25 +24,94 @@ export const OptionButton = ({ delivery }) => {
         </IconContainer>
 
         <IconContainer>
-          <CallIcon />
+          <a href={`tel:${contacts.tel}`}>
+            <CallIcon />
+          </a>
           <IconInfo>Дзвінок</IconInfo>
         </IconContainer>
-        <IconContainer>
-          <WaitIcon />
-          <IconInfo>У роботі</IconInfo>
-        </IconContainer>
-        <IconContainer>
-          <DoneIcon />
-          <IconInfo>Заявка виконана</IconInfo>
-        </IconContainer>
+
+        {type === 'in progress' ? (
+          <IconContainer
+            onClick={() =>
+              onChange({
+                id,
+                data: { status: 'pending' },
+              })
+            }
+          >
+            <IconPending />
+            <IconInfo>Повернути до активних</IconInfo>
+          </IconContainer>
+        ) : (
+          <IconContainer
+            onClick={() =>
+              onChange({
+                id,
+                data: { status: 'in progress' },
+              })
+            }
+          >
+            <WaitIcon />
+            <IconInfo>У роботі</IconInfo>
+          </IconContainer>
+        )}
+
+        {type === 'completed' ? (
+          <IconContainer
+            onClick={() =>
+              onChange({
+                id,
+                data: { status: 'pending' },
+              })
+            }
+          >
+            <IconPending />
+            <IconInfo>Повернути до активних</IconInfo>
+          </IconContainer>
+        ) : (
+          <IconContainer
+            onClick={() =>
+              onChange({
+                id,
+                data: { status: 'completed' },
+              })
+            }
+          >
+            <DoneIcon />
+            <IconInfo>Заявка виконана</IconInfo>
+          </IconContainer>
+        )}
+
         <IconContainer>
           <EditIcon />
           <IconInfo>Редагувати</IconInfo>
         </IconContainer>
-        <IconContainer>
-          <DeleteIcon />
-          <IconInfo>Видалити</IconInfo>
-        </IconContainer>
+
+        {type === 'deleted' ? (
+          <IconContainer
+            onClick={() =>
+              onChange({
+                id,
+                data: { status: 'pending' },
+              })
+            }
+          >
+            <IconPending />
+            <IconInfo>Повернути до активних</IconInfo>
+          </IconContainer>
+        ) : (
+          <IconContainer
+            onClick={() =>
+              onChange({
+                id,
+                data: { status: 'deleted' },
+              })
+            }
+          >
+            <DeleteIcon />
+            <IconInfo>Видалити</IconInfo>
+          </IconContainer>
+        )}
       </IconBlock>
     </>
   );

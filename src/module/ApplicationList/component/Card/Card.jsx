@@ -8,8 +8,10 @@ import { DataSet } from '../DataSet/DataSet';
 import { OpenMoreInfoButton } from '../MoreInfo/OpenMoreInfoButton';
 
 export const Card = ({
+  onChange,
+  type,
   data: {
-    // id = '',
+    id = '',
     contacts = {},
     typeHelp = [],
     additional = {},
@@ -28,6 +30,7 @@ export const Card = ({
       <Block>
         <Main>
           <DataSet data={dataAdd} />
+
           <Contact contact={contacts} />
           <TypeHelpList types={typeHelp} />
 
@@ -36,7 +39,13 @@ export const Card = ({
             onClick={() => setOpenMoreInfo(ps => !ps)}
           />
         </Main>
-        <OptionButton delivery={delivery} />
+        <OptionButton
+          delivery={delivery}
+          id={id}
+          contacts={contacts}
+          onChange={onChange}
+          type={type}
+        />
       </Block>
       {openMoreInfo && <MoreInfo additional={additional} info={info} />}
     </Item>
