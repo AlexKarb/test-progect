@@ -13,6 +13,7 @@ export const Item = styled.li`
   list-style: none;
   position: relative;
   width: 325px;
+  background-color: #9aadff33;
   /* min-height: 275px; */
   border-radius: 6px;
   margin-left: auto;

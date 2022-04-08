@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 import { TiUserDeleteOutline } from 'react-icons/ti';
 import { HiCheck, HiOutlineShoppingCart } from 'react-icons/hi';
-import { FaBus } from 'react-icons/fa';
+// import { FaBus } from 'react-icons/fa';
 import {
   // FiEdit,
   FiEdit2,
   FiPhoneCall,
 } from 'react-icons/fi';
 import { FaRegHourglass } from 'react-icons/fa';
+import { MdOutlineDeliveryDining } from 'react-icons/md';
 
 export const IconBlock = styled.div`
   /* border: 1px solid black; */
@@ -64,10 +65,10 @@ export const TelLink = styled.a`
   color: inherit;
 `;
 
-export const DeliveryIcon = styled(FaBus)`
+export const DeliveryIcon = styled(MdOutlineDeliveryDining)`
   color: ${({ delivery }) => delivery && 'green'};
-  width: 16px;
-  height: 16px;
+  width: 22px;
+  height: 22px;
   /* margin-bottom: 25px; */
 
   &:hover {
