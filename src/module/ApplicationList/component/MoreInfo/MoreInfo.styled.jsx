@@ -45,8 +45,8 @@ export const Button = styled.button`
 
   //
 
-  position: absolute;
-  bottom: 5px;
+  /* position: absolute;
+  bottom: 5px; */
 `;
 
 export const DownLine = styled(FaAngleDown)`

@@ -13,14 +13,14 @@ export const Item = styled.li`
   list-style: none;
   position: relative;
   width: 325px;
-  min-height: 275px;
+  /* min-height: 275px; */
+  border-radius: 6px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  border: 1px solid green;
   padding: 10px 6px 10px 20px;
   font-size: 12px;
-  box-shadow: 3px 3px 5px #00000033;
+  box-shadow: 0px 0px 6px 3px #71717133;
 
   @media screen and (min-width: 768px) {
     width: 625px;
@@ -38,8 +38,9 @@ export const Item = styled.li`
 
 export const Block = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  height: 253px;
+  /* height: 253px; */
 
   @media screen and (min-width: 768px) {
     flex-direction: column-reverse;
@@ -66,6 +67,6 @@ export const Container = styled.div`
 
 export const Main = styled.div`
   /* width: 184px; */
-
+  margin-bottom: 18px;
   position: relative; //del
 `;

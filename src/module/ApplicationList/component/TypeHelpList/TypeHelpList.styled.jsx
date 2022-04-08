@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   font-size: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   &:last-child {
     margin-bottom: 0;

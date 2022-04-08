@@ -12,7 +12,7 @@ import { FaRegHourglass } from 'react-icons/fa';
 export const IconBlock = styled.div`
   /* border: 1px solid black; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
   padding: 5px 10px;
   /* height: 250px; */
@@ -38,7 +38,7 @@ export const IconContainer = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #808080;
+  color: #b9b9b9;
   padding: 0;
   background-color: transparent;
   outline: none;
@@ -60,56 +60,8 @@ export const IconInfo = styled.div`
   background-color: #fff;
 `;
 
-export const WaitIcon = styled(FaRegHourglass)`
-  /* margin-bottom: 15px; */
-  width: 16px;
-  height: 16px;
-
-  &:hover {
-    color: #000;
-  }
-  &:hover ~ * {
-    display: block;
-  }
-`;
-
-export const DoneIcon = styled(HiCheck)`
-  /* margin-bottom: 15px; */
-  width: 18px;
-  height: 18px;
-
-  &:hover {
-    color: #000;
-  }
-  &:hover ~ * {
-    display: block;
-  }
-`;
-
-export const EditIcon = styled(FiEdit2)`
-  padding: 2px;
-  /* margin-bottom: 15px; */
-  width: 18px;
-  height: 18px;
-
-  &:hover {
-    color: #000;
-  }
-  &:hover ~ * {
-    display: block;
-  }
-`;
-export const DeleteIcon = styled(TiUserDeleteOutline)`
-  /* margin-bottom: 15px; */
-  width: 18px;
-  height: 18px;
-
-  &:hover {
-    color: #000;
-  }
-  &:hover ~ * {
-    display: block;
-  }
+export const TelLink = styled.a`
+  color: inherit;
 `;
 
 export const DeliveryIcon = styled(FaBus)`
@@ -132,7 +84,7 @@ export const CallIcon = styled(FiPhoneCall)`
   /* margin-bottom: 25px; */
 
   &:hover {
-    color: #000;
+    color: #10af02;
   }
   &:hover ~ * {
     display: block;
@@ -140,6 +92,68 @@ export const CallIcon = styled(FiPhoneCall)`
 `;
 
 export const IconPending = styled(HiOutlineShoppingCart)`
-  width: 26px;
-  height: 26px;
+  width: 19px;
+  height: 19px;
+  color: ${({ type }) => (type === 'pending' ? '#1b00be' : null)};
+
+  &:hover {
+    color: #000;
+  }
+  &:hover ~ * {
+    display: block;
+  }
+`;
+
+export const WaitIcon = styled(FaRegHourglass)`
+  /* margin-bottom: 15px; */
+  width: 16px;
+  height: 16px;
+  color: ${({ type }) => (type === 'in progress' ? '#1b00be' : null)};
+
+  &:hover {
+    color: #000;
+  }
+  &:hover ~ * {
+    display: block;
+  }
+`;
+
+export const DoneIcon = styled(HiCheck)`
+  /* margin-bottom: 15px; */
+  width: 18px;
+  height: 18px;
+  color: ${({ type }) => (type === 'completed' ? '#1b00be' : null)};
+
+  &:hover {
+    color: #000;
+  }
+  &:hover ~ * {
+    display: block;
+  }
+`;
+
+export const EditIcon = styled(FiEdit2)`
+  /* margin-bottom: 15px; */
+  width: 16px;
+  height: 16px;
+
+  &:hover {
+    color: #000;
+  }
+  &:hover ~ * {
+    display: block;
+  }
+`;
+export const DeleteIcon = styled(TiUserDeleteOutline)`
+  /* margin-bottom: 15px; */
+  width: 18px;
+  height: 18px;
+  color: ${({ type }) => (type === 'deleted' ? '#1b00be' : null)};
+
+  &:hover {
+    color: #000;
+  }
+  &:hover ~ * {
+    display: block;
+  }
 `;
