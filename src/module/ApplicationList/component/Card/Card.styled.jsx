@@ -1,14 +1,5 @@
 import styled from 'styled-components';
 
-// export const LeftSide = styled.div`
-//   margin-bottom: 10px;
-//   @media screen and (min-width: 1024px) {
-//     margin-bottom: 0px;
-//     margin-right: 30px;
-//     width: 450px;
-//   }
-// `;
-
 export const Item = styled.li`
   list-style: none;
   position: relative;

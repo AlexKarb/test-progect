@@ -1,22 +1,14 @@
 import styled from 'styled-components';
 import { TiUserDeleteOutline } from 'react-icons/ti';
 import { HiCheck, HiOutlineShoppingCart } from 'react-icons/hi';
-// import { FaBus } from 'react-icons/fa';
-import {
-  // FiEdit,
-  FiEdit2,
-  FiPhoneCall,
-} from 'react-icons/fi';
+import { FiEdit2, FiPhoneCall } from 'react-icons/fi';
 import { FaRegHourglass } from 'react-icons/fa';
 import { MdOutlineDeliveryDining } from 'react-icons/md';
 
 export const IconBlock = styled.div`
-  /* border: 1px solid black; */
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   padding: 5px 10px;
-  /* height: 250px; */
 
   /* * {
     outline: 1px solid red;
@@ -29,8 +21,6 @@ export const IconBlock = styled.div`
     position: absolute;
     top: 10px;
     right: 5px;
-
-    /* width: 220px; */
   }
 `;
 
@@ -39,7 +29,7 @@ export const IconContainer = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #b9b9b9;
+  color: var(--unactive-color-bg);
   padding: 0;
   background-color: transparent;
   outline: none;
@@ -69,7 +59,6 @@ export const DeliveryIcon = styled(MdOutlineDeliveryDining)`
   color: ${({ delivery }) => delivery && 'green'};
   width: 22px;
   height: 22px;
-  /* margin-bottom: 25px; */
 
   &:hover {
     color: #000;
@@ -95,7 +84,7 @@ export const CallIcon = styled(FiPhoneCall)`
 export const IconPending = styled(HiOutlineShoppingCart)`
   width: 19px;
   height: 19px;
-  color: ${({ type }) => (type === 'pending' ? '#1b00be' : null)};
+  color: ${({ type }) => (type === 'true' ? '#1b00be' : null)};
 
   &:hover {
     color: #000;
@@ -109,7 +98,7 @@ export const WaitIcon = styled(FaRegHourglass)`
   /* margin-bottom: 15px; */
   width: 16px;
   height: 16px;
-  color: ${({ type }) => (type === 'in progress' ? '#1b00be' : null)};
+  color: ${({ type }) => (type === 'true' ? '#1b00be' : null)};
 
   &:hover {
     color: #000;
@@ -123,7 +112,7 @@ export const DoneIcon = styled(HiCheck)`
   /* margin-bottom: 15px; */
   width: 18px;
   height: 18px;
-  color: ${({ type }) => (type === 'completed' ? '#1b00be' : null)};
+  color: ${({ type }) => (type === 'true' ? '#1b00be' : null)};
 
   &:hover {
     color: #000;
@@ -145,11 +134,11 @@ export const EditIcon = styled(FiEdit2)`
     display: block;
   }
 `;
+
 export const DeleteIcon = styled(TiUserDeleteOutline)`
-  /* margin-bottom: 15px; */
   width: 18px;
   height: 18px;
-  color: ${({ type }) => (type === 'deleted' ? '#1b00be' : null)};
+  color: ${({ type }) => (type === 'true' ? '#1b00be' : null)};
 
   &:hover {
     color: #000;

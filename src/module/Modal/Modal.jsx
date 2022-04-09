@@ -1,6 +1,5 @@
 import Modal from 'react-modal';
-import { Container } from './Modal.styled';
-import { CloseButton } from './Modal.styled';
+import { CloseButton, MainContainer } from './Modal.styled';
 
 const customStyles = {
   content: {
@@ -16,9 +15,9 @@ const customStyles = {
 
 Modal.setAppElement('#root');
 
-export function ModalW({ elements, onClose, open }) {
+export function ModalW({ elements, children, onClose, open }) {
   return (
-    <Container>
+    <MainContainer>
       <Modal
         isOpen={open}
         onRequestClose={onClose}
@@ -27,7 +26,8 @@ export function ModalW({ elements, onClose, open }) {
       >
         <CloseButton onClick={onClose}>Закрити</CloseButton>
         {elements}
+        {children}
       </Modal>
-    </Container>
+    </MainContainer>
   );
 }

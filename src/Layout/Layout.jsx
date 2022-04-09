@@ -27,14 +27,3 @@ export const Layout = () => {
 };
 
 export default Layout;
-
-//  {
-//    /* {<button onClick={setIsOpen}>відкрити</button>}
-//     {
-//       <ModalW
-//         onClose={() => setIsOpen(false)}
-//         elements={<SideBar />}
-//         open={modalIsOpen}
-//       />
-//     } */
-//  }

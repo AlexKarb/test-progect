@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
 
+export const MainContainer = styled.div`
+  position: relative;
+`;
+
 export const CloseButton = styled(IoIosCloseCircleOutline)`
-  color: black;
+  display: none;
+  color: var(--unactive-color-bg);
   position: absolute;
   top: 0;
   right: -40px;
@@ -11,10 +16,10 @@ export const CloseButton = styled(IoIosCloseCircleOutline)`
   cursor: pointer;
 
   &:hover {
-    color: #525252;
+    color: black;
   }
-`;
 
-export const Container = styled.div`
-  position: relative;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 `;

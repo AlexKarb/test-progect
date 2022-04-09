@@ -1,27 +1,6 @@
-import { useEffect, useState } from 'react';
-import { editPublication, getSortedPublications } from 'service/api-service';
+import { useGetPublication } from 'module/ApplicationList/hooks/useGetPublication';
 import { Card } from '../Card/Card';
 import { Container, Title } from './ApplicationList.styled';
-
-const useGetPublication = type => {
-  const [change, setChange] = useState('');
-  const [data, setData] = useState();
-
-  useEffect(() => {
-    getSortedPublications(type).then(setData);
-  }, [type]);
-
-  useEffect(() => {
-    (async function () {
-      if (change) {
-        await editPublication(change.id, change.data);
-        await getSortedPublications(type).then(setData);
-      }
-    })();
-  }, [change, type]);
-
-  return [data, setChange];
-};
 
 export const ApplicationList = ({ type, title }) => {
   const [data, setChange] = useGetPublication(type);
