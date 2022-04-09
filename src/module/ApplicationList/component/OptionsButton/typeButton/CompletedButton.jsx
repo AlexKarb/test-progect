@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { changeStatus } from 'service/changeStatus';
-import { ChangeModal } from '../ModalW/ChangeType';
+import { ChangeModal } from '../ModalW/ChangeTypeModal';
 import { RestoreModal } from '../ModalW/RestoreModal';
 import { DoneIcon, IconContainer, IconInfo } from '../OptionsButton.styled';
 

@@ -23,7 +23,7 @@ export const CreateApplication = () => {
   return (
     <Container>
       <Title>Створення заявки</Title>
-      <Form onSubmit={setValue} />
+      <Form onSubmit={setValue} initialValues={initialValues} />
     </Container>
   );
 };

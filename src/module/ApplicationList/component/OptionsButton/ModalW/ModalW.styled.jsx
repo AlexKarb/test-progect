@@ -31,3 +31,7 @@ export const Button = styled.button`
   color: #fff;
   cursor: pointer;
 `;
+
+export const ModalContainer = styled.div`
+  width: 300px;
+`;

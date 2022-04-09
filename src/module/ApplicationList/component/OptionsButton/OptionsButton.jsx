@@ -19,7 +19,7 @@ export const OptionButton = ({ delivery, id, contacts, onChange, type }) => {
         <PendingButton id={id} onChange={onChange} type={type} />
         <InProgressButton id={id} onChange={onChange} type={type} />
         <CompletedButton id={id} onChange={onChange} type={type} />
-        <EditButton />
+        <EditButton id={id} onChange={onChange} />
         <DeletedButton id={id} type={type} onChange={onChange} />
       </IconBlock>
     </>

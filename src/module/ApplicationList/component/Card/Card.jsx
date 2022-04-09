@@ -18,7 +18,9 @@ export const Card = ({
     delivery = false,
     info = '',
     dataAdd = '',
-    // dataClose = '',
+    dataClose = '',
+    dataInProgress = '',
+    dataCompleted = '',
     // deletedInfo = '',
     // status = '',
   },
@@ -29,7 +31,10 @@ export const Card = ({
     <Item>
       <Block>
         <Main>
-          <DataSet data={dataAdd} />
+          <DataSet
+            dates={{ dataAdd, dataClose, dataInProgress, dataCompleted }}
+            type={type}
+          />
 
           <Contact contact={contacts} />
           <TypeHelpList types={typeHelp} />

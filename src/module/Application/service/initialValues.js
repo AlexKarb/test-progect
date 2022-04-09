@@ -11,5 +11,7 @@ export const initialValues = {
   delivery: false,
   info: '',
   dataClose: '',
+  dataInProgress: '',
+  dataCompleted: '',
   deletedInfo: '',
 };

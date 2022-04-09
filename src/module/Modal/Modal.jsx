@@ -1,6 +1,18 @@
 import Modal from 'react-modal';
 import { CloseButton, MainContainer } from './Modal.styled';
 
+// const customStyles = {
+//   content: {
+//     top: '50%',
+//     left: '50%',
+//     right: 'auto',
+//     bottom: 'auto',
+//     marginRight: '-50%',
+//     transform: 'translate(-50%, -50%)',
+//     overflow: 'unset',
+//   },
+// };
+
 const customStyles = {
   content: {
     top: '50%',
@@ -9,7 +21,9 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    overflow: 'unset',
+    overflow: 'auto',
+    maxHeight: 'calc(100vh - 60px)',
+    maxWidth: 'calc(100vw - 30px)',
   },
 };
 

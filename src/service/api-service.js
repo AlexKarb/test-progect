@@ -6,6 +6,11 @@ export const getAllPublications = async () => {
   return response?.data;
 };
 
+export const getPublicationById = async id => {
+  const response = await axios.get(`/help/${id}`);
+  return response?.data;
+};
+
 export const getSortedPublications = async type => {
   const data = await getAllPublications();
 
@@ -26,21 +31,6 @@ export const getSortedPublications = async type => {
       return data;
   }
 };
-
-// export const getInProgressPublications = async () => {
-//   const data = await getAllPublications();
-//   return data?.filter(({ status }) => status === 'in progress');
-// };
-
-// export const getCompletedPublications = async () => {
-//   const data = await getAllPublications();
-//   return data?.filter(({ status }) => status === 'completed');
-// };
-
-// export const getDeletedPublications = async () => {
-//   const data = await getAllPublications();
-//   return data?.filter(({ status }) => status === 'deleted');
-// };
 
 export const postPublication = async data => {
   await axios.post('/help', data).then(console.log).catch(console.log);
