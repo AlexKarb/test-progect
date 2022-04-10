@@ -4,7 +4,7 @@ import { parseISO, format } from 'date-fns';
 export const DataSet = ({ dates, type }) => {
   const { dataAdd, dataClose, dataInProgress, dataCompleted } = dates;
 
-  const formatingData = date => format(parseISO(date), ` dd-LL-yyyy, kk:mm `);
+  const formatingData = date => format(parseISO(date), ` dd.LL.yy | kk:mm `);
 
   return (
     <>
@@ -14,17 +14,15 @@ export const DataSet = ({ dates, type }) => {
       </Data>
 
       {type === 'in progress' && dataInProgress && (
-        <Data type={type}>
-          Дата відправки у роботу: {formatingData(dataInProgress)}
-        </Data>
+        <Data>Дата відправки у роботу: {formatingData(dataInProgress)}</Data>
       )}
 
       {type === 'completed' && dataCompleted && (
-        <Data type={type}>Дата виконання: {formatingData(dataCompleted)}</Data>
+        <Data>Дата виконання: {formatingData(dataCompleted)}</Data>
       )}
 
       {type === 'deleted' && dataClose && (
-        <Data type={type}>Дата видалення: {formatingData(dataClose)}</Data>
+        <Data>Дата видалення: {formatingData(dataClose)}</Data>
       )}
     </>
   );

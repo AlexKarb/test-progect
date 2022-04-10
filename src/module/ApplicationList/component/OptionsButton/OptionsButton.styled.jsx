@@ -8,9 +8,11 @@ import { MdOutlineDeliveryDining } from 'react-icons/md';
 export const IconBlock = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 5px 10px;
+  padding: 5px 0;
 
-  /* * {
+  /* outline: 1px solid red;
+
+  * {
     outline: 1px solid red;
   } */
 
@@ -40,12 +42,11 @@ export const IconContainer = styled.button`
 export const IconInfo = styled.div`
   display: none;
   position: absolute;
-  left: -65px;
-  top: -6px;
+  left: -20px;
+  bottom: 28px;
   width: 60px;
   padding: 3px;
-  border: 1px solid #0b0909;
-  box-shadow: 3px 3px 5px #00000033;
+  box-shadow: -1px 0px 5px #00000033;
   font-size: 8px;
   border-radius: 5px;
   background-color: #fff;
@@ -53,6 +54,11 @@ export const IconInfo = styled.div`
 
 export const TelLink = styled.a`
   color: inherit;
+  display: flex;
+
+  &:hover ~ * {
+    display: block;
+  }
 `;
 
 export const DeliveryIcon = styled(MdOutlineDeliveryDining)`
@@ -71,7 +77,6 @@ export const DeliveryIcon = styled(MdOutlineDeliveryDining)`
 export const CallIcon = styled(FiPhoneCall)`
   width: 16px;
   height: 16px;
-  /* margin-bottom: 25px; */
 
   &:hover {
     color: #10af02;
@@ -84,7 +89,7 @@ export const CallIcon = styled(FiPhoneCall)`
 export const IconPending = styled(HiOutlineShoppingCart)`
   width: 19px;
   height: 19px;
-  color: ${({ type }) => (type === 'true' ? '#1b00be' : null)};
+  color: ${({ type }) => (type === 'true' ? 'var(--first-color-bg)' : null)};
 
   &:hover {
     color: #000;
@@ -98,7 +103,7 @@ export const WaitIcon = styled(FaRegHourglass)`
   /* margin-bottom: 15px; */
   width: 16px;
   height: 16px;
-  color: ${({ type }) => (type === 'true' ? '#1b00be' : null)};
+  color: ${({ type }) => (type === 'true' ? 'var(--first-color-bg)' : null)};
 
   &:hover {
     color: #000;
@@ -112,7 +117,7 @@ export const DoneIcon = styled(HiCheck)`
   /* margin-bottom: 15px; */
   width: 18px;
   height: 18px;
-  color: ${({ type }) => (type === 'true' ? '#1b00be' : null)};
+  color: ${({ type }) => (type === 'true' ? 'var(--first-color-bg)' : null)};
 
   &:hover {
     color: #000;
@@ -138,7 +143,7 @@ export const EditIcon = styled(FiEdit2)`
 export const DeleteIcon = styled(TiUserDeleteOutline)`
   width: 18px;
   height: 18px;
-  color: ${({ type }) => (type === 'true' ? '#1b00be' : null)};
+  color: ${({ type }) => (type === 'true' ? 'var(--first-color-bg)' : null)};
 
   &:hover {
     color: #000;

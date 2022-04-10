@@ -19,7 +19,7 @@ export const UserName = styled.p`
   height: auto;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--main-text-color);
+  color: white;
   margin-bottom: 2px;
 `;
 export const Role = styled.p`

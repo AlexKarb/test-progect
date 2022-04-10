@@ -25,6 +25,7 @@ img {
 
 body {
   font-family: 'Nunito', sans-serif;
+  background-color: var(--first-color-bg);
 }
 
 .Toastify__toast--success {

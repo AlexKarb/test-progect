@@ -11,14 +11,14 @@ export const EditButton = ({ id, onChange }) => {
       <IconContainer onClick={handleClick}>
         <EditIcon />
         <IconInfo>Редагувати</IconInfo>
-      </IconContainer>
 
-      <EditModal
-        id={id}
-        modalIsOpen={modalIsOpen}
-        setIsOpen={setIsOpen}
-        onChange={onChange}
-      />
+        <EditModal
+          id={id}
+          modalIsOpen={modalIsOpen}
+          setIsOpen={setIsOpen}
+          onChange={onChange}
+        />
+      </IconContainer>
     </>
   );
 };

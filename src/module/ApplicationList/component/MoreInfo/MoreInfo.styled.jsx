@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FaAngleDown } from 'react-icons/fa';
+import { FiChevronDown } from 'react-icons/fi';
 
 export const Block = styled.div`
   padding: 15px 0;
@@ -32,12 +32,12 @@ export const Button = styled.button`
   background-color: var(--first-color-bg);
   border: none;
   padding: 8px 0;
-  padding-left: 8px;
-  padding-right: 18px;
+  padding-left: 4px;
+  padding-right: 14px;
   text-align: center;
   border-radius: 5px;
   color: #fff;
-  width: 130px;
+  width: 110px;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -49,10 +49,10 @@ export const Button = styled.button`
   bottom: 5px; */
 `;
 
-export const DownLine = styled(FaAngleDown)`
+export const DownLine = styled(FiChevronDown)`
   width: 18px;
   height: 18px;
-  margin-right: 4px;
+  margin-right: 8px;
   transform: ${({ isopen }) => isopen};
 `;
 
@@ -71,5 +71,4 @@ export const CommentContainer = styled.div`
   align-items: baseline;
   font-size: 12px;
   margin-top: 10px;
-  padding-right: 35px;
 `;

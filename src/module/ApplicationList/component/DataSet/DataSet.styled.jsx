@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const Data = styled.div`
   font-size: 12px;
-  color: ${({ type }) => {
+  margin-bottom: 4px;
+  color: #808080;
+  /* color: ${({ type }) => {
     switch (type) {
       case 'in progress':
         return 'green';
@@ -16,5 +18,5 @@ export const Data = styled.div`
       default:
         return '#808080';
     }
-  }};
+  }}; */
 `;

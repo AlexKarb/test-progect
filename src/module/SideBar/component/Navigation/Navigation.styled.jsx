@@ -37,6 +37,7 @@ export const LinkMenu = styled(Link)`
 
 export const Label = styled.span`
   margin-left: 17px;
+  color: white;
 `;
 
 export const IconContainer = styled.div`

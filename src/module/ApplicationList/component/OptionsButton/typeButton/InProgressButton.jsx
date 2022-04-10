@@ -19,22 +19,22 @@ export const InProgressButton = ({ id, onChange, type }) => {
       <IconContainer disabled={currentPage} onClick={handleClick}>
         <WaitIcon type={currentPage.toString()} />
         <IconInfo>У роботі</IconInfo>
-      </IconContainer>
 
-      {isDeletedPage ? (
-        <RestoreModal
-          changeType={changeType}
-          modalIsOpen={modalIsOpen}
-          setIsOpen={setIsOpen}
-        />
-      ) : (
-        <ChangeModal
-          changeType={changeType}
-          modalIsOpen={modalIsOpen}
-          setIsOpen={setIsOpen}
-          currentAction={currentAction}
-        />
-      )}
+        {isDeletedPage ? (
+          <RestoreModal
+            changeType={changeType}
+            modalIsOpen={modalIsOpen}
+            setIsOpen={setIsOpen}
+          />
+        ) : (
+          <ChangeModal
+            changeType={changeType}
+            modalIsOpen={modalIsOpen}
+            setIsOpen={setIsOpen}
+            currentAction={currentAction}
+          />
+        )}
+      </IconContainer>
     </>
   );
 };

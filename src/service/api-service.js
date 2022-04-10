@@ -1,6 +1,8 @@
 import axios from 'axios';
 axios.defaults.baseURL = 'https://621faf0dce99a7de19458441.mockapi.io/ua-help';
 
+export const keysOfTypes = ['pending', 'in progress', 'completed', 'deleted'];
+
 export const getAllPublications = async () => {
   const response = await axios.get('/help');
   return response?.data;
@@ -30,6 +32,12 @@ export const getSortedPublications = async type => {
     default:
       return data;
   }
+};
+
+export const getLengthOfSortedPublication = async type => {
+  const data = await getSortedPublications(type);
+
+  return data.length;
 };
 
 export const postPublication = async data => {

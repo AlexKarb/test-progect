@@ -12,14 +12,14 @@ export const DeletedButton = ({ type, onChange, id }) => {
       <IconContainer disabled={isDeleted} onClick={() => setIsOpen(true)}>
         <DeleteIcon type={isDeleted.toString()} />
         <IconInfo>Видалити</IconInfo>
-      </IconContainer>
 
-      <DeletedModal
-        id={id}
-        onChange={onChange}
-        modalIsOpen={modalIsOpen}
-        setIsOpen={setIsOpen}
-      />
+        <DeletedModal
+          id={id}
+          onChange={onChange}
+          modalIsOpen={modalIsOpen}
+          setIsOpen={setIsOpen}
+        />
+      </IconContainer>
     </>
   );
 };

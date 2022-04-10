@@ -23,7 +23,6 @@ export const Label = styled.span`
 export const TypeList = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
   align-items: center;
 `;
 export const TypeItem = styled.li`
@@ -50,9 +49,9 @@ export const TypeItem = styled.li`
         return '#53d6ba73';
     }
   }};
-  padding: 2px 10px;
+  padding: 4px 10px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 30px;
   margin-bottom: 6px;
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;

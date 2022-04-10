@@ -3,16 +3,16 @@ import styled from 'styled-components';
 export const Item = styled.li`
   list-style: none;
   position: relative;
-  width: 325px;
-  background-color: #9aadff33;
+  width: 365px;
+  background-color: white;
   /* min-height: 275px; */
   border-radius: 6px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  padding: 10px 6px 10px 20px;
+  padding: 10px 20px;
   font-size: 12px;
-  box-shadow: 0px 0px 6px 3px #71717133;
+  box-shadow: 0px 0px 10px 3px #b8b8b833;
 
   @media screen and (min-width: 768px) {
     width: 625px;

@@ -21,22 +21,22 @@ export const PendingButton = ({ id, onChange, type }) => {
       <IconContainer disabled={currentPage} onClick={handleClick}>
         <IconPending type={currentPage.toString()} />
         <IconInfo>Активні</IconInfo>
-      </IconContainer>
 
-      {isDeletedPage ? (
-        <RestoreModal
-          changeType={changeType}
-          modalIsOpen={modalIsOpen}
-          setIsOpen={setIsOpen}
-        />
-      ) : (
-        <ChangeModal
-          changeType={changeType}
-          modalIsOpen={modalIsOpen}
-          setIsOpen={setIsOpen}
-          currentAction={currentAction}
-        />
-      )}
+        {isDeletedPage ? (
+          <RestoreModal
+            changeType={changeType}
+            modalIsOpen={modalIsOpen}
+            setIsOpen={setIsOpen}
+          />
+        ) : (
+          <ChangeModal
+            changeType={changeType}
+            modalIsOpen={modalIsOpen}
+            setIsOpen={setIsOpen}
+            currentAction={currentAction}
+          />
+        )}
+      </IconContainer>
     </>
   );
 };

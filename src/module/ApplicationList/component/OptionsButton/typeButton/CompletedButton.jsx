@@ -19,22 +19,22 @@ export const CompletedButton = ({ id, onChange, type }) => {
       <IconContainer disabled={currentPage} onClick={handleClick}>
         <DoneIcon type={currentPage.toString()} />
         <IconInfo>Заявка виконана</IconInfo>
-      </IconContainer>
 
-      {isDeletedPage ? (
-        <RestoreModal
-          changeType={changeType}
-          modalIsOpen={modalIsOpen}
-          setIsOpen={setIsOpen}
-        />
-      ) : (
-        <ChangeModal
-          changeType={changeType}
-          modalIsOpen={modalIsOpen}
-          setIsOpen={setIsOpen}
-          currentAction={currentAction}
-        />
-      )}
+        {isDeletedPage ? (
+          <RestoreModal
+            changeType={changeType}
+            modalIsOpen={modalIsOpen}
+            setIsOpen={setIsOpen}
+          />
+        ) : (
+          <ChangeModal
+            changeType={changeType}
+            modalIsOpen={modalIsOpen}
+            setIsOpen={setIsOpen}
+            currentAction={currentAction}
+          />
+        )}
+      </IconContainer>
     </>
   );
 };
