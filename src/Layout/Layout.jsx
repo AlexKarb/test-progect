@@ -1,9 +1,10 @@
 import { SideBarElement } from 'module/SideBar/component';
+import { Toast } from 'module/Toaster/Toaster';
 import { useState } from 'react';
 // import { useSelector } from 'react-redux';
 import { Outlet } from 'react-router-dom';
 // import { LoginPage } from './components/LoginPage/LoginPage';
-import { Toast } from '../components/Toaster/Toaster';
+
 import { MainContainer } from './Layout.styled';
 
 export const Layout = () => {

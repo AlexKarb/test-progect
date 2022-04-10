@@ -11,7 +11,9 @@ export const PendingButton = ({ id, onChange, type }) => {
   const currentPage = type === currentAction;
   const isDeletedPage = type === 'deleted';
 
-  const changeType = () => onChange(changeStatus(id, currentAction));
+  const changeType = () => {
+    onChange(changeStatus(id, currentAction));
+  };
   const handleClick = () => setIsOpen(true);
 
   return (

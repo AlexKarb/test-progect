@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { logIn } from '../../redux/authSlice';
 
 import userBase from '../../Storage/login.json';
-import { notifyError, notifySuccess } from 'components/Toaster/Toaster';
+import { notifyError, notifySuccess } from 'module/Toaster/Toaster';
 
 const userLoggining = (name, password) => {
   const isNameInBase = Object.keys(userBase).includes(name);

@@ -14,6 +14,7 @@ export const EditButton = ({ id, onChange }) => {
       </IconContainer>
 
       <EditModal
+        id={id}
         modalIsOpen={modalIsOpen}
         setIsOpen={setIsOpen}
         onChange={onChange}

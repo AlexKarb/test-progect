@@ -5,14 +5,13 @@ import { UserData } from '../UserData/UserData';
 import { Details } from '../Details/Details';
 import { Button } from 'module/Utils/Button/Button';
 
-export const Form = ({ onSubmit, initialValues, closeModal }) => {
+export const Form = ({ onSubmit, initialValues }) => {
   return (
     <Formik
       initialValues={initialValues}
       onSubmit={(values, { resetForm }) => {
         onSubmit(values);
         resetForm();
-        if (closeModal) closeModal();
       }}
     >
       {({ values, isSubmitting }) => {

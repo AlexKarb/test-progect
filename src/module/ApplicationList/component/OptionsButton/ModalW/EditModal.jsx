@@ -1,5 +1,6 @@
 import { Form } from 'module/Application/component/Form/Form';
 import { ModalW } from 'module/Modal/Modal';
+import { notifyChange } from 'module/Toaster/Toaster';
 import { useEffect, useState } from 'react';
 import { getPublicationById } from 'service/api-service';
 import { ModalContainer } from './ModalW.styled';
@@ -13,20 +14,18 @@ export const EditModal = ({ id, modalIsOpen, setIsOpen, onChange }) => {
     const { id, ...data } = values;
     onChange({ id, data });
     setValues(values);
+    closeModal();
+    notifyChange('Зміни внесено!');
   };
 
   useEffect(() => {
-    getPublicationById(1).then(setValues);
+    getPublicationById(id).then(setValues);
   }, [id]);
 
   return (
     <ModalW onClose={closeModal} open={modalIsOpen}>
       <ModalContainer>
-        <Form
-          onSubmit={handleSubmit}
-          initialValues={values}
-          closeModal={closeModal}
-        />
+        <Form onSubmit={handleSubmit} initialValues={values} />
       </ModalContainer>
     </ModalW>
   );
