@@ -11,6 +11,7 @@ export const ContactsInfo = ({ info }) => {
         name={name}
         required={required}
         placeholder={placeholder}
+        autoComplete={'off'}
       />
     </Label>
   );

@@ -4,7 +4,7 @@
     "label": "одяг для дорослих",
     "details": {
       "inputType": "text",
-      "view": "введіть розмір одягу для дорослих",
+      "view": "введіть розмір",
       "required": true
     }
   },
@@ -14,7 +14,7 @@
     "label": "одяг для дітей",
     "details": {
       "inputType": "text",
-      "view": "введіть розмір одягу для дітей ",
+      "view": "введіть розмір",
       "required": false
     }
   },
@@ -24,7 +24,7 @@
     "label": "їжа",
     "details": {
       "inputType": "text",
-      "view": "введіть їжу, що бажають отримати",
+      "view": "введіть побажання",
       "required": false
     }
   },
@@ -34,7 +34,7 @@
     "label": "дитяче харчування",
     "details": {
       "inputType": "text",
-      "view": "введіть вид дитячого харчування",
+      "view": "введіть вид",
       "required": true
     }
   },
@@ -44,7 +44,7 @@
     "label": "підгузки",
     "details": {
       "inputType": "text",
-      "view": "введіть розмір підгузків",
+      "view": "введіть розмір",
       "required": true
     }
   },
@@ -54,7 +54,7 @@
     "label": "засоби гігієни",
     "details": {
       "inputType": "text",
-      "view": "введіть вид засобів гігієни ",
+      "view": "введіть вид",
       "required": false
     }
   },
@@ -64,7 +64,7 @@
     "label": "інший тип допомоги",
     "details": {
       "inputType": "text",
-      "view": "введіть інший тип допомоги",
+      "view": "введіть вид",
       "required": true
     }
   }

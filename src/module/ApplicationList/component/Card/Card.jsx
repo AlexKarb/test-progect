@@ -52,7 +52,14 @@ export const Card = ({
           type={type}
         />
       </Block>
-      {openMoreInfo && <MoreInfo additional={additional} info={info} />}
+      {openMoreInfo && (
+        <MoreInfo
+          additional={additional}
+          info={info}
+          dates={{ dataAdd, dataInProgress, dataCompleted }}
+          type={type}
+        />
+      )}
     </Item>
   );
 };

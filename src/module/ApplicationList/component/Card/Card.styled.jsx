@@ -3,9 +3,8 @@ import styled from 'styled-components';
 export const Item = styled.li`
   list-style: none;
   position: relative;
-  width: 365px;
+  max-width: 365px;
   background-color: white;
-  /* min-height: 275px; */
   border-radius: 6px;
   margin-left: auto;
   margin-right: auto;
@@ -22,17 +21,12 @@ export const Item = styled.li`
   @media screen and (min-width: 1024px) {
     width: 1000px;
   }
-
-  /* * {
-    outline: 1px solid red;
-  } */
 `;
 
 export const Block = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* height: 253px; */
 
   @media screen and (min-width: 768px) {
     flex-direction: column-reverse;
@@ -58,7 +52,5 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.div`
-  /* width: 184px; */
   margin-bottom: 18px;
-  position: relative; //del
 `;

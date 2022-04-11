@@ -1,29 +1,32 @@
-import { Data } from './DataSet.styled';
-import { parseISO, format } from 'date-fns';
+import { formatingData } from 'module/ApplicationList/hooks/formatingData';
+import {
+  isCompletedPage,
+  isDeletedPage,
+  isInProgressPage,
+  isPendingPage,
+} from 'root/isPage';
+import { Data, Container } from './DataSet.styled';
 
 export const DataSet = ({ dates, type }) => {
   const { dataAdd, dataClose, dataInProgress, dataCompleted } = dates;
 
-  const formatingData = date => format(parseISO(date), ` dd.LL.yy | kk:mm `);
-
   return (
     <>
-      <Data>
-        Дата створення:
-        {formatingData(dataAdd)}
-      </Data>
+      <Container>
+        {isPendingPage(type) && (
+          <Data>Дата створення:{formatingData(dataAdd)}</Data>
+        )}
 
-      {type === 'in progress' && dataInProgress && (
-        <Data>Дата відправки у роботу: {formatingData(dataInProgress)}</Data>
-      )}
-
-      {type === 'completed' && dataCompleted && (
-        <Data>Дата виконання: {formatingData(dataCompleted)}</Data>
-      )}
-
-      {type === 'deleted' && dataClose && (
-        <Data>Дата видалення: {formatingData(dataClose)}</Data>
-      )}
+        {isInProgressPage(type) && (
+          <Data>Дата відправки у роботу: {formatingData(dataInProgress)}</Data>
+        )}
+        {isCompletedPage(type) && dataCompleted && (
+          <Data>Дата виконання: {formatingData(dataCompleted)}</Data>
+        )}
+        {isDeletedPage(type) && dataClose && (
+          <Data>Дата видалення: {formatingData(dataClose)}</Data>
+        )}
+      </Container>
     </>
   );
 };

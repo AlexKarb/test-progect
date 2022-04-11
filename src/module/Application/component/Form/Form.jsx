@@ -1,6 +1,6 @@
 import { TypeHelp } from '../TypeHelp/TypeHelp';
 import { Formik } from 'formik';
-import { StyledForm } from './Form.styled';
+import { ButtonContainer, StyledForm } from './Form.styled';
 import { UserData } from '../UserData/UserData';
 import { Details } from '../Details/Details';
 import { Button } from 'module/Utils/Button/Button';
@@ -18,13 +18,17 @@ export const Form = ({ onSubmit, initialValues }) => {
         return (
           <StyledForm>
             <UserData />
+
             <TypeHelp selectedTypes={values.typeHelp} />
+
             <Details />
-            <Button
-              type="submit"
-              text={'Зарегеструвати'}
-              isSubmitting={isSubmitting}
-            />
+            <ButtonContainer>
+              <Button
+                type="submit"
+                text={'Зарегеструвати'}
+                isSubmitting={isSubmitting}
+              />
+            </ButtonContainer>
           </StyledForm>
         );
       }}

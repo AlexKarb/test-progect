@@ -13,6 +13,7 @@ export const AdditionalInputInfo = ({ selected, service }) => {
           name={`additional.${type}`}
           required={required}
           placeholder={view}
+          autoComplete={'off'}
         />
       )}
     </>

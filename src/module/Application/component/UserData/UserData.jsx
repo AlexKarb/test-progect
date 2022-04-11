@@ -1,12 +1,18 @@
 import { dataInput } from 'module/Application/service/dataInputUserData';
 import { Title } from '../Title/Title';
 import { ContactsInfo } from './ContactInfo';
+import { Wrapper, Container } from './UserData.styled';
+import { CheckBoxDelivery } from '../Details/CheckBoxDelivery';
 
 export const UserData = () => (
-  <div>
+  <Container>
     <Title text="*Дані про замовника:" />
-    {dataInput.map(data => (
-      <ContactsInfo key={data.label} info={data} />
-    ))}
-  </div>
+    <Wrapper>
+      {dataInput.map(data => (
+        <ContactsInfo key={data.label} info={data} />
+      ))}
+    </Wrapper>
+    <CheckBoxDelivery />
+    <hr />
+  </Container>
 );

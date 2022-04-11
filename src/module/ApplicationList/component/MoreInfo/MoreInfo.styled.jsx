@@ -3,6 +3,7 @@ import { FiChevronDown } from 'react-icons/fi';
 
 export const Block = styled.div`
   padding: 15px 0;
+  font-size: 10px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -12,8 +13,6 @@ export const Block = styled.div`
 export const Container = styled.div`
   display: flex;
   align-items: baseline;
-  font-size: 12px;
-  /* padding: 1px 0; */
 `;
 
 export const Label = styled.span`
@@ -22,8 +21,19 @@ export const Label = styled.span`
   flex-shrink: 0;
   font-size: 10px;
 `;
-
+export const DataLabel = styled.span`
+  margin-right: 5px;
+  color: #808080;
+  flex-shrink: 0;
+  font-size: 10px;
+  width: 115px;
+`;
 export const Info = styled.p`
+  font-size: 10px;
+  padding: 2px 0;
+`;
+export const DataInfo = styled.p`
+  font-size: 9px;
   padding: 2px 0;
 `;
 
@@ -42,11 +52,6 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   font-size: 14px;
-
-  //
-
-  /* position: absolute;
-  bottom: 5px; */
 `;
 
 export const DownLine = styled(FiChevronDown)`
@@ -69,6 +74,5 @@ export const CommentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  font-size: 12px;
   margin-top: 10px;
 `;

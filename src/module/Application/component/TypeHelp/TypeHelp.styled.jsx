@@ -2,33 +2,42 @@ import styled from 'styled-components';
 import { Field } from 'formik';
 
 export const Container = styled.div`
-  width: 300px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 14px;
+  margin: 10px 0;
 `;
 
-export const CheckBox = styled(Field)`
-  margin-top: 10px;
-  margin-right: 5px;
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  height: 25px;
 `;
 
 export const CheckBoxLabel = styled.label`
-  margin-right: 30px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+`;
+
+export const CheckBox = styled(Field)`
+  margin-right: 5px;
 `;
 
 export const Input = styled(Field)`
-  margin-top: 10px;
-  max-width: 300px;
+  width: 145px;
+  border: none;
+  border-bottom: 1px solid #2857e2;
+  outline: none;
+  padding: 1px 10px;
+
+  &::placeholder {
+    text-align: center;
+    font-size: 9px;
+    color: var(--unactive-color-bg);
+  }
 
   @media screen and (min-width: 600px) {
     max-width: 100%;
   }
 `;
-
-export const Label = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-`;
-
-export const Wrapper = styled.div``;

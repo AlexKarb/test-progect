@@ -1,14 +1,15 @@
+import { isPendingPage } from 'root/isPage';
 import { namesOfServiceTypes } from 'service/dataFromServiceType';
+import { DataHistory } from './DataHistory';
 import {
   Container,
   Block,
   Label,
   Info,
-  Comment,
   CommentContainer,
 } from './MoreInfo.styled';
 
-export const MoreInfo = ({ additional, info }) => {
+export const MoreInfo = ({ additional, info, dates, type }) => {
   return (
     <Block>
       <hr />
@@ -25,12 +26,20 @@ export const MoreInfo = ({ additional, info }) => {
         })}
       </div>
 
-      <hr />
       {info && (
-        <CommentContainer>
-          <Label> Інформація : </Label>
-          <Comment>{info}</Comment>
-        </CommentContainer>
+        <>
+          <hr />
+          <CommentContainer>
+            <Label> інформація : </Label>
+            <Info>{info}</Info>
+          </CommentContainer>
+        </>
+      )}
+      {!isPendingPage(type) && (
+        <>
+          <hr />
+          <DataHistory dates={dates} type={type} />
+        </>
       )}
     </Block>
   );

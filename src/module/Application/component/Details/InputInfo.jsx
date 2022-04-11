@@ -1,8 +1,13 @@
-import { Label, Input } from './Details.styled';
+import { Textarea } from './Details.styled';
 
 export const InputInfo = () => (
-  <Label>
-    Деталі:
-    <Input type="text" name="info" placeholder="введіть інформіцію" />
-  </Label>
+  <>
+    <Textarea
+      type="text"
+      name="info"
+      component="textarea"
+      placeholder="введіть інформіцію"
+      rows="4"
+    />
+  </>
 );
