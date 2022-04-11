@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   height: 25px;
+  justify-content: space-between;
 `;
 
 export const CheckBoxLabel = styled.label`
