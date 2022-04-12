@@ -1,5 +1,5 @@
 import { ModalW } from 'module/Modal/Modal';
-import { ButtonWrapper, Button, Container, Title } from './ModalW.styled';
+import { ButtonWrapper, Button, Container, Text } from './ModalW.styled';
 
 export const ChangeModal = ({
   changeType,
@@ -7,21 +7,26 @@ export const ChangeModal = ({
   setIsOpen,
   currentAction,
 }) => {
-  const closeModal = () => setIsOpen(false);
-
   return (
-    <ModalW onClose={closeModal} open={modalIsOpen}>
+    <ModalW onClose={setIsOpen} open={modalIsOpen}>
       <Container>
-        <Title>
+        <Text>
           Відправити заявку у{currentAction === 'pending' && ' АКТИВНІ'}
           {currentAction === 'in progress' && ' РОБОТУ'}
           {currentAction === 'completed' && ' ВИКОНАНІ'}?
-        </Title>
+        </Text>
         <ButtonWrapper>
-          <Button type={'active'} onClick={changeType}>
+          <Button action={'active'} onClick={changeType} type="button">
             Так
           </Button>
-          <Button onClick={closeModal}>Ні</Button>
+          <Button
+            onClick={() => {
+              setIsOpen(false);
+            }}
+            type="button"
+          >
+            Ні
+          </Button>
         </ButtonWrapper>
       </Container>
     </ModalW>

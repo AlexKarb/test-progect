@@ -1,21 +1,23 @@
 import { ModalW } from 'module/Modal/Modal';
 import { changeStatus } from 'service/changeStatus';
-import { ButtonWrapper, Button, Container, Title } from './ModalW.styled';
+import { ButtonWrapper, Button, Container, Text } from './ModalW.styled';
 
 export const DeletedModal = ({ id, onChange, modalIsOpen, setIsOpen }) => {
-  const closeModal = () => setIsOpen(false);
-
   const currentAction = 'deleted';
 
   return (
-    <ModalW onClose={closeModal} open={modalIsOpen}>
+    <ModalW onClose={setIsOpen} open={modalIsOpen}>
       <Container>
-        <Title>Ви дійсно хочете видалити заявку?</Title>
+        <Text>Ви дійсно хочете видалити заявку?</Text>
         <ButtonWrapper>
           <Button onClick={() => onChange(changeStatus(id, currentAction))}>
             Так
           </Button>
-          <Button type={'active'} onClick={closeModal}>
+          <Button
+            action={'active'}
+            onClick={() => setIsOpen(false)}
+            type="button"
+          >
             Ні
           </Button>
         </ButtonWrapper>

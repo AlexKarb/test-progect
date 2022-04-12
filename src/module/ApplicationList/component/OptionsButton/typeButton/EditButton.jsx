@@ -3,22 +3,24 @@ import { EditModal } from '../ModalW/EditModal';
 import { EditIcon, IconContainer, IconInfo } from '../OptionsButton.styled';
 
 export const EditButton = ({ id, onChange }) => {
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
   const handleClick = () => setIsOpen(true);
+  const onClose = () => setIsOpen(false);
 
   return (
     <>
       <IconContainer onClick={handleClick}>
         <EditIcon />
         <IconInfo>Редагувати</IconInfo>
-
-        <EditModal
-          id={id}
-          modalIsOpen={modalIsOpen}
-          setIsOpen={setIsOpen}
-          onChange={onChange}
-        />
       </IconContainer>
+
+      <EditModal
+        id={id}
+        modalIsOpen={isOpen}
+        setIsOpen={onClose}
+        onChange={onChange}
+      />
     </>
   );
 };

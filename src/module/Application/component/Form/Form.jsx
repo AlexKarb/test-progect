@@ -5,7 +5,7 @@ import { UserData } from '../UserData/UserData';
 import { Details } from '../Details/Details';
 import { Button } from 'module/Utils/Button/Button';
 
-export const Form = ({ onSubmit, initialValues }) => {
+export const Form = ({ onSubmit, initialValues, type }) => {
   return (
     <Formik
       initialValues={initialValues}
@@ -16,7 +16,7 @@ export const Form = ({ onSubmit, initialValues }) => {
     >
       {({ values, isSubmitting }) => {
         return (
-          <StyledForm>
+          <StyledForm type={type}>
             <UserData />
 
             <TypeHelp selectedTypes={values.typeHelp} />
@@ -25,7 +25,7 @@ export const Form = ({ onSubmit, initialValues }) => {
             <ButtonContainer>
               <Button
                 type="submit"
-                text={'Зарегеструвати'}
+                text={type === 'edit' ? 'Зберегти' : 'Зарегеструвати'}
                 isSubmitting={isSubmitting}
               />
             </ButtonContainer>

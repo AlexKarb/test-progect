@@ -3,6 +3,7 @@ import { editPublication, getSortedPublications } from 'service/api-service';
 
 export const useGetPublication = type => {
   const [change, setChange] = useState('');
+
   const [data, setData] = useState();
 
   useEffect(() => {

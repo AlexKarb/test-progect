@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { TiUserDeleteOutline } from 'react-icons/ti';
+import { AiOutlineDelete } from 'react-icons/ai';
 import { HiCheck, HiOutlineShoppingCart } from 'react-icons/hi';
 import { FiEdit2, FiPhoneCall } from 'react-icons/fi';
 import { FaRegHourglass } from 'react-icons/fa';
@@ -140,9 +140,9 @@ export const EditIcon = styled(FiEdit2)`
   }
 `;
 
-export const DeleteIcon = styled(TiUserDeleteOutline)`
-  width: 18px;
-  height: 18px;
+export const DeleteIcon = styled(AiOutlineDelete)`
+  width: 19px;
+  height: 19px;
   color: ${({ type }) => (type === 'true' ? 'var(--first-color-bg)' : null)};
 
   &:hover {

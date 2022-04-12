@@ -1,15 +1,26 @@
-import { Link, Outlet } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import {
+  ArchiveLink,
+  Container,
+  DeleteIcon,
+  DoneIcon,
+} from './ArchiveList.styled';
 
 export const ArchiveList = () => {
+  let location = useLocation();
+  console.log('~ location', location);
+
   return (
-    <>
-      <Link to="/archive/completed">Виконані заявки</Link>
-      <br />
-      <hr />
-      <Link to="/archive/deleted">Видалені заявки </Link>
-      <br />
-      <hr />
-      <Outlet />
-    </>
+    <Container>
+      <ArchiveLink to="/archive/completed" state={{ from: location }}>
+        <DeleteIcon />
+        Виконані
+      </ArchiveLink>
+
+      <ArchiveLink to="/archive/deleted" state={{ from: location }}>
+        <DoneIcon />
+        Видалені
+      </ArchiveLink>
+    </Container>
   );
 };

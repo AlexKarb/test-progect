@@ -1,8 +1,9 @@
 import { useGetPublication } from 'module/ApplicationList/hooks/useGetPublication';
 import { Card } from '../Card/Card';
-import { Container, Title } from './ApplicationList.styled';
+import { NoFound } from '../Utils/NoFound';
+import { Container } from './ApplicationList.styled';
 
-export const ApplicationList = ({ type, title }) => {
+export const ApplicationList = ({ type }) => {
   const [data, setChange] = useGetPublication(type);
 
   //   const [filters, setFilter] = useState([]);
@@ -17,14 +18,12 @@ export const ApplicationList = ({ type, title }) => {
   //   }, [data, filters]);
 
   return (
-    <>
-      <Title>{title}</Title>
-      <Container>
-        {data &&
-          data.map(info => (
-            <Card key={info.id} data={info} onChange={setChange} type={type} />
-          ))}
-      </Container>
-    </>
+    <Container>
+      {data &&
+        data.map(info => (
+          <Card key={info.id} data={info} onChange={setChange} type={type} />
+        ))}
+      {data?.length === 0 && <NoFound />}
+    </Container>
   );
 };

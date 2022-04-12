@@ -1,25 +1,27 @@
 import { useState } from 'react';
+import { isDeletedPage } from 'root/isPage';
 import { DeletedModal } from '../ModalW/DeletedModal';
 import { DeleteIcon, IconContainer, IconInfo } from '../OptionsButton.styled';
 
 export const DeletedButton = ({ type, onChange, id }) => {
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const isDeleted = type === 'deleted';
+  const handleClick = () => setIsOpen(true);
+  const onClose = () => setIsOpen(false);
 
   return (
     <>
-      <IconContainer disabled={isDeleted} onClick={() => setIsOpen(true)}>
-        <DeleteIcon type={isDeleted.toString()} />
+      <IconContainer disabled={isDeletedPage(type)} onClick={handleClick}>
+        <DeleteIcon type={isDeletedPage(type).toString()} />
         <IconInfo>Видалити</IconInfo>
-
-        <DeletedModal
-          id={id}
-          onChange={onChange}
-          modalIsOpen={modalIsOpen}
-          setIsOpen={setIsOpen}
-        />
       </IconContainer>
+
+      <DeletedModal
+        id={id}
+        onChange={onChange}
+        modalIsOpen={isOpen}
+        setIsOpen={onClose}
+      />
     </>
   );
 };
