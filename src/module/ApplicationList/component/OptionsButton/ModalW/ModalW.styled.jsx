@@ -9,9 +9,11 @@ export const CloseButton = styled(IoIosCloseCircleOutline)`
   width: 30px;
   height: 31px;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 
   &:hover {
-    color: black;
+    color: #5e5e5e;
   }
 
   @media screen and (min-width: 768px) {

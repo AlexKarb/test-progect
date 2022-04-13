@@ -6,9 +6,20 @@ const Icon = styled(BsArrowLeft)`
   height: 25px;
   width: 25px;
   color: white;
+
+  &:hover {
+    color: #afafaf;
+  }
+`;
+
+const StyledLink = styled(Link)`
   position: absolute;
   top: 15px;
   left: 30px;
+
+  color: white;
+  border: none;
+  background-color: transparent;
 
   &:hover {
     color: #afafaf;
@@ -17,8 +28,8 @@ const Icon = styled(BsArrowLeft)`
 
 export const GoBackButton = ({ path }) => {
   return (
-    <Link to={path}>
+    <StyledLink to={path} aria-label="закрити вікно">
       <Icon />
-    </Link>
+    </StyledLink>
   );
 };
