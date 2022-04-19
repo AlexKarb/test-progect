@@ -8,17 +8,16 @@ import {
 
 export const ArchiveList = () => {
   let location = useLocation();
-  console.log('~ location', location);
 
   return (
     <Container>
       <ArchiveLink to="/archive/completed" state={{ from: location }}>
-        <DeleteIcon />
+        <DoneIcon />
         Виконані
       </ArchiveLink>
 
       <ArchiveLink to="/archive/deleted" state={{ from: location }}>
-        <DoneIcon />
+        <DeleteIcon />
         Видалені
       </ArchiveLink>
     </Container>

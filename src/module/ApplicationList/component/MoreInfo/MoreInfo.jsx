@@ -14,7 +14,7 @@ export const MoreInfo = ({ additional, info, dates, type }) => {
     <Block>
       <hr />
       <div>
-        {namesOfServiceTypes.map(({ type, label }) => {
+        {namesOfServiceTypes().map(({ type, label }) => {
           return (
             additional[type] && (
               <Container key={type}>

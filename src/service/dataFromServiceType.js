@@ -1,18 +1,22 @@
 import servicesType from 'Storage/servicesType.json';
 
-export const servicesTypesObject = servicesType.reduce((pV, { type }) => {
-  return { ...pV, [type]: '' };
-}, {});
+// {children_food: "", ...}
 
-export const namesOfServiceTypes = servicesType.map(({ type, label }) => {
-  return { type, label };
-});
+export const servicesTypesObject = () =>
+  servicesType.reduce((pV, { type }) => {
+    return { ...pV, [type]: '' };
+  }, {});
 
-export const namesOfServiceTypesObject = servicesType.reduce(
-  (pV, { type, label }) => {
+//  [{type: 'clothes_adult', label: 'одяг для дорослих'}, {..},]
+export const namesOfServiceTypes = () =>
+  servicesType.map(({ type, label }) => {
+    return { type, label };
+  });
+
+//{children_food: "дитяче харчування", ...}
+export const namesOfServiceTypesObject = () =>
+  servicesType.reduce((pV, { type, label }) => {
     return { ...pV, [type]: label };
-  },
-  {}
-);
+  }, {});
 
-export const allDataServicesType = servicesType;
+export const allDataServicesType = () => servicesType;

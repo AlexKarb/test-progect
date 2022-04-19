@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { ApplicationList } from '../ApplicationList/ApplicationList';
-import { GoBackButton } from '../Utils/GoBackButton';
+import { GoBackButton } from '../../../Utils/GoBackBtn/GoBackButton';
 import { Title } from '../Utils/Title';
 
 export const CompletedApplication = () => {

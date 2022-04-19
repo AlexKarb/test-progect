@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { EditModal } from '../ModalW/EditModal';
+import { EditModal } from '../Modal/types/EditModal';
 import { EditIcon, IconContainer, IconInfo } from '../OptionsButton.styled';
 
 export const EditButton = ({ id, onChange }) => {

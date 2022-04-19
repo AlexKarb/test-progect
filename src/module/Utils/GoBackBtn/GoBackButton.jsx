@@ -6,6 +6,7 @@ const Icon = styled(BsArrowLeft)`
   height: 25px;
   width: 25px;
   color: white;
+  z-index: 100;
 
   &:hover {
     color: #afafaf;

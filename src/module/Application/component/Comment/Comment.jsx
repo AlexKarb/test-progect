@@ -1,7 +1,6 @@
-// import { CheckBoxDelivery } from './CheckBoxDelivery';
 import { Title } from '../Title/Title';
 import { InputInfo } from './InputInfo';
-import { Container } from './Details.styled';
+import { Container } from './Comment.styled';
 
 export const Details = () => (
   <Container>

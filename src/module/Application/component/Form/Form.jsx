@@ -2,7 +2,7 @@ import { TypeHelp } from '../TypeHelp/TypeHelp';
 import { Formik } from 'formik';
 import { ButtonContainer, StyledForm } from './Form.styled';
 import { UserData } from '../UserData/UserData';
-import { Details } from '../Details/Details';
+import { Details } from '../Comment/Comment';
 import { Button } from 'module/Utils/Button/Button';
 
 export const Form = ({ onSubmit, initialValues, type }) => {
@@ -10,6 +10,7 @@ export const Form = ({ onSubmit, initialValues, type }) => {
     <Formik
       initialValues={initialValues}
       onSubmit={(values, { resetForm }) => {
+        console.log('~ values', values);
         onSubmit(values);
         resetForm();
       }}

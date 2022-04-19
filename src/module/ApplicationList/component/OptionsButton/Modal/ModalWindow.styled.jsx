@@ -45,15 +45,22 @@ export const ButtonWrapper = styled.div`
   justify-content: space-between;
   margin: 0 auto;
 `;
-export const Button = styled.button`
+export const Button = styled.button.attrs(prop => ({
+  type: 'button',
+}))`
   width: 75px;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  background-color: ${({ action, agree, disagree }) => {
+    if ((agree && action !== 'deleted') || (disagree && action === 'deleted')) {
+      return 'var(--first-color-bg)';
+    } else {
+      return 'var(--main-text-color)';
+    }
+  }};
 
-  background-color: ${({ action }) =>
-    action === 'active' ? 'var(--first-color-bg)' : 'var(--main-text-color)'};
   border: none;
   padding: 8px 0;
   border-radius: 5px;

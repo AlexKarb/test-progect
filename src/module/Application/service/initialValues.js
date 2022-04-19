@@ -7,7 +7,7 @@ export const initialValues = {
     adress: '',
   },
   typeHelp: [],
-  additional: servicesTypesObject,
+  additional: servicesTypesObject(),
   delivery: false,
   info: '',
   dataClose: '',

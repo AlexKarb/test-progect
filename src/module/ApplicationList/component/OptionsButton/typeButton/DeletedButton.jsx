@@ -1,13 +1,17 @@
 import { useState } from 'react';
 import { isDeletedPage } from 'root/isPage';
-import { DeletedModal } from '../ModalW/DeletedModal';
+import { changeStatus } from 'service/changeStatus';
+import { DeletedModal } from '../Modal/types/DeletedModal';
 import { DeleteIcon, IconContainer, IconInfo } from '../OptionsButton.styled';
 
 export const DeletedButton = ({ type, onChange, id }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const currentAction = 'deleted';
+
   const handleClick = () => setIsOpen(true);
   const onClose = () => setIsOpen(false);
+  const changeType = () => onChange(changeStatus(id, currentAction));
 
   return (
     <>
@@ -18,9 +22,10 @@ export const DeletedButton = ({ type, onChange, id }) => {
 
       <DeletedModal
         id={id}
-        onChange={onChange}
+        onChange={changeType}
         modalIsOpen={isOpen}
         setIsOpen={onClose}
+        action={currentAction}
       />
     </>
   );

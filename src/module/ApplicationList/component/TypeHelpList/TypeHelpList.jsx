@@ -6,14 +6,15 @@ import {
 import { namesOfServiceTypesObject } from 'service/dataFromServiceType';
 
 export const TypeHelpList = ({ types }) => {
+  const namesOfService = namesOfServiceTypesObject();
   return (
     <Container>
       <TypeList>
         {types.map(el => {
-          const label = namesOfServiceTypesObject[el];
+          const label = namesOfService[el];
           return (
             <TypeItem key={el} type={el} color={label}>
-              {namesOfServiceTypesObject[el]}
+              {namesOfService[el]}
             </TypeItem>
           );
         })}

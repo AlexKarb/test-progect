@@ -1,4 +1,4 @@
-import { Textarea } from './Details.styled';
+import { Textarea } from './Comment.styled';
 
 export const InputInfo = () => (
   <>

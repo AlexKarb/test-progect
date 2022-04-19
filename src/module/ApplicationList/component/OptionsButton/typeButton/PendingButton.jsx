@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { isDeletedPage, isPendingPage } from 'root/isPage';
 import { changeStatus } from 'service/changeStatus';
-import { ChangeModal } from '../ModalW/ChangeTypeModal';
-import { RestoreModal } from '../ModalW/RestoreModal';
+import { ChangeTypeModal } from '../Modal/types/ChangeTypeModal';
+import { RestoreModal } from '../Modal/types/RestoreModal';
 import { IconPending, IconContainer, IconInfo } from '../OptionsButton.styled';
 
 export const PendingButton = ({ id, onChange, type }) => {
@@ -26,13 +26,15 @@ export const PendingButton = ({ id, onChange, type }) => {
           changeType={changeType}
           modalIsOpen={isOpen}
           setIsOpen={onClose}
+          action={'change'}
         />
       ) : (
-        <ChangeModal
+        <ChangeTypeModal
           changeType={changeType}
           modalIsOpen={isOpen}
           setIsOpen={onClose}
           currentAction={currentAction}
+          action={'change'}
         />
       )}
     </>

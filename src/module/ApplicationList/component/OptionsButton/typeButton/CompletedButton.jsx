@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { isCompletedPage, isDeletedPage } from 'root/isPage';
 import { changeStatus } from 'service/changeStatus';
-import { ChangeModal } from '../ModalW/ChangeTypeModal';
-import { RestoreModal } from '../ModalW/RestoreModal';
+import { ChangeTypeModal } from '../Modal/types/ChangeTypeModal';
+import { RestoreModal } from '../Modal/types/RestoreModal';
 import { DoneIcon, IconContainer, IconInfo } from '../OptionsButton.styled';
 
 export const CompletedButton = ({ id, onChange, type }) => {
@@ -26,12 +26,14 @@ export const CompletedButton = ({ id, onChange, type }) => {
           changeType={changeType}
           modalIsOpen={isOpen}
           setIsOpen={onClose}
+          action={'change'}
         />
       ) : (
-        <ChangeModal
+        <ChangeTypeModal
           changeType={changeType}
           modalIsOpen={isOpen}
           setIsOpen={onClose}
+          action={'change'}
           currentAction={currentAction}
         />
       )}

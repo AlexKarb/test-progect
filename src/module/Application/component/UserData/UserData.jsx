@@ -2,7 +2,7 @@ import { dataInput } from 'module/Application/service/dataInputUserData';
 import { Title } from '../Title/Title';
 import { ContactsInfo } from './ContactInfo';
 import { Wrapper, Container } from './UserData.styled';
-import { CheckBoxDelivery } from '../Details/CheckBoxDelivery';
+import { CheckBoxDelivery } from '../CheckBoxDelivery/CheckBoxDelivery';
 
 export const UserData = () => (
   <Container>
