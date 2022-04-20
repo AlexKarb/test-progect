@@ -27,8 +27,9 @@ const StyledLink = styled(Link)`
 `;
 
 export const GoBackButton = ({ path }) => {
+  console.log('~ path', path);
   return (
-    <StyledLink to={path} aria-label="закрити вікно">
+    <StyledLink to={path ? path : '/'} aria-label="закрити вікно">
       <Icon />
     </StyledLink>
   );

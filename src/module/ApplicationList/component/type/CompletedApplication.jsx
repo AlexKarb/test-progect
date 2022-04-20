@@ -8,7 +8,7 @@ export const CompletedApplication = () => {
 
   return (
     <>
-      <GoBackButton path={location.state.from} />
+      <GoBackButton path={location?.state?.from} />
       <Title text={'Виконані заявки '} />
       <ApplicationList type="completed" />
     </>

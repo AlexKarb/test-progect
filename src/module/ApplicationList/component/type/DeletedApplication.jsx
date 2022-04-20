@@ -8,7 +8,7 @@ export const DeletedApplication = () => {
 
   return (
     <>
-      <GoBackButton path={location.state.from} />
+      <GoBackButton path={location?.state?.from} />
       <Title text={'Видалені заявки '} />
       <ApplicationList type="deleted" />
     </>
