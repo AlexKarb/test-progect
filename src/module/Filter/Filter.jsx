@@ -9,6 +9,12 @@ const Filter = ({ filter, toggleFilter }) => {
 
   const handleClick = e => toggleFilter(e.target.value);
 
+  const removeChildItems = async () => {
+    await toggleFilter('clothes_child', { deteleValue: true });
+    await toggleFilter('children_food', { deteleValue: true });
+    await toggleFilter('diapers', { deteleValue: true });
+  };
+
   return (
     <>
       <FilterIcon
@@ -54,7 +60,11 @@ const Filter = ({ filter, toggleFilter }) => {
 
                 <ContainerBox>
                   <Wrapper>
-                    <CheckBox label={'для дітей'} name="showChild" />
+                    <CheckBox
+                      label={'для дітей'}
+                      name="showChild"
+                      onClick={() => showChild && removeChildItems()}
+                    />
                   </Wrapper>
 
                   <Wrapper>
@@ -74,9 +84,7 @@ const Filter = ({ filter, toggleFilter }) => {
                     />
                   </Wrapper>
                 </ContainerBox>
-                {showChild && (
-                  <ChildrenType toggleFilter={toggleFilter} filter={filter} />
-                )}
+                {showChild && <ChildrenType handleClick={handleClick} />}
               </Container>
             </>
           )}

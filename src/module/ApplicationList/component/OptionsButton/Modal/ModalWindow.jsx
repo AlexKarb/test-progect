@@ -1,7 +1,7 @@
 import { ModalW } from 'module/Modal/Modal';
 import { useSelector } from 'react-redux';
 import { getRoleValue } from 'redux/authSlice';
-import { ButtonWrapper, Button, Container, Text } from './ModalWindow.styled';
+import { ButtonWrapper, Button, Container } from './ModalWindow.styled';
 import { NoAccess } from './noAccess';
 
 export const ModalWindow = ({

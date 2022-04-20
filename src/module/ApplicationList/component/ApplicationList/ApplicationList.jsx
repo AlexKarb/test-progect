@@ -4,7 +4,6 @@ import { Container } from './ApplicationList.styled';
 import Filter from 'module/Filter/Filter';
 import { useFilterByType } from 'module/ApplicationList/hooks/useFilterByType';
 import { useGetPublication } from 'module/ApplicationList/hooks/useGetPublication';
-import { useState } from 'react';
 
 export const ApplicationList = ({ type }) => {
   const [data, setChange] = useGetPublication(type);

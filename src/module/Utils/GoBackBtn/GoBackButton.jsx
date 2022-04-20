@@ -6,7 +6,6 @@ const Icon = styled(BsArrowLeft)`
   height: 25px;
   width: 25px;
   color: white;
-  z-index: 100;
 
   &:hover {
     color: #afafaf;
@@ -17,7 +16,7 @@ const StyledLink = styled(Link)`
   position: absolute;
   top: 15px;
   left: 30px;
-
+  z-index: 100;
   color: white;
   border: none;
   background-color: transparent;

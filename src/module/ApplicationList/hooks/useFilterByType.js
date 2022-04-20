@@ -3,7 +3,6 @@ const { useState, useEffect } = require('react');
 export const useFilterByType = data => {
   const [itemsOfList, setItemsOfList] = useState();
   const [filter, setFilter] = useState([]);
-  console.log('~ filter', filter);
 
   useEffect(() => {
     const sorted = data?.filter(({ typeHelp, delivery }) =>
@@ -20,6 +19,7 @@ export const useFilterByType = data => {
 
   const toggleFilter = (value, prop = { deteleValue: false }) => {
     const haveMatch = filter.find(filterValue => filterValue === value);
+
     const addValue = () => setFilter(prS => [...prS, value]);
     const deleteValue = () =>
       setFilter(prS => prS.filter(filterValue => filterValue !== value));
@@ -33,5 +33,5 @@ export const useFilterByType = data => {
     }
   };
 
-  return [itemsOfList, toggleFilter, filter];
+  return [itemsOfList, toggleFilter, filter, setFilter];
 };

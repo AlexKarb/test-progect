@@ -1,19 +1,9 @@
 import { Formik } from 'formik';
 import { CheckBox } from 'module/Utils/CheckBox/CheckBox';
-import { useEffect } from 'react';
+
 import { AddBox, BabyIcon } from './Filter.styled';
 
-export const ChildrenType = ({ toggleFilter, filter }) => {
-  const handleClick = e => toggleFilter(e.target.value);
-
-  useEffect(() => {
-    return async () => {
-      await toggleFilter('clothes_child', { deteleValue: true });
-      await toggleFilter('children_food', { deteleValue: true });
-      await toggleFilter('diapers', { deteleValue: true });
-    };
-  }, []);
-
+export const ChildrenType = ({ handleClick, filter }) => {
   return (
     <Formik initialValues={{ filter }}>
       <AddBox>

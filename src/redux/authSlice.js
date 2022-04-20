@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   login: 'Гість',
-  role: 'GUEST', // "ADMIN", "VOLONTER", "GUEST"
+  role: 'ADMIN', // "ADMIN", "VOLONTER", "GUEST"
   isLoggedIn: false,
 };
 
