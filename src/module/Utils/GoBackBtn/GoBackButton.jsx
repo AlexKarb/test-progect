@@ -16,7 +16,7 @@ const StyledLink = styled(Link)`
   position: absolute;
   top: 15px;
   left: 30px;
-  z-index: 100;
+  z-index: 1;
   color: white;
   border: none;
   background-color: transparent;
