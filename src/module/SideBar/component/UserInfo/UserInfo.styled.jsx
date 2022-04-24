@@ -24,7 +24,7 @@ export const UserName = styled.p`
 `;
 export const Role = styled.p`
   font-size: 10px;
-  color: #a4a4a4c8;
+  color: #2ccac1;
 `;
 
 // export const IconAdmin = styled(FaUserTie)`

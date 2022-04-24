@@ -8,7 +8,6 @@ import {
 
 export const ArchiveList = () => {
   let location = useLocation();
-  console.log('~ location', location);
 
   return (
     <Container>

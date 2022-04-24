@@ -34,33 +34,6 @@ const Filter = ({ filter, toggleFilter }) => {
                 <ContainerBox>
                   <Wrapper>
                     <CheckBox
-                      value={'clothes_adult'}
-                      label={'одяг'}
-                      name="filter"
-                      onClick={handleClick}
-                    />
-                  </Wrapper>
-                  <Wrapper>
-                    <CheckBox
-                      value={'food'}
-                      label={'їжа'}
-                      name="filter"
-                      onClick={handleClick}
-                    />
-                  </Wrapper>
-                  <Wrapper>
-                    <CheckBox
-                      value={'hygiene'}
-                      label={'гігієна'}
-                      name="filter"
-                      onClick={handleClick}
-                    />
-                  </Wrapper>
-                </ContainerBox>
-
-                <ContainerBox>
-                  <Wrapper>
-                    <CheckBox
                       label={'для дітей'}
                       name="showChild"
                       onClick={() => showChild && removeChildItems()}

@@ -16,7 +16,7 @@ export const TotalStatistics = () => {
         number={number}
         title={'Загальна кількість:'}
         icon={<IconTotal />}
-        width={'100%'}
+        size={'large'}
       />
     </Wrapper>
   );

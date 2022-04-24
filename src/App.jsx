@@ -6,7 +6,7 @@ import { ArchiveList } from 'module/ApplicationList/component/type/ArchiveList/A
 import { CompletedApplication } from 'module/ApplicationList/component/type/CompletedApplication';
 import { DeletedApplication } from 'module/ApplicationList/component/type/DeletedApplication';
 import { InProgressApplication } from 'module/ApplicationList/component/type/InProgressApplication';
-import { MyProfile } from 'module/MyProfile/MyProfile';
+import { HomePage } from 'module/HomePage/HomePage';
 import { Statistics } from 'module/Statistics/component/Statistics/Statistics';
 
 import { Navigate, Route, Routes } from 'react-router-dom';
@@ -14,7 +14,8 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 const App = () => (
   <Routes>
     <Route path="/" element={<Layout />}>
-      <Route path="my-profile" element={<MyProfile />} />
+      <Route index path="/" element={<HomePage />} />
+
       <Route path="create-help" element={<CreateApplication />} />
       <Route path="active" element={<ActiveApplication />} />
       <Route path="in-progress" element={<InProgressApplication />} />

@@ -7,7 +7,7 @@ import {
   FcConferenceCall,
 } from 'react-icons/fc';
 
-export const Container = styled.div`
+export const Container = styled.main`
   margin: 0 auto;
 `;
 
@@ -30,10 +30,34 @@ export const Wrapper = styled.div`
 export const BoxContainer = styled.div`
   position: relative;
   width: ${({ width }) => (width ? width : '160px')};
-  height: 120px;
-  /* background-color: ${({ color }) => color}; */
+  width: ${({ size }) => {
+    switch (size) {
+      case 'small':
+        return '140px';
+
+      case 'medium':
+        return '160px';
+
+      case 'large':
+        return '100%';
+      default:
+        return '160px';
+    }
+  }};
+
+  height: ${({ size }) => {
+    switch (size) {
+      case 'small':
+        return '100px';
+
+      default:
+        return '120px';
+    }
+  }};
+
   background-color: white;
-  box-shadow: 2px 5px 8px 0px #c7c7c79e;
+  box-shadow: ${({ size }) =>
+    size === 'small' ? 'none' : '  2px 5px 8px 0px #c7c7c79e;'};
   border-radius: 3px;
   margin-bottom: 25px;
   padding: 4px;

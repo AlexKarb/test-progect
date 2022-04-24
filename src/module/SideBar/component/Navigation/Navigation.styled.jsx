@@ -1,17 +1,14 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { FaRegUser, FaRegHourglass } from 'react-icons/fa';
+import { FaRegHourglass } from 'react-icons/fa';
 import { FiSettings, FiArchive } from 'react-icons/fi';
 import { HiOutlineDocumentAdd, HiOutlineShoppingCart } from 'react-icons/hi';
 import { MdOutlineAnalytics } from 'react-icons/md';
+import { BiHomeSmile } from 'react-icons/bi';
 
 export const Container = styled.nav`
   padding: 28px 0 0 0;
   overflow-y: auto;
-
-  /* * {
-    outline: 1px solid red;
-  } */
 `;
 
 export const List = styled.div`
@@ -23,11 +20,10 @@ export const LinkMenu = styled(Link)`
   margin-bottom: 8px;
 
   text-decoration: none;
-  color: var(--main-text-color);
+  color: #2ccac1;
   display: flex;
   align-items: center;
   padding: 10px 28px 10px 14px;
-  /* border-radius: 6px; */
 
   &:hover,
   &:active {
@@ -48,9 +44,9 @@ export const IconContainer = styled.div`
   align-items: center;
 `;
 
-export const IconProfile = styled(FaRegUser)`
-  width: 23px;
-  height: 23px;
+export const IconHome = styled(BiHomeSmile)`
+  width: 27px;
+  height: 27px;
 `;
 export const IconCreate = styled(HiOutlineDocumentAdd)`
   width: 26px;

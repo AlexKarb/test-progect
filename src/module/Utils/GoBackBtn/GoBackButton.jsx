@@ -26,11 +26,8 @@ const StyledLink = styled(Link)`
   }
 `;
 
-export const GoBackButton = ({ path }) => {
-  console.log('~ path', path);
-  return (
-    <StyledLink to={path ? path : '/'} aria-label="закрити вікно">
-      <Icon />
-    </StyledLink>
-  );
-};
+export const GoBackButton = ({ path }) => (
+  <StyledLink to={path ? path : '/'} aria-label="закрити вікно">
+    <Icon />
+  </StyledLink>
+);

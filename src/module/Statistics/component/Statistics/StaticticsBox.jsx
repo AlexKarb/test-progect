@@ -7,9 +7,9 @@ import {
   Text,
 } from './Statistics.styled';
 
-export const StaticticsBox = ({ number, title, icon, width }) => {
+export const StaticticsBox = ({ number, title, icon, width, size }) => {
   return (
-    <BoxContainer width={width}>
+    <BoxContainer size={size} width={width}>
       <Name>{title}</Name>
       <BoxBlock>
         {icon}

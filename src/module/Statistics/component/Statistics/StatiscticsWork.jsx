@@ -32,24 +32,28 @@ export const StatiscticsWork = () => {
         title={'Активні:'}
         number={number.pending}
         icon={<IconActive />}
+        size={'medium'}
       ></StaticticsBox>
 
       <StaticticsBox
         title={'У роботі:'}
         number={number['in progress']}
         icon={<IconInProgress />}
+        size={'medium'}
       ></StaticticsBox>
 
       <StaticticsBox
         title={'Виконані:'}
         number={number.completed}
         icon={<IconDone />}
+        size={'medium'}
       ></StaticticsBox>
 
       <StaticticsBox
         title={'Видалені:'}
         number={number.deleted}
         icon={<IconDeleted />}
+        size={'medium'}
       ></StaticticsBox>
     </Wrapper>
   );

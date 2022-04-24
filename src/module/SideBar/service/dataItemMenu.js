@@ -1,5 +1,5 @@
 import {
-  IconProfile,
+  IconHome,
   IconAdmin,
   IconCreate,
   IconPending,
@@ -10,9 +10,9 @@ import {
 
 export const dataItemMenu = [
   {
-    label: 'Мій профіль',
-    icon: <IconProfile />,
-    path: '/my-profile',
+    label: 'Головна сторінка',
+    icon: <IconHome />,
+    path: '/',
   },
 
   {

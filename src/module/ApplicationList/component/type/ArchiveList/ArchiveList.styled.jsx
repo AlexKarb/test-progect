@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineDelete } from 'react-icons/ai';
 import { HiCheck } from 'react-icons/hi';
 
-export const Container = styled.div`
+export const Container = styled.main`
   display: flex;
   flex-direction: column;
   width: 100%;
