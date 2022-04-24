@@ -3,6 +3,7 @@ import { CheckBox } from 'module/Utils/CheckBox/CheckBox';
 import { Container, ContainerBox, FilterIcon, Wrapper } from './Filter.styled';
 import { ChildrenType } from './ChildrenType';
 import { useState } from 'react';
+import { MainType } from './MainType/MainType';
 
 const Filter = ({ filter, toggleFilter }) => {
   const [showFilter, setShowFilter] = useState(false);
@@ -31,6 +32,7 @@ const Filter = ({ filter, toggleFilter }) => {
           {({ values: { showChild, filter } }) => (
             <>
               <Container>
+                <MainType onClick={handleClick} />
                 <ContainerBox>
                   <Wrapper>
                     <CheckBox

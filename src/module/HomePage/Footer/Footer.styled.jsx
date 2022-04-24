@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Footer = styled.footer`
+export const FooterContainer = styled.footer`
   position: fixed;
   bottom: 0;
   left: 0;

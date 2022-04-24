@@ -25,7 +25,7 @@ const App = () => (
       <Route path="statistics" element={<Statistics />} />
       <Route path="administration" element={<Administration />} />
 
-      <Route path="*" element={<Navigate to="create-help" replace={true} />} />
+      <Route path="*" element={<Navigate to="/" replace={true} />} />
     </Route>
   </Routes>
 );

@@ -1,7 +1,7 @@
-import { Wrapp, Text, MyLink } from './Footer.styled';
+import { Wrapp, Text, MyLink, FooterContainer } from './Footer.styled';
 
 export const Footer = () => (
-  <Footer>
+  <FooterContainer>
     <div>&#169; "We are from Ukraine", 2022</div>
 
     <Wrapp>
@@ -10,5 +10,5 @@ export const Footer = () => (
       </Text>
       <MyLink>AlexKarb</MyLink>
     </Wrapp>
-  </Footer>
+  </FooterContainer>
 );
