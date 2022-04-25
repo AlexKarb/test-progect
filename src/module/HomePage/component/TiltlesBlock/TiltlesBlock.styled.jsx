@@ -23,7 +23,7 @@ export const SubTitle = styled.p`
 `;
 
 export const Heart = styled(FaHeart)`
-  color: #ffff00;
+  color: inherit;
   width: 20px;
   height: 20px;
   margin-left: 6px;

@@ -4,7 +4,7 @@ import { GoBackButton } from '../../../Utils/GoBackBtn/GoBackButton';
 import { Title } from '../Utils/Title';
 import { Main } from '../Utils/Main';
 
-export const CompletedApplication = () => {
+const CompletedApplication = () => {
   let location = useLocation();
 
   return (
@@ -15,3 +15,5 @@ export const CompletedApplication = () => {
     </Main>
   );
 };
+
+export default CompletedApplication;

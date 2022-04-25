@@ -4,7 +4,7 @@ import { GoBackButton } from '../../../Utils/GoBackBtn/GoBackButton';
 import { Title } from '../Utils/Title';
 import { Main } from '../Utils/Main';
 
-export const DeletedApplication = () => {
+const DeletedApplication = () => {
   let location = useLocation();
 
   return (
@@ -15,3 +15,5 @@ export const DeletedApplication = () => {
     </Main>
   );
 };
+
+export default DeletedApplication;

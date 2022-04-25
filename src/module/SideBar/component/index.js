@@ -13,13 +13,6 @@ export const SideBarElement = ({ children }) => {
       onSetOpen={setSidebarOpen}
       touchHandleWidth={0}
       dragToggleDistance={0}
-      // styles={{
-      //   content: {
-      //     display: 'flex',
-      //     flexDirection: 'column',
-      //     justifyContent: 'space-between',
-      //   },
-      // }}
     >
       <Header openSideBar={setSidebarOpen} />
       {children}

@@ -2,7 +2,7 @@ import { ApplicationList } from '../ApplicationList/ApplicationList';
 import { Main } from '../Utils/Main';
 import { Title } from '../Utils/Title';
 
-export const ActiveApplication = () => {
+const ActiveApplication = () => {
   return (
     <Main>
       <Title text={'Необроблені заявки '} />
@@ -10,3 +10,5 @@ export const ActiveApplication = () => {
     </Main>
   );
 };
+
+export default ActiveApplication;

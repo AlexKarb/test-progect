@@ -1,5 +1,4 @@
-import { FormContainer } from 'components/FormContainer/FormContainer';
-import { Input, SubmitBtn, Title } from './LoginPage.styled';
+import { Input, SubmitBtn, Title, FormContainer } from './LoginPage.styled';
 
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';

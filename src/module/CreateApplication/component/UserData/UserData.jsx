@@ -1,4 +1,4 @@
-import { dataInput } from 'module/Application/service/dataInputUserData';
+import { dataInput } from 'module/CreateApplication/service/dataInputUserData';
 import { Title } from '../Title/Title';
 import { ContactsInfo } from './ContactInfo';
 import { Wrapper, Container } from './UserData.styled';

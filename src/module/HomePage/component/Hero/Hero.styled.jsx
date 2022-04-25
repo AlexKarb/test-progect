@@ -1,12 +1,5 @@
 import styled from 'styled-components';
-import hero from '../static/Photo/hero2.jpg';
-
-export const Container = styled.main`
-  padding-top: 32px;
-  padding-bottom: 90px;
-  font-size: 20px;
-  position: relative;
-`;
+import hero from '../../../static/Photo/hero2.jpg';
 
 export const Hero = styled.div`
   height: 265px;

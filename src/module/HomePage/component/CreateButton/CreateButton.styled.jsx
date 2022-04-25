@@ -19,7 +19,6 @@ export const Button = styled.button`
   color: rgb(255 255 255);
   border: none;
   border-radius: 6px;
-
   cursor: pointer;
 
   &:hover {

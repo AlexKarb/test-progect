@@ -8,6 +8,7 @@ import { store } from './redux/store';
 import { Provider } from 'react-redux';
 
 import 'modern-normalize/modern-normalize.css';
+import 'react-loader-spinner';
 import './index.css';
 
 ReactDOM.render(

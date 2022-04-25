@@ -11,32 +11,27 @@ export const FooterContainer = styled.footer`
 
   font-size: 12px;
   line-height: 1.13;
-
   color: #b3bee1;
-  line-height: 1.13;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-export const Wrapp = styled.div`
+export const Text = styled.span`
   font-size: 10px;
   display: flex;
   align-items: center;
   margin-top: 3px;
 `;
 
-export const Text = styled.a`
-  text-decoration: none;
-  color: #b3bee1;
-  cursor: pointer;
-`;
-
-export const MyLink = styled.span`
+export const MyLink = styled.a.attrs(prop => ({
+  target: '_blank',
+  rel: 'noreferrer',
+}))`
   margin-left: 3px;
-  color: #ffffffb5;
   font-weight: 700;
-  cursor: pointer;
+  color: #ffffffb5;
   text-decoration: none;
+  cursor: pointer;
 `;

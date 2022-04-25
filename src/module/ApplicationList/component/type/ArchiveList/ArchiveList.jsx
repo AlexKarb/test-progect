@@ -6,7 +6,7 @@ import {
   DoneIcon,
 } from './ArchiveList.styled';
 
-export const ArchiveList = () => {
+const ArchiveList = () => {
   let location = useLocation();
 
   return (
@@ -23,3 +23,5 @@ export const ArchiveList = () => {
     </Container>
   );
 };
+
+export default ArchiveList;

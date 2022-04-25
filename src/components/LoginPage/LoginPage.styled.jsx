@@ -32,3 +32,5 @@ export const SubmitBtn = styled.button`
     transform: scale(1.05);
   }
 `;
+
+export const FormContainer = styled.div``;
