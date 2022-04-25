@@ -42,9 +42,9 @@ export const dataItemMenu = [
     path: '/statistics',
   },
 
-  {
-    label: 'Адміністрування',
-    icon: <IconAdmin />,
-    path: '/administration',
-  },
+  // {
+  //   label: 'Адміністрування',
+  //   icon: <IconAdmin />,
+  //   path: '/administration',
+  // },
 ];
