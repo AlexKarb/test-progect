@@ -1,10 +1,10 @@
 import { Card } from '../Card/Card';
 import { NoFound } from '../../../Utils/NoFound/NoFound';
 import { Container } from './ApplicationList.styled';
-import Filter from 'module/Filter/Filter';
+import Filter from 'module/Filter';
 import { useFilterByType } from 'module/ApplicationList/hooks/useFilterByType';
 import { useGetPublication } from 'module/ApplicationList/hooks/useGetPublication';
-import { MainSpiner } from 'module/Spiner/MainSpiner';
+import { MainSpiner } from 'module/Utils/MainSpiner/MainSpiner';
 
 export const ApplicationList = ({ type }) => {
   const [data, setChange] = useGetPublication(type);

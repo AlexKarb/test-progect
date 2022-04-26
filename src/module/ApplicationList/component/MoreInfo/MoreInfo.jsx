@@ -1,5 +1,5 @@
 import { isPendingPage } from 'root/isPage';
-import { namesOfServiceTypes } from 'service/dataFromServiceType';
+import { nameLabelArrayTypeOfHelp } from 'service/typeOfHelp/dataFromTypeOfHelp';
 import { DataHistory } from './DataHistory';
 import {
   Container,
@@ -14,7 +14,7 @@ export const MoreInfo = ({ additional, info, dates, type }) => {
     <Block>
       <hr />
       <div>
-        {namesOfServiceTypes().map(({ type, label }) => {
+        {nameLabelArrayTypeOfHelp().map(({ type, label }) => {
           return (
             additional[type] && (
               <Container key={type}>

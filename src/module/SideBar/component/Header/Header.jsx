@@ -1,6 +1,6 @@
-import { Burger } from 'module/SideBar/component/Header/Burger/Burger';
+import { Burger } from 'module/Utils/Burger/Burger';
 import { HeaderContainer } from './Header.styled';
-import { Logotype } from './Logotype/Logotype';
+import { Logotype } from 'module/Utils/Logotype/Logotype';
 
 export const Header = ({ openSideBar }) => (
   <HeaderContainer>

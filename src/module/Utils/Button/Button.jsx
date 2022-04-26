@@ -1,15 +1,8 @@
 import { StyledButton } from './Button.styled';
-import { LoaderIcon } from './LoaderIcon';
 
-export const Button = ({
-  text = '',
-  type = 'button',
-  isSubmitting = false,
-  onClick,
-  children,
-}) => (
+export const Button = ({ text = '', type = 'button', onClick, children }) => (
   <StyledButton type={type} onClick={onClick}>
-    {text && (isSubmitting ? <LoaderIcon /> : text)}
-    {!text && children}
+    {text}
+    {children}
   </StyledButton>
 );

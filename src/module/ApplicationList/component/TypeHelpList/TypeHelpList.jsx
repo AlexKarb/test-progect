@@ -3,10 +3,10 @@ import {
   TypeList,
   TypeItem,
 } from 'module/ApplicationList/component/TypeHelpList/TypeHelpList.styled';
-import { namesOfServiceTypesObject } from 'service/dataFromServiceType';
+import { nameEngUkrObjectTypeOfHelp } from 'service/typeOfHelp/dataFromTypeOfHelp';
 
 export const TypeHelpList = ({ types }) => {
-  const namesOfService = namesOfServiceTypesObject();
+  const namesOfService = nameEngUkrObjectTypeOfHelp();
   return (
     <Container>
       <TypeList>

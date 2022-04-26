@@ -17,9 +17,3 @@ export const StyledButton = styled.button`
   font-size: 14px;
   cursor: pointer;
 `;
-
-export const StyledButtonIcon = styled.button`
-  border: none;
-  background-color: transparent;
-  padding: 0;
-`;

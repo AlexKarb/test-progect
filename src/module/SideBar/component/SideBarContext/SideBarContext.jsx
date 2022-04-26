@@ -1,4 +1,4 @@
-import { Navigation } from '../Navigation/Navigation';
+import { Navigation } from '../NavigationList/NavigationList';
 import { Futter } from '../Futter/Futter';
 import { UserInfo } from '../UserInfo/UserInfo';
 import { Container, Wrapper } from './SideBarContext.styled';

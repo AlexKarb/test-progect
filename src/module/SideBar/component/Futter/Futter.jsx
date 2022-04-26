@@ -1,4 +1,4 @@
-import { LogOut } from './LogOut';
+import { LogOut } from '../LogOut/LogOut';
 import { Container } from './Futter.styled';
 
 export const Futter = () => (

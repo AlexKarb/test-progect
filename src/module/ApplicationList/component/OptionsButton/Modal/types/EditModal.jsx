@@ -1,4 +1,4 @@
-import { Form } from 'module/CreateApplication/component/Form/Form';
+import { Form } from 'module/Form';
 import { ModalW } from 'module/Modal/Modal';
 import { notifyChange } from 'module/Toaster/Toaster';
 import { useEffect, useState } from 'react';

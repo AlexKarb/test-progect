@@ -1,0 +1,64 @@
+[
+  {
+    "name": "clothes_adult",
+    "label": "одяг для дорослих",
+    "details": {
+      "view": "введіть розмір",
+      "required": true
+    }
+  },
+
+  {
+    "name": "clothes_child",
+    "label": "одяг для дітей",
+    "details": {
+      "view": "введіть розмір",
+      "required": false
+    }
+  },
+
+  {
+    "name": "food",
+    "label": "їжа",
+    "details": {
+      "view": "введіть побажання",
+      "required": false
+    }
+  },
+
+  {
+    "name": "children_food",
+    "label": "дитяче харчування",
+    "details": {
+      "view": "введіть вид",
+      "required": true
+    }
+  },
+
+  {
+    "name": "diapers",
+    "label": "підгузки",
+    "details": {
+      "view": "введіть розмір",
+      "required": true
+    }
+  },
+
+  {
+    "name": "hygiene",
+    "label": "засоби гігієни",
+    "details": {
+      "view": "введіть вид",
+      "required": false
+    }
+  },
+
+  {
+    "name": "otherHelp",
+    "label": "інший тип допомоги",
+    "details": {
+      "view": "введіть вид",
+      "required": true
+    }
+  }
+]

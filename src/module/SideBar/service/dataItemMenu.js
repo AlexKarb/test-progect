@@ -6,7 +6,7 @@ import {
   IconInProgress,
   IconArchive,
   IconStatistic,
-} from '../component/Navigation/Navigation.styled';
+} from '../component/Icon/Icon';
 
 export const dataItemMenu = [
   {

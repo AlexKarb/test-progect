@@ -1,5 +1,5 @@
-import { SideBarElement } from 'module/SideBar/component';
-import { Toast } from 'module/Toaster/Toaster';
+import { SideBarElement } from 'module/SideBar';
+import { Toast } from 'module/Toaster/Toast';
 import { Outlet } from 'react-router-dom';
 // import { LoginPage } from './components/LoginPage/LoginPage';
 

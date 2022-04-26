@@ -2,20 +2,20 @@ import styled from 'styled-components';
 import { Field } from 'formik';
 import { BsCheckLg } from 'react-icons/bs';
 
-export const CheckBoxIcon = styled(BsCheckLg)`
-  color: transparent;
-  margin-right: 8px;
-  border: 1px solid ${prop => (prop.theame === 'ligth' ? 'grey' : 'white')};
-  /* border: 1px solid white; */
-  border-radius: 3px;
-  padding: 2px;
-`;
-
 export const CheckBoxLabel = styled.label`
   margin-right: 8px;
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  width: ${({ width = 'auto' }) => width};
+`;
+
+export const CheckBoxIcon = styled(BsCheckLg)`
+  color: transparent;
+  margin-right: 8px;
+  border: 1px solid ${prop => (prop.theme === 'ligth' ? 'grey' : 'white')};
+  border-radius: 3px;
+  padding: 2px;
 `;
 
 export const Input = styled(Field)`
