@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/5080.09290632.chunk.js","mappings":"oMAEaA,E,SAAOC,GAAAA,IAAH","sources":["module/Form/component/Utils/Line.jsx"],"sourcesContent":["import styled from 'styled-components';\n\nexport const Line = styled.div`\n  display: block;\n  margin-top: 7px;\n  border-style: inset;\n  border-width: 1px;\n`;\n"],"names":["Line","styled"],"sourceRoot":""}
