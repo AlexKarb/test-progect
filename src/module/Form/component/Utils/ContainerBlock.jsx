@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Line } from './Line';
+import { Line } from '../../../Utils/Line/Line';
 
 const Container = styled.div`
   padding-bottom: 7px;

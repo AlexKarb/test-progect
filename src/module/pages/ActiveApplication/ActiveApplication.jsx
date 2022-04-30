@@ -1,6 +1,6 @@
 import { MainContainer } from 'module/Utils/MainContainer/MainContainer';
 import { Title } from 'module/Utils/Title/Title';
-import { ApplicationList } from '../../ApplicationList/component/ApplicationList/ApplicationList';
+import { ApplicationList } from '../../ApplicationList';
 
 const ActiveApplication = () => {
   return (

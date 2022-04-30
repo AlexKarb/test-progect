@@ -21,6 +21,7 @@ export const getPublicationById = async id => {
 
 export const getSortedPublications = async type => {
   const data = await getAllPublications();
+  console.log('~ data', data);
 
   switch (type) {
     case 'pending':

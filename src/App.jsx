@@ -16,10 +16,10 @@ const ActiveApplication = lazy(() =>
 );
 const ArchiveList = lazy(() => import('module/pages/ArchiveList/ArchiveList'));
 const CompletedApplication = lazy(() =>
-  import('module/ApplicationList/component/type/CompletedApplication')
+  import('module/pages/CompletedApplication/CompletedApplication')
 );
 const DeletedApplication = lazy(() =>
-  import('module/ApplicationList/component/type/DeletedApplication')
+  import('module/pages/DeletedApplication/DeletedApplication')
 );
 const InProgressApplication = lazy(() =>
   import('module/pages/InProgressApplication/InProgressApplication')
