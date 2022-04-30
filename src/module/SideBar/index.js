@@ -1,6 +1,6 @@
 import { useSideBarOpen } from './hooks/useSideBarOpen';
 import { SideBarContext } from './component/SideBarContext/SideBarContext';
-import { Header } from './component/Header/Header';
+import { Header } from '../Header/Header';
 import Sidebar from 'react-sidebar';
 
 export const SideBarElement = ({ children }) => {

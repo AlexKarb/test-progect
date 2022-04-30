@@ -5,4 +5,8 @@ export const Line = styled.div`
   margin-top: 7px;
   border-style: inset;
   border-width: 1px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 12px;
+  }
 `;

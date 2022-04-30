@@ -8,6 +8,7 @@ export const LogOut = () => {
   return (
     <LogoutButton
       type="button"
+      disabled
       // onClick={() => dispatch(logOut())}
     >
       <IconLogout />

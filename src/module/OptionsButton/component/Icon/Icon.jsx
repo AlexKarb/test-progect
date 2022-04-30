@@ -7,40 +7,67 @@ import {
   EditIcon,
   DeleteIcon,
   TelLink,
+  IconContainer,
 } from './Icon.styled';
 
 export const Icon = ({ styleIcon, currentPage, data }) => {
   switch (styleIcon) {
     case 'delivery': {
-      return <DeliveryIcon type={data ? 'needDel' : null} />;
+      return (
+        <IconContainer>
+          <DeliveryIcon type={data ? 'needDel' : null} />
+        </IconContainer>
+      );
     }
 
     case 'call': {
       return (
         <TelLink href={`tel:${data}`}>
-          <CallIcon />
+          <IconContainer>
+            <CallIcon />
+          </IconContainer>
         </TelLink>
       );
     }
 
     case 'pending': {
-      return <PendingIcon type={currentPage} />;
+      return (
+        <IconContainer>
+          <PendingIcon type={currentPage} />
+        </IconContainer>
+      );
     }
 
     case 'in progress': {
-      return <WaitIcon type={currentPage} />;
+      return (
+        <IconContainer>
+          <WaitIcon type={currentPage} />
+        </IconContainer>
+      );
     }
 
     case 'completed': {
-      return <DoneIcon type={currentPage} />;
+      return (
+        <IconContainer>
+          <DoneIcon type={currentPage} />
+        </IconContainer>
+      );
     }
 
     case 'edit': {
-      return <EditIcon />;
+      return (
+        <IconContainer>
+          <EditIcon />
+        </IconContainer>
+      );
     }
 
     case 'deleted': {
-      return <DeleteIcon type={currentPage} />;
+      return (
+        <IconContainer>
+          <DeleteIcon type={currentPage} />
+        </IconContainer>
+      );
     }
 
     default:

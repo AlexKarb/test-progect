@@ -10,12 +10,13 @@ export const Item = styled.li`
   margin-right: auto;
   margin-bottom: 20px;
   padding: 10px 20px;
-  font-size: 12px;
   box-shadow: 0px 0px 10px 3px #b8b8b833;
 
   @media screen and (min-width: 768px) {
-    width: 625px;
-    min-height: 220px;
+    max-width: 540px;
+    min-height: 208px;
+    margin-left: 30px;
+    margin-right: 0;
   }
 
   @media screen and (min-width: 1024px) {
@@ -24,7 +25,8 @@ export const Item = styled.li`
 `;
 
 export const Block = styled.div`
-  display: flex;
+  position: relative;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-between;
 
@@ -37,7 +39,7 @@ export const Block = styled.div`
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-wrap: wrap;
-  }
+  } */
 `;
 
 export const Container = styled.div`

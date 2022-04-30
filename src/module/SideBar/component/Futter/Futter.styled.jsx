@@ -10,4 +10,8 @@ export const Container = styled.div`
   justify-content: space-between;
   background-color: rgb(44 202 193 / 50%);
   color: var(--accent-text-color);
+
+  @media screen and (min-width: 768px) {
+    height: 70px;
+  }
 `;

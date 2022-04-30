@@ -6,6 +6,10 @@ export const Text = styled.p`
   text-align: center;
   padding: 16px;
   color: #ffffff54;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
 `;
 
 export const ExclamationPoint = styled(BsExclamationTriangle)`
@@ -15,4 +19,9 @@ export const ExclamationPoint = styled(BsExclamationTriangle)`
   color: #ffffff54;
   display: block;
   margin-top: 50px;
+
+  @media screen and (min-width: 768px) {
+    width: 90px;
+    height: 90px;
+  }
 `;

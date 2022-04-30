@@ -1,23 +1,24 @@
 import {
   BoxBlock,
-  BoxBlock2,
+  Wrapp,
   BoxContainer,
   Name,
   Number,
   Text,
+  IconContainer,
 } from './StaticticsBox.styled';
 
 export const StaticticsBox = ({ number, title, icon, size }) => {
   return (
     <BoxContainer size={size}>
       <Name>{title}</Name>
-      <BoxBlock>
-        {icon}
-        <BoxBlock2>
+      <Wrapp>
+        <IconContainer>{icon}</IconContainer>
+        <BoxBlock>
           <Number>{number} </Number>
           <Text>{'замовлень(я)'}</Text>
-        </BoxBlock2>
-      </BoxBlock>
+        </BoxBlock>
+      </Wrapp>
     </BoxContainer>
   );
 };

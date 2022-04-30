@@ -10,4 +10,12 @@ export const FilterIcon = styled(BiFilterAlt).attrs(pr => ({
   right: 24px;
   top: 12px;
   color: white;
+
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    width: 36px;
+    height: 36px;
+    right: 34px;
+    top: 100px;
+  }
 `;

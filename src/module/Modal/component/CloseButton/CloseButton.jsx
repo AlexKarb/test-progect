@@ -20,6 +20,9 @@ export const CloseButton = styled(IoIosCloseCircleOutline).attrs(prop => ({
   }
 
   @media screen and (min-width: 768px) {
-    display: block;
+    width: 50px;
+    height: 51px;
+    top: 12px;
+    right: 20px;
   }
 `;

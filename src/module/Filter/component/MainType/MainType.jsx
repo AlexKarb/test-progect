@@ -15,6 +15,7 @@ export const MainType = ({ toggleFilter }) => {
       <ContainerBox>
         <Wrapper>
           <CheckBox
+            type={'filter'}
             value={'clothes_adult'}
             label={'одяг'}
             name="filter"
@@ -24,6 +25,7 @@ export const MainType = ({ toggleFilter }) => {
 
         <Wrapper>
           <CheckBox
+            type={'filter'}
             value={'food'}
             label={'їжа'}
             name="filter"
@@ -33,6 +35,7 @@ export const MainType = ({ toggleFilter }) => {
 
         <Wrapper>
           <CheckBox
+            type={'filter'}
             value={'hygiene'}
             label={'гігієна'}
             name="filter"
@@ -44,6 +47,7 @@ export const MainType = ({ toggleFilter }) => {
       <ContainerBox>
         <Wrapper>
           <CheckBox
+            type={'filter'}
             label={'для дітей'}
             name="showChild"
             onClick={removeChild}
@@ -52,6 +56,7 @@ export const MainType = ({ toggleFilter }) => {
 
         <Wrapper>
           <CheckBox
+            type={'filter'}
             value={'delivery'}
             label={'доставка'}
             name="filter"
@@ -61,6 +66,7 @@ export const MainType = ({ toggleFilter }) => {
 
         <Wrapper>
           <CheckBox
+            type={'filter'}
             value={'otherHelp'}
             label={'інше'}
             name="filter"

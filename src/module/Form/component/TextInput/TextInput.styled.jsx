@@ -5,6 +5,11 @@ export const Label = styled.span`
   width: 65px;
   display: inline-block;
   flex-shrink: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    width: 120px;
+  }
 `;
 
 export const Input = styled(Field).attrs(({ required = true }) => ({
@@ -18,13 +23,18 @@ export const Input = styled(Field).attrs(({ required = true }) => ({
   outline: none;
   padding: 1px 10px;
 
+  @media screen and (min-width: 768px) {
+    padding: 1px 20px;
+    font-size: 22px;
+  }
+
   &::placeholder {
     text-align: center;
     font-size: 10px;
     color: var(--unactive-color-bg);
-  }
 
-  @media screen and (min-width: 600px) {
-    max-width: 100%;
+    @media screen and (min-width: 768px) {
+      font-size: 15px;
+    }
   }
 `;

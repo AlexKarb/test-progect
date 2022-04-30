@@ -16,4 +16,15 @@ export const StyledButton = styled.button`
   color: #fff;
   font-size: 14px;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgb(65 106 229);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    width: 280px;
+    min-width: 110px;
+    padding: 16px 7px;
+  }
 `;

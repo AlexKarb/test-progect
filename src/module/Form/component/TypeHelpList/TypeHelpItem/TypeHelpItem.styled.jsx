@@ -5,4 +5,8 @@ export const Wrapper = styled.div`
   align-items: center;
   height: 25px;
   justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    height: 40px;
+  }
 `;

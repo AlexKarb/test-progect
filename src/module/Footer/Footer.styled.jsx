@@ -16,6 +16,11 @@ export const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    padding: 17px;
+  }
 `;
 
 export const Text = styled.span`
@@ -23,6 +28,10 @@ export const Text = styled.span`
   display: flex;
   align-items: center;
   margin-top: 3px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const MyLink = styled.a.attrs(prop => ({

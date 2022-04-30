@@ -39,6 +39,17 @@ export const ArchiveLink = styled(Link)`
   &:first-child {
     margin-bottom: 25px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+    height: 95px;
+    font-size: 30px;
+
+    &:first-child {
+      margin-bottom: 60px;
+      margin-top: 60px;
+    }
+  }
 `;
 
 export const DoneIcon = styled(HiCheck)`
@@ -46,6 +57,10 @@ export const DoneIcon = styled(HiCheck)`
   height: 50px;
   color: white;
   margin-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 26px;
+  }
 `;
 
 export const DeleteIcon = styled(AiOutlineDelete)`
@@ -53,4 +68,8 @@ export const DeleteIcon = styled(AiOutlineDelete)`
   height: 50px;
   color: white;
   margin-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 26px;
+  }
 `;

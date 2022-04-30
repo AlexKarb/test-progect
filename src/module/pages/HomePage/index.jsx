@@ -5,8 +5,10 @@ const HomePage = () => (
   <>
     <MainContainer>
       <Container>
-        <TitleBlock />
-        <Hero />
+        <div>
+          <TitleBlock />
+          <Hero />
+        </div>
         <CreateButton />
       </Container>
     </MainContainer>

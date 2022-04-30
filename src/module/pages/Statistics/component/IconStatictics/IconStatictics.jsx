@@ -8,24 +8,24 @@ import {
 } from 'react-icons/fc';
 
 export const IconActive = styled(FcDatabase)`
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
 `;
 export const IconInProgress = styled(FcDataBackup)`
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
 `;
 export const IconDone = styled(FcAcceptDatabase)`
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
 `;
 
 export const IconDeleted = styled(FcDeleteDatabase)`
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
 `;
 
 export const IconTotal = styled(FcConferenceCall)`
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
 `;

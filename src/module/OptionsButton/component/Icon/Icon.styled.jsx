@@ -10,95 +10,89 @@ export const DeliveryIcon = styled(MdOutlineDeliveryDining)`
   width: 22px;
   height: 22px;
 
+  width: 100%;
+  height: 100%;
+
   &:hover {
     color: #000;
-  }
-  &:hover ~ * {
-    display: block;
   }
 `;
 
 export const CallIcon = styled(FiPhoneCall)`
-  width: 16px;
-  height: 16px;
+  padding: 3px;
+  width: 100%;
+  height: 100%;
 
   &:hover {
     color: #10af02;
   }
-  &:hover ~ * {
-    display: block;
-  }
 `;
 
 export const PendingIcon = styled(HiOutlineShoppingCart)`
-  width: 19px;
-  height: 19px;
+  padding: 1.5px;
+  width: 100%;
+  height: 100%;
   color: ${({ type }) => (type === 'true' ? 'var(--first-color-bg)' : null)};
 
   &:hover {
     color: #000;
-  }
-  &:hover ~ * {
-    display: block;
   }
 `;
 
 export const WaitIcon = styled(FaRegHourglass)`
-  width: 16px;
-  height: 16px;
+  padding: 3px;
+  width: 100%;
+  height: 100%;
   color: ${({ type }) => (type === 'true' ? 'var(--first-color-bg)' : null)};
 
   &:hover {
     color: #000;
-  }
-  &:hover ~ * {
-    display: block;
   }
 `;
 
 export const DoneIcon = styled(HiCheck)`
-  width: 18px;
-  height: 18px;
+  width: 100%;
+  height: 100%;
   color: ${({ type }) => (type === 'true' ? 'var(--first-color-bg)' : null)};
 
   &:hover {
     color: #000;
   }
-  &:hover ~ * {
-    display: block;
-  }
 `;
 
 export const EditIcon = styled(FiEdit2)`
-  width: 16px;
-  height: 16px;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
 
   &:hover {
     color: #000;
-  }
-  &:hover ~ * {
-    display: block;
   }
 `;
 
 export const DeleteIcon = styled(AiOutlineDelete)`
   width: 19px;
   height: 19px;
+  width: 100%;
+  height: 100%;
   color: ${({ type }) => (type === 'true' ? 'var(--first-color-bg)' : null)};
 
   &:hover {
     color: #000;
-  }
-  &:hover ~ * {
-    display: block;
   }
 `;
 
 export const TelLink = styled.a`
   color: inherit;
   display: flex;
+`;
 
-  &:hover ~ * {
-    display: block;
+export const IconContainer = styled.div`
+  width: 22px;
+  height: 22px;
+
+  @media screen and (min-width: 768px) {
+    width: 26px;
+    height: 26px;
   }
 `;

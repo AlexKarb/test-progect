@@ -14,4 +14,9 @@ export const Wrapper = styled.div`
   background: var(--main-color-bg);
   background: var(--Linear-bg);
   font-size: 18px;
+
+  @media screen and (min-width: 768px) {
+    width: 360px;
+    font-size: 28px;
+  }
 `;

@@ -1,16 +1,5 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  margin-bottom: 20px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-`;
-
 export const Label = styled.span`
   margin-right: 10px;
   width: 78px;
@@ -24,6 +13,15 @@ export const TypeList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  /* @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  } */
 `;
 export const TypeItem = styled.li`
   list-style: none;
@@ -53,7 +51,11 @@ export const TypeItem = styled.li`
   text-align: center;
   border-radius: 30px;
   margin-bottom: 6px;
+  font-size: 12px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;
+    padding: 6px 18px;
+    font-size: 16px;
   }
 `;

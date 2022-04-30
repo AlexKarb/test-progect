@@ -15,7 +15,8 @@ export const StyledFormContainer = styled(Form)`
   background-color: white;
   box-shadow: 0px 0px 10px 3px #b8b8b833;
 
-  @media screen and (min-width: 600px) {
-    max-width: 400px;
+  @media screen and (min-width: 768px) {
+    max-width: 610px;
+    padding: 30px 30px;
   }
 `;

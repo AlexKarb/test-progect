@@ -2,8 +2,12 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.nav`
-  padding: 28px 0 0 0;
+  padding: 28px 28px 28px 14px;
   overflow-y: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+  }
 `;
 
 export const List = styled.div`
@@ -12,29 +16,40 @@ export const List = styled.div`
 `;
 
 export const LinkMenu = styled(Link)`
-  margin-bottom: 8px;
-
+  margin-bottom: 28px;
   text-decoration: none;
   color: #2ccac1;
   display: flex;
   align-items: center;
-  padding: 10px 28px 10px 14px;
 
   &:hover,
   &:active {
     background-color: var(--hover-color-bg);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
   }
 `;
 
 export const Label = styled.span`
   margin-left: 17px;
   color: white;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 27px;
+  }
 `;
 
 export const IconContainer = styled.div`
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
 `;

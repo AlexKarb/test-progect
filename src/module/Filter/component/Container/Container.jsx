@@ -10,16 +10,12 @@ export const Container = styled.div`
   margin-bottom: 20px;
   border-radius: 8px;
 
-  @media screen and (min-width: 540px) {
-    flex-direction: row;
-    justify-content: flex-start;
-    height: 90px;
-    width: 504px;
-  }
-
   @media screen and (min-width: 768px) {
-    flex-direction: row;
-    width: 100%;
-    height: 44px;
+    position: fixed;
+    right: 30px;
+    top: 180px;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
   }
 `;

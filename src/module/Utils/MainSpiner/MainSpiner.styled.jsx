@@ -11,4 +11,10 @@ export const Container = styled.div`
   margin: 20px auto;
   height: 70px;
   width: 70px;
+
+  @media screen and (min-width: 768px) {
+    margin: 60px auto;
+    height: 120px;
+    width: 120px;
+  }
 `;

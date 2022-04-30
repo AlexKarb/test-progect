@@ -3,11 +3,22 @@ import { Field } from 'formik';
 import { BsCheckLg } from 'react-icons/bs';
 
 export const CheckBoxLabel = styled.label`
+  font-size: 14px;
   margin-right: 8px;
+
   display: flex;
+
   align-items: center;
   flex-shrink: 0;
   width: ${({ width = 'auto' }) => width};
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    width: ${({ width = 'auto' }) => (width === '160px' ? '260px' : width)};
+    flex-direction: ${({ type }) =>
+      type === 'filter' ? 'row-reverse' : 'row'};
+  }
 `;
 
 export const CheckBoxIcon = styled(BsCheckLg)`
@@ -16,6 +27,11 @@ export const CheckBoxIcon = styled(BsCheckLg)`
   border: 1px solid ${prop => (prop.theme === 'ligth' ? 'grey' : 'white')};
   border-radius: 3px;
   padding: 2px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: ${({ type }) => (type === 'filter' ? '0px' : '18px')};
+    margin-left: ${({ type }) => (type === 'filter' ? '18px' : '0px')};
+  }
 `;
 
 export const Input = styled(Field)`

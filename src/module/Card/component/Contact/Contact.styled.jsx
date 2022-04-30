@@ -4,8 +4,12 @@ import { MdOutlineLocationOn } from 'react-icons/md';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 15px 0;
+  margin-bottom: 15px;
   font-size: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const Wrap = styled.div`
@@ -18,6 +22,11 @@ export const Name = styled.p`
   margin-right: 25px;
   font-size: 16px;
   font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+    margin-bottom: 4px;
+  }
 `;
 export const Tel = styled.p`
   font-size: 12px;
@@ -26,16 +35,30 @@ export const Tel = styled.p`
   position: relative;
   width: 100px;
   color: #808080;
+
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    padding-left: 3px;
+  }
 `;
 export const Adress = styled.p`
   font-size: 14px;
   color: #3f3f3f;
   display: flex;
   align-items: flex-start;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 export const AdressIcon = styled(MdOutlineLocationOn)`
   width: 13px;
   height: 13px;
   margin-left: -2px;
+
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
 `;

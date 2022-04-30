@@ -14,11 +14,22 @@ export const Textarea = styled(Field).attrs(() => ({
   width: 100%;
   resize: none;
 
+  &::placeholder {
+    font-size: 10px;
+    color: var(--unactive-color-bg);
+
+    @media screen and (min-width: 768px) {
+      font-size: 17px;
+    }
+  }
+
   &:focus {
     outline: 1px solid #030067;
   }
 
-  @media screen and (min-width: 600px) {
-    max-width: 100%;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    font-size: 22px;
+    padding: 10px;
   }
 `;

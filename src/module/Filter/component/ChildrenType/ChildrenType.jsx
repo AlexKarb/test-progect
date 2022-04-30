@@ -12,6 +12,7 @@ export const ChildrenType = ({ toggleFilter, filter }) => {
         <BabyIcon />
 
         <CheckBox
+          type={'filter'}
           value={'clothes_child'}
           label={'одяг'}
           name="filter"
@@ -19,6 +20,7 @@ export const ChildrenType = ({ toggleFilter, filter }) => {
         />
 
         <CheckBox
+          type={'filter'}
           value={'children_food'}
           label={'їжа'}
           name="filter"
@@ -26,6 +28,7 @@ export const ChildrenType = ({ toggleFilter, filter }) => {
         />
 
         <CheckBox
+          type={'filter'}
           value={'diapers'}
           label={'підгузки'}
           name="filter"

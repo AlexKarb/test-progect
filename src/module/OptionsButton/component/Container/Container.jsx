@@ -6,11 +6,9 @@ export const IconBlock = styled.div`
   padding: 5px 0;
 
   @media screen and (min-width: 768px) {
-    width: 300px;
-    flex-direction: row;
-    flex-wrap: wrap;
     position: absolute;
-    top: 10px;
-    right: 5px;
+    bottom: -5px;
+    right: 0;
+    width: 320px;
   }
 `;

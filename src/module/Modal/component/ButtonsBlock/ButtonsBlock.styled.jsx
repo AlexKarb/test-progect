@@ -5,7 +5,12 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
 `;
+
 export const Button = styled.button.attrs(prop => ({
   type: 'button',
 }))`
@@ -28,4 +33,10 @@ export const Button = styled.button.attrs(prop => ({
   font-size: 14px;
   color: #fff;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 175px;
+    padding: 10px 0;
+    font-size: 26px;
+  }
 `;

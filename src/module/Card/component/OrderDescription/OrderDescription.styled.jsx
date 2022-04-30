@@ -11,9 +11,17 @@ export const Label = styled.span`
   color: #808080;
   flex-shrink: 0;
   font-size: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const Info = styled.p`
   font-size: 10px;
   padding: 2px 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 `;
