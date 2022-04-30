@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { filteringItems } from '../Filter/hooks/filteringItems';
 import { useToggleFilter } from 'module/Filter/hooks/useToggleFilter';
 import { Card } from '../Card';
