@@ -10,6 +10,10 @@ export const Label = styled.span`
     font-size: 16px;
     margin-bottom: 10px;
   }
+
+  @media screen and (min-width: 2220px) {
+    font-size: 20px;
+  }
 `;
 
 export const Info = styled.p`
@@ -19,6 +23,10 @@ export const Info = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 16px;
   }
+
+  @media screen and (min-width: 2220px) {
+    font-size: 20px;
+  }
 `;
 
 export const CommentContainer = styled.div`
@@ -26,4 +34,8 @@ export const CommentContainer = styled.div`
   flex-direction: column;
   align-items: baseline;
   margin-top: 10px;
+
+  @media screen and (min-width: 1440px) {
+    padding: 0 20px;
+  }
 `;

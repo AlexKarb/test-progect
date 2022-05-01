@@ -9,4 +9,14 @@ export const MainContainer = styled.main`
     width: 768px;
     margin: 0 auto;
   }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: 2220px) {
+    width: 1940px;
+    padding: 0 40px;
+  }
 `;

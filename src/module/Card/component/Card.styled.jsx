@@ -19,27 +19,22 @@ export const Item = styled.li`
     margin-right: 0;
   }
 
-  @media screen and (min-width: 1024px) {
-    width: 1000px;
+  @media screen and (min-width: 1440px) {
+    max-width: 1000px;
+    display: flex;
+  }
+
+  @media screen and (min-width: 2220px) {
+    padding: 30px;
   }
 `;
 
 export const Block = styled.div`
   position: relative;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
-  @media screen and (min-width: 768px) {
-    flex-direction: column-reverse;
-
-    justify-content: flex-end;
+  @media screen and (min-width: 1440px) {
+    width: 500px;
   }
-
-  @media screen and (min-width: 1024px) {
-    display: flex;
-    flex-wrap: wrap;
-  } */
 `;
 
 export const Container = styled.div`

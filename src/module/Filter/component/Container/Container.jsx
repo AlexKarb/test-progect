@@ -11,9 +11,10 @@ export const Container = styled.div`
   border-radius: 8px;
 
   @media screen and (min-width: 768px) {
-    position: fixed;
-    right: 30px;
-    top: 180px;
+    position: absolute;
+    width: 36px;
+    right: 15px;
+    top: 90px;
     align-items: flex-end;
     padding: 0;
     margin: 0;

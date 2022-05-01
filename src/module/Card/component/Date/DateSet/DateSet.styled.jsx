@@ -8,6 +8,10 @@ export const Date = styled.div`
   @media screen and (min-width: 768px) {
     font-size: 15px;
   }
+
+  @media screen and (min-width: 2220px) {
+    font-size: 20px;
+  }
 `;
 
 export const Container = styled.div`

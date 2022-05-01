@@ -1,5 +1,5 @@
 import { Main, Item, Block } from './component/Card.styled';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Contact } from './component/Contact/Contact';
 import { MoreInfo } from './component/MoreInfo/MoreInfo';
 import { TypeHelpList } from './component/TypeHelpList/TypeHelpList';
@@ -26,6 +26,11 @@ export const Card = ({
   },
 }) => {
   const [openMoreInfo, setOpenMoreInfo] = useState(false);
+
+  const mql = window.matchMedia(`(min-width: 1440px)`);
+  useEffect(() => {
+    mql.matches && setOpenMoreInfo(true);
+  }, [mql]);
 
   return (
     <Item>

@@ -18,10 +18,6 @@ export const TypeList = styled.ul`
   &:last-child {
     margin-bottom: 0;
   }
-
-  /* @media screen and (min-width: 768px) {
-    margin-bottom: 10px;
-  } */
 `;
 export const TypeItem = styled.li`
   list-style: none;
@@ -57,5 +53,9 @@ export const TypeItem = styled.li`
     margin-bottom: 8px;
     padding: 6px 18px;
     font-size: 16px;
+  }
+
+  @media screen and (min-width: 2220px) {
+    font-size: 20px;
   }
 `;

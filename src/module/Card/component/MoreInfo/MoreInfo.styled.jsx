@@ -7,4 +7,14 @@ export const Block = styled.div`
     padding: 0;
     padding-bottom: 15px;
   }
+
+  @media screen and (min-width: 1440px) {
+    width: 500px;
+  }
+`;
+
+export const FirstLine = styled.div`
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
 `;

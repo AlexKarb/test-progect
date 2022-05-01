@@ -3,12 +3,14 @@ import { DateHistory } from '../Date/DateHistory/DateHistory';
 import { DetailsComment } from '../DetailsComment/DetailsComment';
 import { OrderDescription } from '../OrderDescription/OrderDescription';
 import { Line } from 'module/Utils/Line/Line';
-import { Block } from './MoreInfo.styled';
+import { Block, FirstLine } from './MoreInfo.styled';
 
 export const MoreInfo = ({ additional, info, dates, type }) => {
   return (
     <Block>
-      <Line />
+      <FirstLine>
+        <Line />
+      </FirstLine>
       <OrderDescription data={additional} />
       {info && (
         <>

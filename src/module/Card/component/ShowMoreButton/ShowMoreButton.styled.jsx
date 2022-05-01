@@ -29,6 +29,10 @@ export const Button = styled.button`
     padding-bottom: 6px;
     padding-right: 22px;
   }
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
 `;
 
 export const DownLine = styled(FiChevronDown)`

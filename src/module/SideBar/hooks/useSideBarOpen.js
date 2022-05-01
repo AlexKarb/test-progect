@@ -1,7 +1,21 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const useSideBarOpen = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const mql = window.matchMedia(`(min-width: 2220px)`);
 
-  return [sidebarOpen, setSidebarOpen];
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarDocked, setSidebarDocked] = useState(mql.matches);
+
+  useEffect(() => {
+    const mediaQueryChanged = mql => {
+      mql.matches && setSidebarOpen(false);
+      mql.matches && setSidebarDocked(true);
+    };
+
+    mediaQueryChanged(mql);
+
+    mql.addEventListener('change', mediaQueryChanged);
+  }, [mql]);
+
+  return [sidebarOpen, sidebarDocked, setSidebarOpen];
 };

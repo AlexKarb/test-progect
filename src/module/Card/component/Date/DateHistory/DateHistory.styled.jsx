@@ -16,6 +16,11 @@ export const DateLabel = styled.span`
     font-size: 16px;
     width: 200px;
   }
+
+  @media screen and (min-width: 2220px) {
+    font-size: 20px;
+    width: 250px;
+  }
 `;
 
 export const DateInfo = styled.p`
@@ -25,8 +30,16 @@ export const DateInfo = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 15px;
   }
+
+  @media screen and (min-width: 2220px) {
+    font-size: 19px;
+  }
 `;
 
 export const DateHistoryContainer = styled.ul`
   padding-top: 7px;
+
+  @media screen and (min-width: 1140px) {
+    padding: 12px 20px;
+  }
 `;

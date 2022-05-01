@@ -11,4 +11,12 @@ export const IconBlock = styled.div`
     right: 0;
     width: 320px;
   }
+
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    left: 15px;
+    width: auto;
+  }
 `;

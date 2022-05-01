@@ -14,6 +14,10 @@ export const Container = styled.div`
 
 export const Wrap = styled.div`
   margin-bottom: 6px;
+
+  @media screen and (min-width: 2220px) {
+    margin-bottom: 10px;
+  }
 `;
 
 export const Name = styled.p`
@@ -26,6 +30,11 @@ export const Name = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 25px;
     margin-bottom: 4px;
+  }
+
+  @media screen and (min-width: 2220px) {
+    font-size: 28px;
+    margin-bottom: 8px;
   }
 `;
 export const Tel = styled.p`
@@ -40,6 +49,10 @@ export const Tel = styled.p`
     font-size: 15px;
     padding-left: 3px;
   }
+
+  @media screen and (min-width: 2220px) {
+    font-size: 18px;
+  }
 `;
 export const Adress = styled.p`
   font-size: 14px;
@@ -49,6 +62,10 @@ export const Adress = styled.p`
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
+  }
+
+  @media screen and (min-width: 2220px) {
+    font-size: 20px;
   }
 `;
 
