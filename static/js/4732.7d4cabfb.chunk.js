@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[4732],{84732:function(e,t,n){n.r(t),n.d(t,{useToggleModal:function(){return o}});var r=n(70885),u=n(72791),o=function(){var e=(0,u.useState)(!1),t=(0,r.Z)(e,2),n=t[0],o=t[1];return[n,function(){return o(!0)},function(){return o(!1)}]}}}]);
-//# sourceMappingURL=4732.7d4cabfb.chunk.js.map

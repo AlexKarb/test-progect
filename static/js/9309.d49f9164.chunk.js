@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[9309],{79309:function(e){e.exports=JSON.parse('{"yulia":{"password":"25fg308y","role":"ADMIN"},"polina":{"password":"38ld406f","role":"ADMIN"},"\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u0430":{"password":"5","role":"ADMIN"}}')}}]);

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[1640],{11640:function(n,e,i){i.r(e),i.d(e,{Line:function(){return t}});var p,r=i(30168),t=i(15751).ZP.div(p||(p=(0,r.Z)(["\n  display: block;\n  margin-top: 7px;\n  border-style: inset;\n  border-width: 1px;\n\n  @media screen and (min-width: 768px) {\n    margin-top: 12px;\n  }\n"])))}}]);
+//# sourceMappingURL=1640.7fe9b10e.chunk.js.map

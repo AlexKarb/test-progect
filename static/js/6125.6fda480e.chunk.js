@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[6125],{46125:function(n,i,d){d.r(i),d.d(i,{Block:function(){return r},FirstLine:function(){return u}});var e,a,p=d(30168),t=d(15751),r=t.ZP.div(e||(e=(0,p.Z)(["\n  padding: 15px 0;\n\n  @media screen and (min-width: 768px) {\n    padding: 0;\n    padding-bottom: 15px;\n  }\n\n  @media screen and (min-width: 1440px) {\n    width: 500px;\n  }\n"]))),u=t.ZP.div(a||(a=(0,p.Z)(["\n  @media screen and (min-width: 1440px) {\n    display: none;\n  }\n"])))}}]);
+//# sourceMappingURL=6125.6fda480e.chunk.js.map

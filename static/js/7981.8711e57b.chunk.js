@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[7981],{7981:function(n,e,p){p.r(e),p.d(e,{Wrapp:function(){return d}});var r,i=p(30168),d=p(15751).ZP.div(r||(r=(0,i.Z)(["\n  display: flex;\n  justify-content: space-around;\n  border: 1px solid;\n  padding: 8px;\n  border-radius: 5px;\n\n  @media screen and (min-width: 768px) {\n    flex-direction: column;\n    height: 200px;\n    border: none;\n    margin-top: 20px;\n  }\n"])))}}]);
+//# sourceMappingURL=7981.8711e57b.chunk.js.map

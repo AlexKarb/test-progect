@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[5832],{95832:function(n,e,i){i.r(e),i.d(e,{BabyIcon:function(){return r}});var h,t=i(30168),a=i(15751),p=i(56355),r=(0,a.ZP)(p.JeS)(h||(h=(0,t.Z)(["\n  color: white;\n  width: 20px;\n  height: 20px;\n  flex-shrink: 0;\n  margin: 0 4px;\n\n  @media screen and (min-width: 768px) {\n    margin-left: auto;\n    width: 40px;\n    height: 40px;\n    margin-right: 1px;\n  }\n"])))}}]);
+//# sourceMappingURL=5832.56211c3d.chunk.js.map

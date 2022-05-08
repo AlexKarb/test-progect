@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[4732],{84732:function(u,n,e){e.r(n),e.d(n,{useToggleModal:function(){return a}});var t=e(70885),r=e(72791),a=function(){var u=(0,r.useState)(!1),n=(0,t.Z)(u,2),e=n[0],a=n[1];return[e,function(){return a(!0)},function(){return a(!1)}]}}}]);
+//# sourceMappingURL=4732.d09c9e6b.chunk.js.map

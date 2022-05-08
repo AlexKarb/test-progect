@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[3665],{73665:function(n,e,p){p.r(e),p.d(e,{StyledTitle:function(){return t}});var i,d=p(30168),t=p(15751).ZP.p(i||(i=(0,d.Z)(["\n  font-size: 20px;\n  padding: 15px 25px;\n  color: white;\n  background-color: #5b7de1;\n\n  @media screen and (min-width: 768px) {\n    font-size: 26px;\n    padding: 25px 25px;\n  }\n"])))}}]);
+//# sourceMappingURL=3665.fce29a07.chunk.js.map

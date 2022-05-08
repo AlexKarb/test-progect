@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[9383],{19383:function(e,t,a){e.exports=a.p+"static/media/uaFlag.d8c6166810c3c8682143.svg"}}]);
