@@ -13,7 +13,7 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename="/ua-help/">
+    <BrowserRouter basename="/">
       <Provider store={store}>
         <App />
       </Provider>
