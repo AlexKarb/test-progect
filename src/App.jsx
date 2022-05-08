@@ -1,30 +1,18 @@
 import loadable from 'service/loadable';
 import { MainSpiner } from 'module/Utils/MainSpiner/MainSpiner';
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 // import { Administration } from 'module/Administration/component/Administration/Administration';
-
 const Layout = loadable('Layout/Layout');
 const HomePage = loadable('module/pages/HomePage');
-
-const CreateApplication = lazy(() =>
-  import('module/pages/CreateApplication/CreateApplication')
-);
-const ActiveApplication = lazy(() =>
-  import('module/pages/ActiveApplication/ActiveApplication')
-);
-const ArchiveList = lazy(() => import('module/pages/ArchiveList/ArchiveList'));
-const CompletedApplication = lazy(() =>
-  import('module/pages/CompletedApplication/CompletedApplication')
-);
-const DeletedApplication = lazy(() =>
-  import('module/pages/DeletedApplication/DeletedApplication')
-);
-const InProgressApplication = lazy(() =>
-  import('module/pages/InProgressApplication/InProgressApplication')
-);
-const Statistics = lazy(() => import('module/pages/Statistics'));
+const CreateApplication = loadable('module/pages/CreateApplication');
+const ActiveApplication = loadable('module/pages/ActiveApplication');
+const ArchiveList = loadable('module/pages/ArchiveList');
+const CompletedApplication = loadable('module/pages/CompletedApplication');
+const DeletedApplication = loadable('module/pages/DeletedApplication');
+const InProgressApplication = loadable('module/pages/InProgressApplication');
+const Statistics = loadable('module/pages/Statistics');
 
 const App = () => {
   return (

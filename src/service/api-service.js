@@ -21,7 +21,6 @@ export const getPublicationById = async id => {
 
 export const getSortedPublications = async type => {
   const data = await getAllPublications();
-  console.log('~ data', data);
 
   switch (type) {
     case 'pending':
@@ -51,12 +50,5 @@ export const postPublication = async data => {
 };
 
 export const editPublication = async (id, data) => {
-  await axios
-    .put(`/help/${id}`, data)
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+  await axios.put(`/help/${id}`, data).then(console.log).catch(console.log);
 };
