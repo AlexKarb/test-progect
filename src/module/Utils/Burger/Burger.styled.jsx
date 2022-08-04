@@ -16,4 +16,8 @@ export const StyledButtonIcon = styled.button`
   @media screen and (min-width: 768px) {
     width: 60px;
   }
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 `;

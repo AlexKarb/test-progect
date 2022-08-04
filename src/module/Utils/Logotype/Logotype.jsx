@@ -1,7 +1,3 @@
-import { LogoContainer, UaLogo } from './Logotype.styled';
+import { LogoContainer } from './Logotype.styled';
 
-export const Logotype = () => (
-  <LogoContainer>
-    <UaLogo />
-  </LogoContainer>
-);
+export const Logotype = () => <LogoContainer />;

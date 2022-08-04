@@ -8,3 +8,9 @@ export const Container = styled.div`
     padding-top: 61px;
   }
 `;
+
+export const HeroWrapper = styled.div`
+  /* @media screen and (min-width: 1024px) {
+    display: flex;
+  } */
+`;

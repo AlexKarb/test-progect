@@ -8,13 +8,13 @@ export const Block = styled.div`
     padding-bottom: 15px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1024px) {
     width: 500px;
   }
 `;
 
 export const FirstLine = styled.div`
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1024px) {
     display: none;
   }
 `;

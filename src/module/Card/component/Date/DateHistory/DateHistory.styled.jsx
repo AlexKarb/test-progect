@@ -39,7 +39,7 @@ export const DateInfo = styled.p`
 export const DateHistoryContainer = styled.ul`
   padding-top: 7px;
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1024px) {
     padding: 12px 20px;
   }
 `;

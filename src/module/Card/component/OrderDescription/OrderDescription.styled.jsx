@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: baseline;
   padding-top: 7px;
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1024px) {
     padding: 0 20px;
   }
 `;

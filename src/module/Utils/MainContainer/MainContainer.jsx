@@ -10,8 +10,8 @@ export const MainContainer = styled.main`
     margin: 0 auto;
   }
 
-  @media screen and (min-width: 1440px) {
-    width: 1440px;
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
     padding: 0 20px;
   }
 

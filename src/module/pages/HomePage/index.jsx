@@ -1,14 +1,21 @@
-import { Container, CreateButton, TitleBlock, Hero, Footer } from './component';
+import {
+  Container,
+  CreateButton,
+  TitleBlock,
+  Hero,
+  Footer,
+  HeroWrapper,
+} from './component';
 import { MainContainer } from 'module/Utils/MainContainer/MainContainer';
 
 const HomePage = () => (
   <>
     <MainContainer>
       <Container>
-        <div>
+        <HeroWrapper>
           <TitleBlock />
           <Hero />
-        </div>
+        </HeroWrapper>
         <CreateButton />
       </Container>
     </MainContainer>

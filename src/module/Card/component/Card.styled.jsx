@@ -19,7 +19,7 @@ export const Item = styled.li`
     margin-right: 0;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1024px) {
     max-width: 1000px;
     display: flex;
   }
@@ -32,7 +32,7 @@ export const Item = styled.li`
 export const Block = styled.div`
   position: relative;
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1024px) {
     width: 500px;
   }
 `;

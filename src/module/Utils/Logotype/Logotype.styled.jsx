@@ -1,26 +1,42 @@
 import styled, { keyframes } from 'styled-components';
 import { MdOutlineVolunteerActivism } from 'react-icons/md';
 import { FaRegHeart } from 'react-icons/fa';
-import { ReactComponent as UaFlag } from 'static/media/uaFlag.svg';
+// import { ReactComponent as UaFlag } from 'static/media/uaFlag.svg';
 
 export const LogoContainer = styled.div`
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 218, 68, 1) 0%,
+    rgba(255, 218, 68, 1) 51%,
+    rgba(51, 138, 243, 1) 50%
+  );
+
   position: relative;
-  width: 38px;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px;
 
   @media screen and (min-width: 768px) {
-    width: 60px;
+    width: 50px;
+    height: 50px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 50px;
+    height: 30px;
+    border-radius: 0;
   }
 `;
 
-export const UaLogo = styled(UaFlag)`
-  width: 100%;
-  height: 100%;
-`;
+// export const UaLogo = styled(UaFlag)`
+//   width: 100%;
+//   height: 100%;
+// `;
 
 export const Arm = styled(MdOutlineVolunteerActivism)`
   width: 35px;

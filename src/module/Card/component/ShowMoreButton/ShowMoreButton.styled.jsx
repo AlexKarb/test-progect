@@ -30,7 +30,7 @@ export const Button = styled.button`
     padding-right: 22px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1024px) {
     display: none;
   }
 `;

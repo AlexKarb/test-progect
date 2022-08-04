@@ -1,21 +1,33 @@
 import { useEffect, useState } from 'react';
+import { SideBarContext } from '../component/SideBarContext/SideBarContext';
+
+const mql = window.matchMedia(`(min-width: 1024px)`);
 
 export const useSideBarOpen = () => {
-  const mql = window.matchMedia(`(min-width: 2220px)`);
-
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [sidebarDocked, setSidebarDocked] = useState(mql.matches);
 
   useEffect(() => {
-    const mediaQueryChanged = mql => {
-      mql.matches && setSidebarOpen(false);
-      mql.matches && setSidebarDocked(true);
+    const mediaQueryChanged = () => {
+      setSidebarOpen(false);
+      setSidebarDocked(mql.matches);
     };
 
-    mediaQueryChanged(mql);
-
     mql.addEventListener('change', mediaQueryChanged);
-  }, [mql]);
 
-  return [sidebarOpen, sidebarDocked, setSidebarOpen];
+    return () => {
+      mql.removeEventListener('change', mediaQueryChanged);
+    };
+  });
+
+  const attributes = {
+    sidebar: <SideBarContext toClose={() => setSidebarOpen(false)} />,
+    open: sidebarOpen,
+    onSetOpen: setSidebarOpen,
+    docked: sidebarDocked,
+    touchHandleWidth: 0,
+    dragToggleDistance: 0,
+  };
+
+  return [attributes, setSidebarOpen];
 };
