@@ -22,8 +22,8 @@ export const LogoContainer = styled.div`
   justify-content: center;
 
   @media screen and (min-width: 768px) {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
   @media screen and (min-width: 1024px) {

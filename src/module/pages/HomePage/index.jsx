@@ -5,11 +5,12 @@ import {
   Hero,
   Footer,
   HeroWrapper,
+  Wrap,
 } from './component';
 import { MainContainer } from 'module/Utils/MainContainer/MainContainer';
 
 const HomePage = () => (
-  <>
+  <Wrap>
     <MainContainer>
       <Container>
         <HeroWrapper>
@@ -20,7 +21,7 @@ const HomePage = () => (
       </Container>
     </MainContainer>
     <Footer />
-  </>
+  </Wrap>
 );
 
 export default HomePage;

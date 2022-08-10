@@ -14,7 +14,8 @@ export const StyledButtonIcon = styled.button`
   padding: 0;
 
   @media screen and (min-width: 768px) {
-    width: 60px;
+    width: 48px;
+    height: 48px;
   }
 
   @media screen and (min-width: 1024px) {

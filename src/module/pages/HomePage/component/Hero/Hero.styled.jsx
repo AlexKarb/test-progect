@@ -25,4 +25,11 @@ export const Hero = styled.div`
     height: 357px;
     max-width: 700px;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0px;
+    border-radius: 28px;
+    height: 200px;
+    width: 500px;
+  }
 `;

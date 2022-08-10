@@ -31,6 +31,13 @@ export const Button = styled.button`
     font-size: 24px;
     padding: 18px 4px;
   }
+
+  @media screen and (min-width: 1024px) {
+    width: 250px;
+
+    font-size: 20px;
+    padding: 8px 5px;
+  }
 `;
 
 export const PlusIcon = styled(GiHeartPlus)`
@@ -43,5 +50,11 @@ export const PlusIcon = styled(GiHeartPlus)`
     margin-right: 15px;
     height: 26px;
     width: 26px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 15px;
+    height: 20px;
+    width: 20px;
   }
 `;

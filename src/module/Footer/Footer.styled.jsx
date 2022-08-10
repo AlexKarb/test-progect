@@ -21,6 +21,13 @@ export const FooterContainer = styled.footer`
     font-size: 15px;
     padding: 17px;
   }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 12px;
+    padding: 6px;
+
+    position: initial;
+  }
 `;
 
 export const Text = styled.span`

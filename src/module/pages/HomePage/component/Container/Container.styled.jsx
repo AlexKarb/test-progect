@@ -10,7 +10,19 @@ export const Container = styled.div`
 `;
 
 export const HeroWrapper = styled.div`
-  /* @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     display: flex;
-  } */
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 62px;
+  }
+`;
+
+export const Wrap = styled.div`
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 `;

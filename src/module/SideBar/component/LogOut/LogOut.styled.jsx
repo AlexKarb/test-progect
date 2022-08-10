@@ -20,6 +20,10 @@ export const IconLogout = styled(FiLogOut)`
     height: 35px;
     width: 35px;
   }
+  @media screen and (min-width: 768px) {
+    height: 20px;
+    width: 20px;
+  }
 `;
 
 export const Label = styled.span`
@@ -29,5 +33,10 @@ export const Label = styled.span`
   @media screen and (min-width: 768px) {
     font-size: 22px;
     margin-left: 17px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    margin-left: 10px;
   }
 `;

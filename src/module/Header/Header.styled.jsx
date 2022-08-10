@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
   color: white;
 
   @media screen and (min-width: 768px) {
-    padding: 5px 22px;
+    padding: 2px 22px;
   }
 
   @media screen and (min-width: 1024px) {

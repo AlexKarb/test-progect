@@ -11,6 +11,10 @@ export const Container = styled.div`
   @media screen and (min-width: 768px) {
     height: 120px;
   }
+
+  @media screen and (min-width: 1024px) {
+    height: 60px;
+  }
 `;
 
 export const UserName = styled.p`
@@ -23,6 +27,10 @@ export const UserName = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 30px;
   }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 21px;
+  }
 `;
 
 export const Role = styled.p`
@@ -31,5 +39,9 @@ export const Role = styled.p`
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 12px;
   }
 `;

@@ -4,6 +4,9 @@ import styled from 'styled-components';
 export const Container = styled.nav`
   padding: 28px 28px 28px 14px;
   overflow-y: auto;
+  background: var(--Linear-bg);
+  flex-shrink: 0;
+  flex-grow: 1;
 
   @media screen and (min-width: 768px) {
     padding-top: 50px;
@@ -39,6 +42,10 @@ export const Label = styled.span`
   @media screen and (min-width: 768px) {
     margin-left: 27px;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 12px;
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -51,5 +58,10 @@ export const IconContainer = styled.div`
   @media screen and (min-width: 768px) {
     width: 40px;
     height: 40px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 20px;
+    height: 20px;
   }
 `;

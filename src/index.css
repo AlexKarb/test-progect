@@ -28,6 +28,34 @@ body {
   background-color: var(--first-color-bg);
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(27, 47, 177) rgb(88 123 227);
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*  зоны отслеживания */
+*::-webkit-scrollbar-track {
+  background: rgba(152, 175, 237, 0.367);
+  border: 1px solid rgba(152, 175, 237, 0.367);
+  outline: none;
+  width: 2px;
+}
+/*  бегун */
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(2, 41, 160, 0.599);
+  border-radius: 20px;
+
+  width: 5px;
+  cursor: pointer;
+}
+
 .Toastify__toast--success {
   position: absolute;
   top: 10px;

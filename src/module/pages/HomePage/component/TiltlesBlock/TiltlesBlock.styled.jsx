@@ -11,6 +11,11 @@ export const WrapTitle = styled.div`
     width: 600px;
     margin-bottom: 52px;
   }
+
+  @media screen and (min-width: 1024px) {
+    width: auto;
+    margin-bottom: 0px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -24,6 +29,13 @@ export const Title = styled.h1`
     font-size: 42px;
     margin-bottom: 22px;
   }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-top: 10px;
+  }
 `;
 export const SubTitle = styled.p`
   color: #ffff00;
@@ -33,6 +45,10 @@ export const SubTitle = styled.p`
 
   @media screen and (min-width: 768px) {
     font-size: 30px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
   }
 `;
 

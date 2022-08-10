@@ -11,12 +11,12 @@ export const MainContainer = styled.main`
   }
 
   @media screen and (min-width: 1024px) {
-    width: 1024px;
     padding: 0 20px;
+
+    flex-grow: 1;
   }
 
   @media screen and (min-width: 2220px) {
-    width: 1940px;
     padding: 0 40px;
   }
 `;
