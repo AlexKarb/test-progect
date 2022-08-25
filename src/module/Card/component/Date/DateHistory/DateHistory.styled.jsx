@@ -17,9 +17,9 @@ export const DateLabel = styled.span`
     width: 200px;
   }
 
-  @media screen and (min-width: 2220px) {
-    font-size: 20px;
-    width: 250px;
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
+    width: 200px;
   }
 `;
 
@@ -31,8 +31,8 @@ export const DateInfo = styled.p`
     font-size: 15px;
   }
 
-  @media screen and (min-width: 2220px) {
-    font-size: 19px;
+  @media screen and (min-width: 1024px) {
+    font-size: 15px;
   }
 `;
 

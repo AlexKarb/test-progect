@@ -55,7 +55,7 @@ export const TypeItem = styled.li`
     font-size: 16px;
   }
 
-  @media screen and (min-width: 2220px) {
-    font-size: 20px;
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
   }
 `;

@@ -15,14 +15,6 @@ export const HeroWrapper = styled.div`
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    margin-bottom: 62px;
-  }
-`;
-
-export const Wrap = styled.div`
-  @media screen and (min-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-bottom: 255px;
   }
 `;

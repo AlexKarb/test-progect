@@ -12,10 +12,10 @@ export const StaticticsBox = ({ number, title, icon, size }) => {
   return (
     <BoxContainer size={size}>
       <Name>{title}</Name>
-      <Wrapp>
-        <IconContainer>{icon}</IconContainer>
+      <Wrapp size={size}>
+        <IconContainer size={size}>{icon}</IconContainer>
         <BoxBlock>
-          <Number>{number} </Number>
+          <Number size={size}>{number} </Number>
           <Text>{'замовлень(я)'}</Text>
         </BoxBlock>
       </Wrapp>

@@ -1,22 +1,21 @@
 import { Header } from 'module/Header/Header';
 import { Toast } from 'module/Toaster/Toast';
 import { Outlet } from 'react-router-dom';
-
-// import { LoginPage } from './components/LoginPage/LoginPage';
+import { Wrap } from './Layout.styled';
 
 const Layout = ({ sidebarOpen }) => {
-  // const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
-
   return (
-    <>
-      <Toast />
+    <Wrap>
       <Header openSideBar={sidebarOpen} />
-      {/* {!isLoggedIn && <LoginPage />} */}
-      {/* {isLoggedIn && (  */}
-
+      <Toast />
       <Outlet />
-    </>
+    </Wrap>
   );
 };
 
 export default Layout;
+
+// import { LoginPage } from './components/LoginPage/LoginPage';
+// const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
+/* {!isLoggedIn && <LoginPage />} */
+/* {isLoggedIn && (  */

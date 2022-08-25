@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
 
   padding: 14px;
   background-color: #385cc5;
@@ -23,7 +23,7 @@ export const FooterContainer = styled.footer`
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 12px;
+    font-size: 11px;
     padding: 6px;
 
     position: initial;
@@ -37,7 +37,7 @@ export const Text = styled.span`
   margin-top: 3px;
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 `;
 

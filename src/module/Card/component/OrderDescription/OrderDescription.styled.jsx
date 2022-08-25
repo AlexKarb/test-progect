@@ -20,8 +20,8 @@ export const Label = styled.span`
     font-size: 16px;
   }
 
-  @media screen and (min-width: 2220px) {
-    font-size: 20px;
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
     margin-right: 25px;
   }
 `;
@@ -34,7 +34,7 @@ export const Info = styled.p`
     font-size: 16px;
   }
 
-  @media screen and (min-width: 2220px) {
-    font-size: 20px;
+  @media screen and (min-width: 1024px) {
+    font-size: 15px;
   }
 `;

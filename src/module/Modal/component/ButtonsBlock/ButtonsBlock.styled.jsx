@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ButtonWrapper = styled.div`
-  width: 180px;
+  width: 230px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -14,7 +14,7 @@ export const ButtonWrapper = styled.div`
 export const Button = styled.button.attrs(prop => ({
   type: 'button',
 }))`
-  width: 75px;
+  width: 95px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,5 +38,11 @@ export const Button = styled.button.attrs(prop => ({
     width: 175px;
     padding: 10px 0;
     font-size: 26px;
+  }
+
+  @media screen and (min-width: 1023px) {
+    width: 175px;
+    padding: 10px 0;
+    font-size: 20px;
   }
 `;

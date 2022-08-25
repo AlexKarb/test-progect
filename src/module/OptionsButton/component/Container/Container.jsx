@@ -13,10 +13,8 @@ export const IconBlock = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    position: absolute;
-    bottom: 0px;
-    right: 30px;
-    left: 15px;
+    position: initial;
     width: auto;
+    padding: 5px;
   }
 `;

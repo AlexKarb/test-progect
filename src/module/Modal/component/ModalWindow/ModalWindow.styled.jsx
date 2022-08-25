@@ -8,7 +8,12 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 500px;
-    padding: 60px 35px;
+    padding: 40px 35px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 443px;
+    padding: 30px 25px;
   }
 `;
 
@@ -17,7 +22,14 @@ export const Text = styled.div`
   font-size: 20px;
 
   @media screen and (min-width: 768px) {
-    font-size: 30px;
+    font-size: 26px;
+    padding: 0 60px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    padding: 0 70px;
     margin-bottom: 40px;
   }
 `;

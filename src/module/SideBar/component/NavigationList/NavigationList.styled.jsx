@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.nav`
-  padding: 28px 28px 28px 14px;
+  padding: 28px 0px 28px 10px;
   overflow-y: auto;
   background: var(--Linear-bg);
   flex-shrink: 0;
   flex-grow: 1;
 
   @media screen and (min-width: 768px) {
-    padding-top: 50px;
+    padding-top: 30px;
   }
 `;
 
@@ -19,11 +19,13 @@ export const List = styled.div`
 `;
 
 export const LinkMenu = styled(Link)`
-  margin-bottom: 28px;
+  height: 54px;
+  padding-left: 9px;
   text-decoration: none;
   color: #2ccac1;
   display: flex;
   align-items: center;
+  border-radius: 5px 0 0 5px;
 
   &:hover,
   &:active {
@@ -31,7 +33,11 @@ export const LinkMenu = styled(Link)`
   }
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
+    height: 90px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 60px;
   }
 `;
 

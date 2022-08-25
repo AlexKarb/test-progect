@@ -8,6 +8,10 @@ const DeliverBox = styled.div`
   @media screen and (min-width: 768px) {
     margin-bottom: 12px;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 8px;
+  }
 `;
 
 export const CheckBoxDelivery = () => (

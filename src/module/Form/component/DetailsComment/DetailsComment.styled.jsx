@@ -13,6 +13,7 @@ export const Textarea = styled(Field).attrs(() => ({
   font-size: 14px;
   width: 100%;
   resize: none;
+  font-style: italic;
 
   &::placeholder {
     font-size: 10px;
@@ -20,6 +21,10 @@ export const Textarea = styled(Field).attrs(() => ({
 
     @media screen and (min-width: 768px) {
       font-size: 17px;
+    }
+
+    @media screen and (min-width: 1014px) {
+      font-size: 14px;
     }
   }
 
@@ -31,5 +36,11 @@ export const Textarea = styled(Field).attrs(() => ({
     margin-top: 20px;
     font-size: 22px;
     padding: 10px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 6px 10px;
   }
 `;

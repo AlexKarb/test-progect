@@ -9,8 +9,8 @@ export const Date = styled.div`
     font-size: 15px;
   }
 
-  @media screen and (min-width: 2220px) {
-    font-size: 20px;
+  @media screen and (min-width: 1024px) {
+    font-size: 12px;
   }
 `;
 

@@ -1,3 +1,4 @@
+import { MainContainer } from 'module/Utils/MainContainer/MainContainer';
 import { useLocation } from 'react-router-dom';
 import {
   ArchiveLink,
@@ -10,17 +11,18 @@ const ArchiveList = () => {
   let location = useLocation();
 
   return (
-    <Container>
-      <ArchiveLink to="/archive/completed" state={{ from: location }}>
-        <DoneIcon />
-        Виконані
-      </ArchiveLink>
-
-      <ArchiveLink to="/archive/deleted" state={{ from: location }}>
-        <DeleteIcon />
-        Видалені
-      </ArchiveLink>
-    </Container>
+    <MainContainer>
+      <Container>
+        <ArchiveLink to="/archive/completed" state={{ from: location }}>
+          <DoneIcon />
+          Виконані
+        </ArchiveLink>
+        <ArchiveLink to="/archive/deleted" state={{ from: location }}>
+          <DeleteIcon />
+          Видалені
+        </ArchiveLink>
+      </Container>
+    </MainContainer>
   );
 };
 

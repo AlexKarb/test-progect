@@ -27,9 +27,6 @@ export const Hero = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    margin-bottom: 0px;
-    border-radius: 28px;
-    height: 200px;
-    width: 500px;
+    display: none;
   }
 `;

@@ -4,7 +4,7 @@ export const Container = styled.div`
   padding: 12px 14px;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(44 202 193 / 25%);
+  background-color: rgb(16 136 198);
   color: var(--accent-text-color);
 
   @media screen and (min-width: 768px) {

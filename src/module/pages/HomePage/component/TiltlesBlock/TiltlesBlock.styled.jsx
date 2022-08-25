@@ -5,16 +5,20 @@ export const WrapTitle = styled.div`
   width: 260px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
+  margin-bottom: 300px;
+  margin-top: 40px;
 
   @media screen and (min-width: 768px) {
     width: 600px;
-    margin-bottom: 52px;
+    margin-bottom: 492px;
+    margin-top: 80px;
   }
 
   @media screen and (min-width: 1024px) {
     width: auto;
     margin-bottom: 0px;
+    margin-right: 22px;
+    margin-top: 0;
   }
 `;
 
@@ -31,7 +35,7 @@ export const Title = styled.h1`
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 15px;
     text-align: left;
     padding-top: 10px;
@@ -48,7 +52,7 @@ export const SubTitle = styled.p`
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 16px;
+    font-size: 20px;
   }
 `;
 

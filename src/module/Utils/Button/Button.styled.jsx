@@ -27,4 +27,10 @@ export const StyledButton = styled.button`
     min-width: 110px;
     padding: 16px 7px;
   }
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+    width: 280px;
+    min-width: 110px;
+    padding: 10px 7px;
+  }
 `;

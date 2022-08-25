@@ -7,6 +7,10 @@ const StyledTitle = styled.h3`
   @media screen and (min-width: 768px) {
     font-size: 26px;
   }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+  }
 `;
 
 export const Title = ({ text }) => <StyledTitle>{text}</StyledTitle>;

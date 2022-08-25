@@ -19,4 +19,8 @@ export const StyledFormContainer = styled(Form)`
     max-width: 610px;
     padding: 30px 30px;
   }
+
+  @media screen and (min-width: 1024px) {
+    padding: 20px 30px;
+  }
 `;

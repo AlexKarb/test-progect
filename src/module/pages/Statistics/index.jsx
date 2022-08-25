@@ -10,14 +10,16 @@ const Statistics = () => {
 
   return (
     <>
-      {isLoad && <MainSpiner />}
-      {!isLoad && (
-        <MainContainer>
-          <Title text={'Статистика роботи'} />
-          <TotalStatistics number={number.all} />
-          <WorkStatictics number={number} />
-        </MainContainer>
-      )}
+      <MainContainer>
+        {isLoad && <MainSpiner />}
+        {!isLoad && (
+          <>
+            <Title text={'Статистика роботи'} />
+            <TotalStatistics number={number.all} />
+            <WorkStatictics number={number} />
+          </>
+        )}
+      </MainContainer>
     </>
   );
 };

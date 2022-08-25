@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineDelete } from 'react-icons/ai';
 import { HiCheck } from 'react-icons/hi';
 
-export const Container = styled.main`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -19,7 +19,7 @@ export const ArchiveLink = styled(Link)`
   height: 77px;
   padding: 4px 26px 4px 20px;
   color: white;
-  background-color: #2857e2;
+  background-color: #2856e2d5;
   border-radius: 7px;
 
   display: flex;
@@ -34,6 +34,7 @@ export const ArchiveLink = styled(Link)`
 
   &:hover {
     transform: scale(1.05);
+    background-color: #2856e2ed;
   }
 
   &:first-child {
@@ -50,6 +51,12 @@ export const ArchiveLink = styled(Link)`
       margin-top: 60px;
     }
   }
+
+  @media screen and (min-width: 1024px) {
+    height: 60px;
+    font-size: 20px;
+    padding: 4px 26px 4px 10px;
+  }
 `;
 
 export const DoneIcon = styled(HiCheck)`
@@ -61,6 +68,12 @@ export const DoneIcon = styled(HiCheck)`
   @media screen and (min-width: 768px) {
     margin-right: 26px;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const DeleteIcon = styled(AiOutlineDelete)`
@@ -71,5 +84,11 @@ export const DeleteIcon = styled(AiOutlineDelete)`
 
   @media screen and (min-width: 768px) {
     margin-right: 26px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
   }
 `;

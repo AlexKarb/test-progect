@@ -19,6 +19,10 @@ export const CheckBoxLabel = styled.label`
     flex-direction: ${({ type }) =>
       type === 'filter' ? 'row-reverse' : 'row'};
   }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
 `;
 
 export const CheckBoxIcon = styled(BsCheckLg)`

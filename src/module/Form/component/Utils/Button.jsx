@@ -10,6 +10,10 @@ const ButtonContainer = styled.div`
   @media screen and (min-width: 768px) {
     margin-top: 12px;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 0px;
+  }
 `;
 
 export const Button = ({ text }) => (

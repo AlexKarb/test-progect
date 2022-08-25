@@ -6,7 +6,7 @@ export const Container = styled.div`
   padding: 25px;
   align-items: flex-start;
   justify-content: center;
-  background-color: var(--hover-color-bg);
+  background-color: #2333b2;
 
   @media screen and (min-width: 768px) {
     height: 120px;

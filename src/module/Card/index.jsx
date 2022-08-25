@@ -27,7 +27,7 @@ export const Card = ({
 }) => {
   const [openMoreInfo, setOpenMoreInfo] = useState(false);
 
-  const mql = window.matchMedia(`(min-width: 1440px)`);
+  const mql = window.matchMedia(`(min-width: 1024px)`);
   useEffect(() => {
     mql.matches && setOpenMoreInfo(true);
   }, [mql]);

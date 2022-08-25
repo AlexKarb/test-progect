@@ -37,6 +37,26 @@ export const BoxContainer = styled.div`
       }
     }};
   }
+
+  @media screen and (min-width: 1024px) {
+    height: ${({ size }) => {
+      switch (size) {
+        case 'medium':
+          return '128px';
+
+        case 'large':
+          return '150px;';
+        default:
+          return '100px;';
+      }
+    }};
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: ${({ size }) => (size === 'medium' ? ' center' : '')};
+    margin-bottom: ${({ size }) => (size === 'large' ? '12px' : '')};
+  }
 `;
 
 export const Name = styled.p`
@@ -47,12 +67,21 @@ export const Name = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 20px;
   }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+  }
 `;
 
 export const Wrapp = styled.div`
   display: flex;
   justify-content: center;
   padding: 16px 0;
+
+  @media screen and (min-width: 1024px) {
+    align-items: ${({ size }) => (size === 'medium' ? 'flex-end' : '')};
+    padding: ${({ size }) => (size === 'large' ? '4px 0' : '')};
+  }
 `;
 
 export const BoxBlock = styled.div`
@@ -65,6 +94,10 @@ export const BoxBlock = styled.div`
   @media screen and (min-width: 768px) {
     margin-left: 15px;
   }
+
+  @media screen and (min-width: 1024px) {
+    align-items: center;
+  }
 `;
 
 export const Number = styled.p`
@@ -75,6 +108,10 @@ export const Number = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 50px;
     margin-bottom: 4px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: ${({ size }) => (size === 'medium' ? '30px' : '50px')};
   }
 `;
 
@@ -95,5 +132,11 @@ export const IconContainer = styled.div`
   @media screen and (min-width: 768px) {
     height: 90px;
     width: 90px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: ${({ size }) => (size === 'medium' ? '50px' : '90px')};
+
+    width: ${({ size }) => (size === 'medium' ? '50px' : '90px')};
   }
 `;
