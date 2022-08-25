@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[3485],{73485:function(e,n,t){t.r(n),t.d(n,{Wrap:function(){return i}});var u,c=t(30168),i=t(15751).ZP.div(u||(u=(0,c.Z)(["\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  height: 100%;\n"])))}}]);
+//# sourceMappingURL=3485.be1881b4.chunk.js.map

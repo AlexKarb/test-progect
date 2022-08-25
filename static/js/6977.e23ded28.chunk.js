@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[6977],{16977:function(n,e,t){t.r(e),t.d(e,{Title:function(){return p}});var u,i=t(30168),p=t(15751).ZP.h1(u||(u=(0,i.Z)(["\n  font-size: 20px;\n  text-align: center;\n  padding: 16px;\n  color: white;\n"])))}}]);
-//# sourceMappingURL=6977.e23ded28.chunk.js.map
