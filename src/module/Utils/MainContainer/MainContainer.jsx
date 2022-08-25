@@ -15,7 +15,7 @@ export const MainContainer = styled.main`
   height: 100%;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    /* width: 768px; */
     margin: 0 auto;
   }
 
