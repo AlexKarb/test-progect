@@ -1,8 +1,8 @@
 import { LogOut } from '../LogOut/LogOut';
 import { Container } from './Futter.styled';
 
-export const Futter = () => (
+export const Futter = ({ toClose }) => (
   <Container>
-    <LogOut />
+    <LogOut toClose={toClose} />
   </Container>
 );

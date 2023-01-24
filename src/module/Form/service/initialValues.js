@@ -10,8 +10,4 @@ export const initialValues = {
   additional: nameObjectTypeOfHelp(),
   delivery: false,
   info: '',
-  dataClose: '',
-  dataInProgress: '',
-  dataCompleted: '',
-  deletedInfo: '',
 };

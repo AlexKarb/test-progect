@@ -16,8 +16,8 @@ const ButtonContainer = styled.div`
   }
 `;
 
-export const Button = ({ text }) => (
+export const Button = ({ text, onClick }) => (
   <ButtonContainer>
-    <MainButton type="submit" text={text} />
+    <MainButton type="submit" text={text} onClick={onClick} />
   </ButtonContainer>
 );

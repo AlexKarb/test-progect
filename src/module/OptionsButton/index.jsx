@@ -9,17 +9,17 @@ import {
   InProgressButton,
 } from './component/typeButton';
 
-export const OptionButton = ({ delivery, id, contacts, onChange, type }) => {
+export const OptionButton = ({ delivery, id, contacts, type }) => {
   return (
     <>
       <IconBlock>
         <DeliveryButton delivery={delivery} />
         <CallButton tel={contacts.tel} />
-        <PendingButton id={id} onChange={onChange} type={type} />
-        <InProgressButton id={id} onChange={onChange} type={type} />
-        <CompletedButton id={id} onChange={onChange} type={type} />
-        <EditButton id={id} onChange={onChange} />
-        <DeletedButton id={id} type={type} onChange={onChange} />
+        <PendingButton id={id} type={type} />
+        <InProgressButton id={id} type={type} />
+        <CompletedButton id={id} type={type} />
+        <EditButton id={id} />
+        <DeletedButton id={id} type={type} />
       </IconBlock>
     </>
   );

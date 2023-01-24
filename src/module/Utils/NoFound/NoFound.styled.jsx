@@ -10,6 +10,9 @@ export const Text = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 28px;
   }
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+  }
 `;
 
 export const ExclamationPoint = styled(BsExclamationTriangle)`
@@ -23,5 +26,10 @@ export const ExclamationPoint = styled(BsExclamationTriangle)`
   @media screen and (min-width: 768px) {
     width: 90px;
     height: 90px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 60px;
+    height: 60px;
   }
 `;

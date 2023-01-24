@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-import { filteringItems } from '../Filter/hooks/filteringItems';
 import { useToggleFilter } from 'module/Filter/hooks/useToggleFilter';
 import { Card } from '../Card';
 import { NoFound } from '../Utils/NoFound/NoFound';
@@ -9,14 +7,8 @@ import { useGetPublication } from 'module/ApplicationList/hooks/useGetPublicatio
 import { MainSpiner } from 'module/Utils/MainSpiner/MainSpiner';
 
 export const ApplicationList = ({ type }) => {
-  const [itemsOfList, setItemsOfList] = useState();
-  const [data, setChange] = useGetPublication(type);
   const [filter, toggleFilter] = useToggleFilter();
-
-  useEffect(() => {
-    const sorted = filteringItems(data, filter);
-    setItemsOfList(sorted || data);
-  }, [data, filter]);
+  const [itemsOfList] = useGetPublication(type, filter);
 
   return (
     <Container>
@@ -24,9 +16,7 @@ export const ApplicationList = ({ type }) => {
       {!itemsOfList && <MainSpiner />}
 
       {itemsOfList &&
-        itemsOfList.map(info => (
-          <Card key={info.id} data={info} onChange={setChange} type={type} />
-        ))}
+        itemsOfList.map(info => <Card key={info._id} data={info} type={type} />)}
 
       {itemsOfList?.length === 0 && <NoFound />}
     </Container>

@@ -1,5 +1,10 @@
 import { formatingDate } from 'service/date/formatingDate';
-import { isCompletedPage, isDeletedPage, isPendingPage } from 'root/isPage';
+import {
+  isCompletedPage,
+  isDeletedPage,
+  isPendingPage,
+  isInProgressPage,
+} from 'root/isPage';
 import {
   Container,
   DateHistoryContainer,
@@ -20,13 +25,16 @@ export const DateHistory = ({ dates, type }) => {
           </Container>
         )}
 
-        {(isCompletedPage(type) || isDeletedPage(type)) && dataInProgress && (
-          <Container>
-            <DateLabel>відправлена в обробку:</DateLabel>
-            <DateInfo>{formatingDate(dataInProgress)}</DateInfo>
-          </Container>
-        )}
-        {isDeletedPage(type) && dataCompleted && (
+        {(isInProgressPage(type) ||
+          isCompletedPage(type) ||
+          isDeletedPage(type)) &&
+          dataInProgress && (
+            <Container>
+              <DateLabel>відправлено в обробку:</DateLabel>
+              <DateInfo>{formatingDate(dataInProgress)}</DateInfo>
+            </Container>
+          )}
+        {(isDeletedPage(type) || isCompletedPage(type)) && dataCompleted && (
           <Container>
             <DateLabel>дата виконання: </DateLabel>
             <DateInfo> {formatingDate(dataCompleted)}</DateInfo>

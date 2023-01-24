@@ -12,7 +12,7 @@ export const Label = styled.span`
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 16px;
+    font-size: 12px;
   }
 `;
 
@@ -23,7 +23,23 @@ export const Input = styled(Field).attrs(({ required = true }) => ({
 }))`
   width: 100%;
   border: none;
-  border-bottom: 1px solid #6b8cef6e;
+  border-bottom: ${({ $formController }) => {
+    const errors = $formController?.errors;
+    const touched = $formController?.touched;
+
+    const falseColor = '0.5px solid #ff0000';
+    const defaultColor = '1px solid #6b8cef6e';
+
+    if (!$formController?.isSubmitting) {
+      const inValid = touched && errors && '0.5px solid #ff0000';
+      return inValid || defaultColor;
+    }
+
+    if ($formController?.isSubmitting) {
+      return errors ? falseColor : defaultColor;
+    }
+  }};
+
   outline: none;
   padding: 1px 10px;
   font-style: italic;
@@ -38,7 +54,7 @@ export const Input = styled(Field).attrs(({ required = true }) => ({
     font-size: 16px;
   }
 
-  @media screen and (min-width: 1014px) {
+  @media screen and (min-width: 1024px) {
     padding: 2px 20px;
     font-size: 14px;
   }
@@ -53,7 +69,7 @@ export const Input = styled(Field).attrs(({ required = true }) => ({
     }
 
     @media screen and (min-width: 1024px) {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 `;

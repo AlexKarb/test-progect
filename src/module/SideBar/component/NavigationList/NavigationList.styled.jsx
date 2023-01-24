@@ -9,7 +9,7 @@ export const Container = styled.nav`
   flex-grow: 1;
 
   @media screen and (min-width: 768px) {
-    padding-top: 30px;
+    padding-top: 9px;
   }
 `;
 
@@ -18,18 +18,21 @@ export const List = styled.div`
   flex-direction: column;
 `;
 
-export const LinkMenu = styled(Link)`
+export const Button = styled.button`
   height: 54px;
   padding-left: 9px;
-  text-decoration: none;
   color: #2ccac1;
-  display: flex;
-  align-items: center;
-  border-radius: 5px 0 0 5px;
 
-  &:hover,
-  &:active {
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background-color: transparent;
+
+  &:hover {
     background-color: var(--hover-color-bg);
+  }
+
+  &:active {
+    background-color: #475094b8;
   }
 
   @media screen and (min-width: 768px) {
@@ -38,6 +41,19 @@ export const LinkMenu = styled(Link)`
 
   @media screen and (min-width: 1024px) {
     height: 60px;
+  }
+`;
+
+export const LinkMenu = styled(Link)`
+  display: flex;
+  align-items: center;
+  color: #2ccac1;
+  height: 100%;
+  text-decoration: none;
+  pointer-events: ${({ active }) => active};
+
+  &:active {
+    color: #2ccac1;
   }
 `;
 

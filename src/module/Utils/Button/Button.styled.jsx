@@ -21,6 +21,10 @@ export const StyledButton = styled.button`
     background-color: rgb(65 106 229);
   }
 
+  &:active {
+    background-color: #475094b8;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 24px;
     width: 280px;
@@ -28,9 +32,9 @@ export const StyledButton = styled.button`
     padding: 16px 7px;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 20px;
-    width: 280px;
+    font-size: 16px;
+    width: 250px;
     min-width: 110px;
-    padding: 10px 7px;
+    padding: 7px 7px;
   }
 `;

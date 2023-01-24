@@ -19,8 +19,10 @@ export const Button = styled.button.attrs(prop => ({
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background-color: ${({ action, agree, disagree }) => {
-    if ((agree && action !== 'deleted') || (disagree && action === 'deleted')) {
+  background-color: ${({ activeButton, agree, disagree }) => {
+    if (agree && activeButton === 'left') {
+      return 'var(--first-color-bg)';
+    } else if (disagree && activeButton === 'right') {
       return 'var(--first-color-bg)';
     } else {
       return 'var(--main-text-color)';
@@ -33,6 +35,14 @@ export const Button = styled.button.attrs(prop => ({
   font-size: 14px;
   color: #fff;
   cursor: pointer;
+
+  &:hover {
+    background-color: #061588ab;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 
   @media screen and (min-width: 768px) {
     width: 175px;

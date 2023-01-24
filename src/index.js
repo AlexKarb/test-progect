@@ -4,8 +4,9 @@ import App from 'App';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter } from 'react-router-dom';
-import { store } from './redux/store';
+import { store, persistor } from './service/redux/store';
 import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 
 import 'modern-normalize/modern-normalize.css';
 import 'react-loader-spinner';
@@ -15,7 +16,9 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter basename="/ua-help/">
       <Provider store={store}>
-        <App />
+        <PersistGate loading={null} persistor={persistor}>
+          <App />
+        </PersistGate>
       </Provider>
     </BrowserRouter>
   </React.StrictMode>,

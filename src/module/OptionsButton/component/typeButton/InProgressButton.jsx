@@ -1,14 +1,15 @@
 import { ChangeTypeModal } from 'module/Modal/component/ChangeTypeModal/ChangeTypeModal';
 import { useToggleModal } from 'module/Modal/hooks/useToggleModal';
 import { isInProgressPage } from 'root/isPage';
-import { changeStatus } from 'service/changeStatus';
+
 import { Button } from '../Button/Button';
 
-export const InProgressButton = ({ id, onChange, type }) => {
+export const InProgressButton = ({ id, type }) => {
   const [isOpen, onOpen, onClose] = useToggleModal();
 
   const currentAction = 'in progress';
-  const changeType = () => onChange(changeStatus(id, currentAction));
+  // const changeType = () => changeStatus(id, currentAction);
+  const changeType = () => {};
 
   return (
     <>
@@ -23,7 +24,6 @@ export const InProgressButton = ({ id, onChange, type }) => {
         changeType={changeType}
         modalIsOpen={isOpen}
         setIsOpen={onClose}
-        action={'change'}
         currentPage={type}
         currentAction={currentAction}
       />

@@ -1,35 +1,32 @@
-import { useEditCard } from 'module/Card/hooks/useEditCard';
 import { Form } from 'module/Form';
 import { CloseButton } from 'module/Modal/component/CloseButton/CloseButton';
 import { ModalW } from 'module/Modal/component/MainElementModal/Modal';
-import { NoAccess } from '../NoAccess/NoAccess';
+import { MainSpiner } from 'module/Utils/MainSpiner/MainSpiner';
 import { EditTitle } from './EditModal.styled';
+import { MiniSpiner } from './MiniSpiner';
 
-import { useValueEditModal } from './hooks/useValueEditModal';
-
-export const EditModal = ({ id, modalIsOpen, setIsOpen, onChange }) => {
-  const [values, setValues] = useValueEditModal(id, modalIsOpen);
-  const [editCard, noAccess] = useEditCard(setValues, onChange);
-
-  const handleSubmit = value => {
-    editCard(value);
-    setIsOpen(false);
+export const EditModal = ({ modalIsOpen, onClose, data, editRequestCard, isLoading }) => {
+  const handleSubmit = val => {
+    editRequestCard(val);
   };
 
   return (
-    <ModalW onClose={setIsOpen} open={modalIsOpen}>
-      {values && (
+    <ModalW onClose={onClose} open={modalIsOpen}>
+      {!data && <MainSpiner />}
+
+      {data && (
         <div>
           <EditTitle>Редагувати</EditTitle>
-          <CloseButton onClick={() => setIsOpen(false)} />
-          <Form onSubmit={handleSubmit} initialValues={values} type={'edit'} />
-        </div>
-      )}
+          {isLoading && <MiniSpiner />}
+          {!isLoading && <CloseButton onClick={onClose} />}
 
-      {noAccess && (
-        <ModalW onClose={setIsOpen} open={modalIsOpen}>
-          <NoAccess onClose={setIsOpen} />
-        </ModalW>
+          <Form
+            onSubmit={handleSubmit}
+            initialValues={data}
+            type={'edit'}
+            isLoading={isLoading}
+          />
+        </div>
       )}
     </ModalW>
   );

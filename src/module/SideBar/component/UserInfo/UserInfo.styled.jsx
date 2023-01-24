@@ -25,11 +25,11 @@ export const UserName = styled.p`
   margin-bottom: 2px;
 
   @media screen and (min-width: 768px) {
-    font-size: 30px;
+    font-size: 18px;
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 21px;
+    font-size: 14px;
   }
 `;
 
@@ -38,10 +38,10 @@ export const Role = styled.p`
   color: #2ccac1;
 
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 12px;
+    font-size: 9px;
   }
 `;

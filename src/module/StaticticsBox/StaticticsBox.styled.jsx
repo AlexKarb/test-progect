@@ -39,13 +39,24 @@ export const BoxContainer = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
+    width: ${({ size }) => {
+      switch (size) {
+        case 'medium':
+          return '200px';
+
+        case 'large':
+          return '100%';
+        default:
+          return '295px';
+      }
+    }};
     height: ${({ size }) => {
       switch (size) {
         case 'medium':
-          return '128px';
+          return '110px';
 
         case 'large':
-          return '150px;';
+          return '130px;';
         default:
           return '100px;';
       }
@@ -69,7 +80,7 @@ export const Name = styled.p`
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 20px;
+    font-size: 16px;
   }
 `;
 
@@ -80,7 +91,7 @@ export const Wrapp = styled.div`
 
   @media screen and (min-width: 1024px) {
     align-items: ${({ size }) => (size === 'medium' ? 'flex-end' : '')};
-    padding: ${({ size }) => (size === 'large' ? '4px 0' : '')};
+    padding: ${({ size }) => (size === 'large' ? '4px 0' : '7px 0')};
   }
 `;
 
@@ -111,7 +122,7 @@ export const Number = styled.p`
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: ${({ size }) => (size === 'medium' ? '30px' : '50px')};
+    font-size: ${({ size }) => (size === 'medium' ? '30px' : '40px')};
   }
 `;
 
@@ -122,6 +133,10 @@ export const Text = styled.span`
 
   @media screen and (min-width: 768px) {
     font-size: 15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 12px;
   }
 `;
 
@@ -135,8 +150,8 @@ export const IconContainer = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    height: ${({ size }) => (size === 'medium' ? '50px' : '90px')};
+    height: ${({ size }) => (size === 'medium' ? '50px' : '80px')};
 
-    width: ${({ size }) => (size === 'medium' ? '50px' : '90px')};
+    width: ${({ size }) => (size === 'medium' ? '50px' : '80px')};
   }
 `;

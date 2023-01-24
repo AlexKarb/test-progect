@@ -1,12 +1,17 @@
 import { Button, ButtonWrapper } from './ButtonsBlock.styled';
 
-export const ButtonsBlock = ({ action, changeType, onClose }) => (
+export const ButtonsBlock = ({
+  textButton,
+  activeButton = 'left',
+  changeType,
+  onClose,
+}) => (
   <ButtonWrapper>
-    <Button action={action} agree onClick={changeType}>
-      Так
+    <Button activeButton={activeButton} agree onClick={changeType}>
+      {textButton[0]}
     </Button>
-    <Button action={action} disagree onClick={onClose}>
-      Ні
+    <Button activeButton={activeButton} disagree onClick={onClose}>
+      {textButton[1]}
     </Button>
   </ButtonWrapper>
 );

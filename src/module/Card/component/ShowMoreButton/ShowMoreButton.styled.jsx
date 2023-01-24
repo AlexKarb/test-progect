@@ -22,6 +22,10 @@ export const Button = styled.button`
     background-color: rgb(65 106 229);
   }
 
+  &:active {
+    background-color: #475094b8;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 18px;
     width: 140px;

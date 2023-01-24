@@ -26,6 +26,10 @@ export const Button = styled.button`
     box-shadow: 3px 3px 7px #3f3e3e63;
   }
 
+  &:active {
+    background-color: #475094b8;
+  }
+
   @media screen and (min-width: 768px) {
     width: 300px;
     font-size: 24px;

@@ -1,19 +1,21 @@
 import { EditModal } from 'module/Modal/component/EditModal/EditModal';
-import { useToggleModal } from 'module/Modal/hooks/useToggleModal';
+import { Spiner } from 'module/Modal/component/EditModal/EditModal.styled';
+import { useEditModal } from 'module/OptionsButton/component/hooks/useEditModal';
 import { Button } from '../Button/Button';
 
-export const EditButton = ({ id, onChange }) => {
-  const [isOpen, onOpen, onClose] = useToggleModal();
+export const EditButton = ({ id }) => {
+  const [openModal, closeModal, isOpen, data, editRequestCard, isLoading] =
+    useEditModal(id);
 
   return (
     <>
-      <Button currentAction={'edit'} onClick={onOpen} text={'Редагувати'} />
-
+      <Button currentAction={'edit'} onClick={openModal} text={'Редагувати'} />
       <EditModal
-        id={id}
         modalIsOpen={isOpen}
-        setIsOpen={onClose}
-        onChange={onChange}
+        onClose={closeModal}
+        data={data}
+        editRequestCard={editRequestCard}
+        isLoading={isLoading}
       />
     </>
   );

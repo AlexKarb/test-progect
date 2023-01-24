@@ -11,3 +11,9 @@ export const EditTitle = styled(StyledTitle)`
     padding: 8px 30px;
   }
 `;
+
+export const Spiner = styled.div`
+  position: absolute;
+  top: 5px;
+  right: 15px;
+`;

@@ -20,6 +20,10 @@ export const Title = styled.h1`
     width: 316px;
     height: 59px;
   }
+
+  @media screen and (min-width: 1440px) {
+    width: 416px;
+  }
 `;
 
 export const Container = styled.div`

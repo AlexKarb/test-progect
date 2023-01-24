@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
 
   @media screen and (min-width: 1024px) {
     margin-top: 5px;
-    width: 640px;
+    width: 500px;
+    justify-content: space-evenly;
   }
 `;
