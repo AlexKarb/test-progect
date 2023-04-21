@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/1989.c9ae4f69.chunk.js","mappings":"yKAAO,IAAMA,EAA8B","sources":["static/const/magisNumbersAndWorlds.js"],"sourcesContent":["export const MAX_LENGTH_OF_CHART_LABELES = 22;\n"],"names":["MAX_LENGTH_OF_CHART_LABELES"],"sourceRoot":""}

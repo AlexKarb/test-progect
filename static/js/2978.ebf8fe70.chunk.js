@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[2978],{82978:function(e,n,u){u.r(n),u.d(n,{STATUS_OF_APP:function(){return p}});var p={pending:"\u041d\u0435\u043e\u0431\u0440\u043e\u0431\u043b\u0435\u043d\u0456","in progress":"\u0423 \u0440\u043e\u0431\u043e\u0442\u0456",completed:"\u0412\u0438\u043a\u043e\u043d\u0430\u043d\u0456",deleted:"\u0412\u0438\u0434\u0430\u043b\u0435\u043d\u0456"}}}]);
+//# sourceMappingURL=2978.ebf8fe70.chunk.js.map

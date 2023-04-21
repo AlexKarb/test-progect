@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[2576],{62576:function(n,u,e){e.r(u),e.d(u,{formatingToMonthAndYear:function(){return a}});var r=e(72387),t=e(98673),a=function(n){return(0,r.Z)((0,t.Z)(n),"MMM yyyy")}}}]);
+//# sourceMappingURL=2576.badd9ec7.chunk.js.map

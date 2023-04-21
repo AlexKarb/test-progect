@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[2662],{72662:function(e,n,r){r.r(n),r.d(n,{userLoggining:function(){return o}});var u={AlexKarb:{password:"123qwe",role:"ADMIN"}},o=function(e,n){var r,o,i=Object.keys(u).includes(e),l=(null===(r=u[e])||void 0===r?void 0:r.password)===n,s=null===(o=u[e])||void 0===o?void 0:o.role;return new Promise((function(n,r){i&&l?n({name:e,role:s}):r()}))}}}]);
+//# sourceMappingURL=2662.0c57b2c2.chunk.js.map

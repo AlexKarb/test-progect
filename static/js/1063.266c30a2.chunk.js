@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[1063],{71063:function(n,u,e){e.r(u),e.d(u,{caclStatisticsEntries:function(){return t}});var t=function(n){return n.reduce((function(n,u){var e=n.findIndex((function(n){return n[0]===u}));-1===e?n.push([u,1]):n[e][1]++;return n}),[])}}}]);
+//# sourceMappingURL=1063.266c30a2.chunk.js.map

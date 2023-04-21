@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[6293],{46293:function(e,r,n){n.r(r),n.d(r,{closeAppLine:function(){return a}});var a=function(e){return{label:"\u0412\u0438\u043a\u043e\u043d\u0430\u043d\u0456",data:e.map((function(e){return{x:e[0],y:e[1]}})),borderColor:"#3b73e4",backgroundColor:"#6692eb96",pointRadius:1,borderWidth:1,fill:{target:"origin",above:"#7ea2ea40"}}}}}]);
+//# sourceMappingURL=6293.966c9761.chunk.js.map

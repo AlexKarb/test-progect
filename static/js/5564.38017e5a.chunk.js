@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[5564],{95564:function(i,s,n){n.r(s),n.d(s,{scalesOption:function(){return t}});var t=function(i){return{x:{axis:"x",offset:!0,min:i.minX,grid:{display:!0,drawTicks:!1,z:-2}},y:{axis:"y",min:0,title:{display:!0,text:"\u041a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u0437\u0430\u044f\u0432\u043e\u043a",padding:3},grid:{display:!1,drawTicks:!1,z:-2},ticks:{count:6,stepSize:10}}}}}}]);
+//# sourceMappingURL=5564.38017e5a.chunk.js.map

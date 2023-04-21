@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[1299],{61299:function(t,n,u){u.r(n),u.d(n,{CallButton:function(){return r}});var e=u(18682),a=u(80184),r=function(t){var n=t.tel;return(0,a.jsx)(e.Button,{data:n,text:"\u0414\u0437\u0432\u0456\u043d\u043e\u043a",currentAction:"call"})}}}]);
+//# sourceMappingURL=1299.ec93e6ad.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[1989],{1989:function(u,e,n){n.r(e),n.d(e,{MAX_LENGTH_OF_CHART_LABELES:function(){return _}});var _=22}}]);
+//# sourceMappingURL=1989.c9ae4f69.chunk.js.map

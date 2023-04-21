@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkua_help=self.webpackChunkua_help||[]).push([[3905],{13905:function(e,t,n){n.r(t),n.d(t,{DeliveryButton:function(){return a}});var u=n(18682),r=n(80184),a=function(e){var t=e.delivery;return(0,r.jsx)(u.Button,{currentAction:"delivery",data:t,text:t?"\u041f\u043e\u0442\u0440\u0456\u0431\u043d\u0430 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0430":"\u0414\u043e\u0441\u0442\u0430\u0432\u043a\u0430 \u043d\u0435\u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0430"})}}}]);
+//# sourceMappingURL=3905.3be2a759.chunk.js.map

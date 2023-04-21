@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/3548.d61d481f.chunk.js","mappings":"4KAAaA,EAAiB,kBAC5B","sources":["module/Administration/component/Administration/Administration.jsx"],"sourcesContent":["export const Administration = () => (\n  <div>майбутня сторінка виключно для адміна </div>\n);\n"],"names":["Administration"],"sourceRoot":""}
