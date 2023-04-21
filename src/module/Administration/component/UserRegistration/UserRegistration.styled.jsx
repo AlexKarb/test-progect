@@ -41,7 +41,6 @@ export const Container = styled.div`
 `;
 
 export const SubmitBtn = styled.button`
-  box-shadow: 6px 3px 4px #69636336;
   height: 40px;
   width: 100%;
   max-width: 250px;
@@ -89,6 +88,7 @@ export const FormContainer = styled(Form)`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
 
   @media screen and (min-width: 1024px) {
     padding: 10px 0px;
@@ -101,7 +101,7 @@ export const Title = styled.h1`
   margin-left: 10px;
   margin-bottom: 30px;
   color: #fff;
-  text-shadow: 0px 0px 6px #0000a3;
+
   width: 280px;
 
   @media screen and (min-width: 768px) {
@@ -113,4 +113,10 @@ export const Title = styled.h1`
   @media screen and (min-width: 1024px) {
     font-size: 18px;
   }
+`;
+
+export const Wrapp = styled.div`
+  position: absolute;
+  bottom: 62px;
+  right: 20px;
 `;

@@ -1,0 +1,1 @@
+export const MAX_LENGTH_OF_CHART_LABELES = 22;

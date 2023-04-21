@@ -8,7 +8,6 @@ export const useLogin = () => {
 
   const logining = async ({ login, password }) => {
     const result = await loginUser({ login, password });
-    console.log('result', result);
 
     if (result.error) {
       notifyError(result.error.data?.message || result.error.error);

@@ -5,10 +5,29 @@ const ERROR_MESSAGES_1 = 'Email in use';
 const ERROR_MESSAGES_2 = 'Login in use';
 
 const defaultErrorMessage = message => notifyError(`ErrorText - ${message}`);
-const existErrorMessage = (message, error, data) =>
-  notifyError(`${message}! user with ${error}: ${data} already exists`, {
-    autoClose: 15000,
-  });
+const existErrorMessage = (message, error, data) => {
+  const opt = { autoClose: 15000 };
+
+  switch (message) {
+    case ERROR_MESSAGES_1:
+      notifyError(
+        `Користувач із почтовою скринькою: ${data} вже був зареєстрований у системі!`,
+        opt
+      );
+      break;
+
+    case ERROR_MESSAGES_2:
+      notifyError(
+        `Користувач із логіном: ${data} вже був зареєстрований у системі!`,
+        opt
+      );
+      break;
+
+    default:
+      notifyError(`${message}`, opt);
+      break;
+  }
+};
 
 export const haveErrorsConflict = (message, status) => {
   const error = message.split(' ')[0].toLowerCase();

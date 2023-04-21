@@ -8,7 +8,7 @@ export const CompletedButton = ({ id, type }) => {
   const currentAction = 'completed';
 
   const [isOpen, onOpen, onClose] = useToggleModal();
-  const changeStatus = useChangeType(currentAction, id);
+  const changeStatus = useChangeType(currentAction, id, onClose);
 
   return (
     <>

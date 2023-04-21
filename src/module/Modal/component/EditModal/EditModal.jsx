@@ -2,31 +2,26 @@ import { Form } from 'module/Form';
 import { CloseButton } from 'module/Modal/component/CloseButton/CloseButton';
 import { ModalW } from 'module/Modal/component/MainElementModal/Modal';
 import { MainSpiner } from 'module/Utils/MainSpiner/MainSpiner';
-import { EditTitle } from './EditModal.styled';
-import { MiniSpiner } from './MiniSpiner';
+import { Container, EditTitle } from './EditModal.styled';
 
-export const EditModal = ({ modalIsOpen, onClose, data, editRequestCard, isLoading }) => {
-  const handleSubmit = val => {
-    editRequestCard(val);
-  };
-
+export const EditModal = ({ modalIsOpen, handleSubmit, onClose, isLoading, data }) => {
   return (
     <ModalW onClose={onClose} open={modalIsOpen}>
-      {!data && <MainSpiner />}
+      {isLoading && <MainSpiner />}
 
-      {data && (
-        <div>
+      {!isLoading && (
+        <Container>
           <EditTitle>Редагувати</EditTitle>
-          {isLoading && <MiniSpiner />}
-          {!isLoading && <CloseButton onClick={onClose} />}
+          <CloseButton onClick={onClose} />
 
           <Form
+            onClose={onClose}
             onSubmit={handleSubmit}
             initialValues={data}
             type={'edit'}
             isLoading={isLoading}
           />
-        </div>
+        </Container>
       )}
     </ModalW>
   );

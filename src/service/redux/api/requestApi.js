@@ -52,7 +52,7 @@ export const requestApi = baseApi.injectEndpoints({
   }),
 });
 
-const {
+export const {
   useGetByIdMutation,
   useGetAllQuery,
   useAddMutation,

@@ -5,12 +5,13 @@ import { useState } from 'react';
 import { MainType } from './component/MainType/MainType';
 import { FilterIcon } from './component/FilterIcon/FilterIcon';
 
-export const Filter = ({ filter, toggleFilter }) => {
+export const Filter = ({ type, filter, toggleFilter }) => {
   const [showFilter, setShowFilter] = useState(false);
 
   return (
     <>
       <FilterIcon
+        type={type}
         isopen={showFilter.toString()}
         onClick={() => setShowFilter(pS => !pS)}
       />
@@ -24,7 +25,7 @@ export const Filter = ({ filter, toggleFilter }) => {
         >
           {({ values: { showChild } }) => {
             return (
-              <Container>
+              <Container type={type}>
                 <MainType toggleFilter={toggleFilter} />
                 {showChild && (
                   <ChildrenType toggleFilter={toggleFilter} filter={filter} />

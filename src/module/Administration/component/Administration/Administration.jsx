@@ -1,5 +1,5 @@
 import { useUsersController } from 'module/Administration/hooks/useUsersController';
-import { MainContainerBg } from 'module/Utils/MainContainer/MainContainer';
+import { MainContainerWithoutBg } from 'module/Utils/MainContainer/MainContainer';
 import { useGetAllUserQuery } from 'service/redux/api';
 import { StatisticsPart } from '../StatisticsPart';
 import { UserRegistration } from '../UserRegistration';
@@ -11,17 +11,19 @@ export const Administration = ({ jogsEfectivity = '100', usersAccounts = '0' }) 
   const { data: users } = useGetAllUserQuery();
 
   return (
-    <MainContainerBg>
-      <Container>
-        <StatisticsPart
-          jogsEfectivity={jogsEfectivity}
-          usersAccounts={users?.data.length}
-        />
-        <Wrapper>
-          <UsersList users={users?.data} />
-          <UserRegistration controller={usersController} />
-        </Wrapper>
-      </Container>
-    </MainContainerBg>
+    <MainContainerWithoutBg>
+      {users?.data && (
+        <Container>
+          <StatisticsPart
+            jogsEfectivity={jogsEfectivity}
+            usersAccounts={users?.data.length}
+          />
+          <Wrapper>
+            <UsersList users={users?.data} />
+            <UserRegistration controller={usersController} />
+          </Wrapper>
+        </Container>
+      )}
+    </MainContainerWithoutBg>
   );
 };

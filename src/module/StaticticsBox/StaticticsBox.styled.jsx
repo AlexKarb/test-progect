@@ -5,33 +5,35 @@ export const BoxContainer = styled.div`
   width: ${({ size }) => {
     switch (size) {
       case 'medium':
-        return '160px';
+        return '140px';
 
       case 'large':
-        return '100%';
+        return '300px';
       default:
         return '160px';
     }
   }};
   height: 120px;
-  padding: 6px 8px;
-  background-color: white;
-  box-shadow: 2px 5px 8px 0px #c7c7c79e;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffffed;
   border-radius: 3px;
   margin-bottom: 25px;
   color: #001f85;
   font-size: 14px;
 
   @media screen and (min-width: 768px) {
-    height: 185px;
-    padding: 16px 18px;
+    height: 105px;
+
     width: ${({ size }) => {
       switch (size) {
         case 'medium':
-          return '295px';
+          return '255px';
 
         case 'large':
-          return '100%';
+          return '700px';
         default:
           return '295px';
       }
@@ -42,10 +44,10 @@ export const BoxContainer = styled.div`
     width: ${({ size }) => {
       switch (size) {
         case 'medium':
-          return '200px';
+          return '120px';
 
         case 'large':
-          return '100%';
+          return '150px';
         default:
           return '295px';
       }
@@ -53,10 +55,10 @@ export const BoxContainer = styled.div`
     height: ${({ size }) => {
       switch (size) {
         case 'medium':
-          return '110px';
+          return '80px';
 
         case 'large':
-          return '130px;';
+          return '80px;';
         default:
           return '100px;';
       }
@@ -68,6 +70,20 @@ export const BoxContainer = styled.div`
     align-items: ${({ size }) => (size === 'medium' ? ' center' : '')};
     margin-bottom: ${({ size }) => (size === 'large' ? '12px' : '')};
   }
+
+  @media screen and (min-width: 1250px) {
+    width: ${({ size }) => {
+      switch (size) {
+        case 'medium':
+          return '160px';
+
+        case 'large':
+          return '160px';
+        default:
+          return '295px';
+      }
+    }};
+  }
 `;
 
 export const Name = styled.p`
@@ -76,11 +92,11 @@ export const Name = styled.p`
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 16px;
+    font-size: 10px;
   }
 `;
 
@@ -89,9 +105,14 @@ export const Wrapp = styled.div`
   justify-content: center;
   padding: 16px 0;
 
+  @media screen and (min-width: 768px) {
+    padding: 2px 0;
+  }
+
   @media screen and (min-width: 1024px) {
     align-items: ${({ size }) => (size === 'medium' ? 'flex-end' : '')};
-    padding: ${({ size }) => (size === 'large' ? '4px 0' : '7px 0')};
+    /* padding: ${({ size }) => (size === 'large' ? '4px 0' : '12px 0')}; */
+    padding: 10px 0 0 0;
   }
 `;
 
@@ -108,6 +129,7 @@ export const BoxBlock = styled.div`
 
   @media screen and (min-width: 1024px) {
     align-items: center;
+    margin-left: 8px;
   }
 `;
 
@@ -117,18 +139,18 @@ export const Number = styled.p`
   line-height: 1;
 
   @media screen and (min-width: 768px) {
-    font-size: 50px;
-    margin-bottom: 4px;
+    font-size: 30px;
+    margin-bottom: 2px;
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: ${({ size }) => (size === 'medium' ? '30px' : '40px')};
+    font-size: ${({ size }) => (size === 'medium' ? '20px' : '26px')};
   }
 `;
 
 export const Text = styled.span`
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 9px;
   color: #afa5c1;
 
   @media screen and (min-width: 768px) {
@@ -136,7 +158,7 @@ export const Text = styled.span`
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 12px;
+    font-size: 8px;
   }
 `;
 
@@ -145,13 +167,13 @@ export const IconContainer = styled.div`
   width: 50px;
 
   @media screen and (min-width: 768px) {
-    height: 90px;
-    width: 90px;
+    height: 40px;
+    width: 40px;
   }
 
   @media screen and (min-width: 1024px) {
-    height: ${({ size }) => (size === 'medium' ? '50px' : '80px')};
+    height: ${({ size }) => (size === 'medium' ? '38px' : '40px')};
 
-    width: ${({ size }) => (size === 'medium' ? '50px' : '80px')};
+    width: ${({ size }) => (size === 'medium' ? '30px' : '40px')};
   }
 `;

@@ -11,11 +11,28 @@ export const FilterIcon = styled(BiFilterAlt).attrs(pr => ({
   top: 12px;
   color: white;
 
+  ${({ type }) => {
+    if (type === 'completed' || type === 'deleted') {
+      return 'top: 70px; right: 12px;';
+    }
+  }}
+
   @media screen and (min-width: 768px) {
     position: absolute;
     width: 36px;
     height: 36px;
     right: 15px;
     top: 15px;
+
+    ${({ type }) => {
+      if (type === 'completed' || type === 'deleted') {
+        return 'top: 80px;';
+      }
+    }}
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 30px;
+    height: 30px;
   }
 `;

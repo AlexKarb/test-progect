@@ -13,7 +13,7 @@ export const Name = styled.div`
 
   padding-left: 10px;
   color: #fff;
-  text-shadow: 0px 0px 6px #0000a3;
+
   display: list-item;
 
   @media screen and (min-width: 768px) {

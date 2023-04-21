@@ -27,8 +27,7 @@ export const LoginPage = () => {
 
     setIsSubmitting(true);
 
-    const res = await logining({ login, password });
-    console.log('res', res);
+    await logining({ login, password });
 
     resetForm();
     setIsSubmitting(false);

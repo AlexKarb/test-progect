@@ -1,28 +1,33 @@
-import { useEffect, useMemo, useState } from 'react';
-import { getLengthOfSortedPublication, keysOfTypes } from 'service/api-service';
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+import { getRequest } from 'service/redux/request';
+
+const initialState = {
+  pending: 0,
+  'in progress': 0,
+  completed: 0,
+  deleted: 0,
+};
 
 export const useGetStatistics = () => {
-  const [number, setNumber] = useState(false);
+  const requestData = useSelector(getRequest);
+  const [statistics, setStatistics] = useState(null);
 
   useEffect(() => {
-    keysOfTypes().map(type =>
-      getLengthOfSortedPublication(type).then(number =>
-        setNumber(pS => ({
-          ...pS,
-          [type]: number,
-        }))
+    setStatistics(
+      requestData.reduce(
+        (acc, { status }) => {
+          acc[status]++;
+          return acc;
+        },
+        { ...initialState }
       )
     );
-  }, []);
 
-  const isLoad = useMemo(
-    () =>
-      keysOfTypes()
-        .map(type => number[type])
-        .includes(undefined),
+    return () => {
+      setStatistics(null);
+    };
+  }, [requestData]);
 
-    [number]
-  );
-
-  return [number, isLoad];
+  return [statistics];
 };

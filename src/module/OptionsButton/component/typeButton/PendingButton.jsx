@@ -4,14 +4,13 @@ import { useToggleModal } from 'module/Modal/hooks/useToggleModal';
 import { isPendingPage } from 'root/isPage';
 
 import { Button } from '../Button/Button';
+import { useChangeType } from '../hooks/useChangeType';
 
-export const PendingButton = ({ id, onChange, type }) => {
-  const [isOpen, onOpen, onClose] = useToggleModal();
-
+export const PendingButton = ({ id, type }) => {
   const currentAction = 'pending';
 
-  // const changeType = () => changeStatus(id, currentAction);
-  const changeType = () => {};
+  const [isOpen, onOpen, onClose] = useToggleModal();
+  const changeStatus = useChangeType(currentAction, id);
 
   return (
     <>
@@ -23,7 +22,7 @@ export const PendingButton = ({ id, onChange, type }) => {
       />
 
       <ChangeTypeModal
-        changeType={changeType}
+        changeType={changeStatus}
         modalIsOpen={isOpen}
         setIsOpen={onClose}
         currentPage={type}

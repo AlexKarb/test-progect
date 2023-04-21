@@ -1,14 +1,13 @@
 import { notifyChange } from 'module/Toaster/Toaster';
 import { Request } from 'service/redux/api';
 
-export const useChangeType = (status, id) => {
+export const useChangeType = (status, id, onClose) => {
   const [updateStatus] = Request.updateStatus();
 
   const changeStatus = async () => {
     const result = await updateStatus({ body: { status }, id });
-
-    console.log('result', result);
-    notify(status);
+    if (result?.data) notify(status);
+    onClose();
   };
 
   return changeStatus;

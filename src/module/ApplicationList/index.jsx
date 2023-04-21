@@ -12,7 +12,7 @@ export const ApplicationList = ({ type }) => {
 
   return (
     <Container>
-      <Filter filter={filter} toggleFilter={toggleFilter} />
+      <Filter filter={filter} type={type} toggleFilter={toggleFilter} />
       {!itemsOfList && <MainSpiner />}
 
       {itemsOfList &&

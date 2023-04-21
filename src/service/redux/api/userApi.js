@@ -2,8 +2,13 @@ import { baseApi } from './api';
 
 export const usersApi = baseApi.injectEndpoints({
   endpoints: build => ({
-    getCurrentUser: build.query({
-      query: () => `/users/current`,
+    getCurrentUser: build.mutation({
+      query() {
+        return {
+          url: `/users/current`,
+          method: 'GET',
+        };
+      },
     }),
 
     getAllUser: build.query({
@@ -51,6 +56,7 @@ export const usersApi = baseApi.injectEndpoints({
           body,
         };
       },
+      invalidatesTags: ['Requests'],
     }),
 
     logoutUser: build.mutation({
@@ -60,7 +66,7 @@ export const usersApi = baseApi.injectEndpoints({
 });
 
 export const {
-  useGetCurrentUserQuery,
+  useGetCurrentUserMutation,
   useGetAllUserQuery,
   useAddUserMutation,
   useUpdatePasswordUserMutation,

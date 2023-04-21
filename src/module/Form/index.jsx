@@ -7,39 +7,42 @@ import {
   UserData,
   StyledFormContainer,
 } from './component';
+
 import { RequestSchema } from './service/Schema';
 
-export const Form = ({ onSubmit, initialValues, type, isLoading = false }) => {
-  const [onButtonSubmitClick, setOnButtonSubmitClick] = useState(false);
+export const Form = ({ onSubmit, initialValues, type, isLoading = false, onClose }) => {
+  const [isSubmitClick, setIsSubmitClick] = useState(false);
 
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={RequestSchema}
-      onSubmit={(values, { resetForm }) => {
-        onSubmit(values);
-        resetForm();
-        setOnButtonSubmitClick(false);
+      onSubmit={async (values, { resetForm }) => {
+        await onSubmit(values);
+        if (type !== 'edit') resetForm();
+        onClose && onClose();
       }}
     >
-      {({ values: { typeHelp }, errors, touched }) => {
+      {({ values, errors, touched }) => {
         return (
           <StyledFormContainer type={type}>
             <>
-              <UserData
-                options={{ errors, touched, isSubmitting: onButtonSubmitClick }}
-              />
+              <UserData options={{ errors, touched, isSubmitting: isLoading }} />
+
               <TypeHelp
-                options={{ errors, isSubmitting: onButtonSubmitClick }}
-                selectedTypes={typeHelp}
+                isSubmitClick={isSubmitClick}
+                options={{ errors, isSubmitting: isLoading }}
+                selectedTypes={values.typeHelp}
               />
               <DetailsComment />
+
               <Button
+                onClick={() => setIsSubmitClick(true)}
                 text={(() => {
                   if (isLoading) return 'Зачекайте...';
-                  return type === 'edit' ? 'Зберегти' : 'Зарегеструвати';
+                  if (type !== 'edit' && !isLoading) return 'Зарегеструвати';
+                  if (type === 'edit') return 'Зберегти';
                 })()}
-                onClick={() => setOnButtonSubmitClick(true)}
               />
             </>
           </StyledFormContainer>

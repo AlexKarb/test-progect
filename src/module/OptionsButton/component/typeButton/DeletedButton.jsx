@@ -3,13 +3,13 @@ import { useToggleModal } from 'module/Modal/hooks/useToggleModal';
 import { isDeletedPage } from 'root/isPage';
 
 import { Button } from '../Button/Button';
+import { useChangeType } from '../hooks/useChangeType';
 
-export const DeletedButton = ({ type, onChange, id }) => {
-  const [isOpen, onOpen, onClose] = useToggleModal();
-
+export const DeletedButton = ({ type, id }) => {
   const currentAction = 'deleted';
-  // const changeType = () => changeStatus(id, currentAction);
-  const changeType = () => {};
+
+  const [isOpen, onOpen, onClose] = useToggleModal();
+  const changeStatus = useChangeType(currentAction, id, onClose);
 
   return (
     <>
@@ -21,8 +21,7 @@ export const DeletedButton = ({ type, onChange, id }) => {
       />
 
       <DeletedModal
-        id={id}
-        onChange={changeType}
+        onChange={changeStatus}
         modalIsOpen={isOpen}
         setIsOpen={onClose}
         activeButton={'right'}

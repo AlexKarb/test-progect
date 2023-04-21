@@ -10,7 +10,6 @@ const CreateApplication = () => {
 
   const handleSubmit = async values => {
     const result = await add(values);
-    console.log('result', result);
 
     if (result.data) notifyChange('Заявка оформлена!');
     if (result.error) notifyError(result.error?.data?.message);

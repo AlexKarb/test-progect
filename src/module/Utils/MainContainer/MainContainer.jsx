@@ -28,7 +28,7 @@ export const MainContainer = styled.main`
   }
 `;
 
-export const MainContainerBg = styled(MainContainer)`
+export const MainContainerWithoutBg = styled(MainContainer)`
   /* * {
     outline: 1px solid red;
   } */

@@ -1,4 +1,4 @@
-import { MainContainerBg } from 'module/Utils/MainContainer/MainContainer';
+import { MainContainerWithoutBg } from 'module/Utils/MainContainer/MainContainer';
 import { Title } from 'module/Utils/Title/Title';
 import { useLocation } from 'react-router-dom';
 import { ApplicationList } from '../../ApplicationList';
@@ -8,11 +8,11 @@ const CompletedApplication = () => {
   let location = useLocation();
 
   return (
-    <MainContainerBg>
+    <MainContainerWithoutBg>
       <GoBackButton path={location?.state?.from} />
       <Title text={'Виконані заявки '} />
       <ApplicationList type="completed" />
-    </MainContainerBg>
+    </MainContainerWithoutBg>
   );
 };
 

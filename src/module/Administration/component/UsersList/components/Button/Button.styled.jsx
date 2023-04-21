@@ -4,7 +4,7 @@ export const StyledButton = styled.button`
   margin-left: 25px;
   width: 150px;
   height: 40px;
-  box-shadow: 6px 3px 4px #69636336;
+
   color: #fff;
   font-weight: 500;
   font-size: 16px;

@@ -1,20 +1,21 @@
 import { filteringItems } from 'module/Filter/hooks/filteringItems';
 import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import { getSortedPublications } from 'service/api-service';
-import { Request } from 'service/redux/api';
+import { getRequest } from 'service/redux/request';
 
 export const useGetPublication = (type, filter) => {
   const [itemsOfList, setItemsOfList] = useState();
-  const allItems = Request.getAll();
+  const requestData = useSelector(getRequest);
 
   useEffect(() => {
     (async function () {
-      const sortedItemByType = await getSortedPublications(type, allItems?.data);
+      const sortedItemByType = await getSortedPublications(type, requestData);
       const filtered = await filteringItems(sortedItemByType, filter);
 
       setItemsOfList(filtered || sortedItemByType);
     })();
-  }, [filter, allItems?.data, type]);
+  }, [filter, requestData, type]);
 
   return [itemsOfList];
 };

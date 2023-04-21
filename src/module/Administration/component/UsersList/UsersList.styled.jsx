@@ -55,7 +55,6 @@ export const Title = styled.h2`
   font-size: 16px;
   text-align: center;
   color: #fff;
-  text-shadow: 0px 0px 6px #0000a3;
   margin-bottom: ${({ margin }) => (margin ? '0px' : '30px')};
 
   @media screen and (min-width: 768px) {

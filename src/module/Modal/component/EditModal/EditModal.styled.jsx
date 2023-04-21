@@ -17,3 +17,7 @@ export const Spiner = styled.div`
   top: 5px;
   right: 15px;
 `;
+
+export const Container = styled.div`
+  background-color: white;
+`;

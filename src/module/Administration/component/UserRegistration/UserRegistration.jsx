@@ -5,17 +5,22 @@ import { useAddUserMutation } from 'service/redux/api';
 import { AutoGeneratePassword } from '../AutoGeneratePassword/AutoGeneratePassword';
 import { Input } from '../Input/Input';
 import { createUserNotification } from '../UsersList/helpers';
-import { Container, FormContainer, Title, SubmitBtn } from './UserRegistration.styled';
+import {
+  Container,
+  FormContainer,
+  Title,
+  SubmitBtn,
+  Wrapp,
+} from './UserRegistration.styled';
 
 export const UserRegistration = () => {
   const [showPassword, setShowPassword] = useState(false);
-
   const [addUser, { isLoading }] = useAddUserMutation();
 
   const handleFormSubmit = async ({ login, password }, { resetForm }) => {
     const result = await addUser({ login, password });
-    createUserNotification(result, login);
     resetForm();
+    createUserNotification(result, login);
   };
 
   return (
@@ -25,7 +30,7 @@ export const UserRegistration = () => {
         validationSchema={LoginSchema}
         onSubmit={handleFormSubmit}
       >
-        {({ errors, touched, values }) => (
+        {({ errors, touched, setFieldValue }) => (
           <FormContainer>
             <Title>Введіть данні для нового користувача</Title>
 
@@ -44,11 +49,14 @@ export const UserRegistration = () => {
               errors={errors}
               state={{ showPassword, setShowPassword }}
             />
-
-            <AutoGeneratePassword
-              functionSetPassword={newValue => (values.password = newValue)}
-            />
-
+            <Wrapp>
+              <AutoGeneratePassword
+                functionSetPassword={pass => {
+                  setFieldValue('password', pass);
+                }}
+                color={'#ffffff73'}
+              />
+            </Wrapp>
             <SubmitBtn type="submit" disabled={isLoading}>
               {isLoading ? 'Зачекайте' : 'Зберегти'}
             </SubmitBtn>

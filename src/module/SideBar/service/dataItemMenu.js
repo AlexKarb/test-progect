@@ -21,19 +21,19 @@ export const dataItemMenu = [
     path: 'create-help',
   },
   {
-    label: 'Активні заявки',
+    label: 'Необроблені',
     icon: <IconPending />,
     path: '/active',
   },
   {
-    label: 'У роботі',
+    label: 'Заявки у роботі',
     icon: <IconInProgress />,
     path: '/in-progress',
   },
   {
     label: 'Архів',
     icon: <IconArchive />,
-    path: '/archive',
+    path: '/archive/completed',
   },
 
   {

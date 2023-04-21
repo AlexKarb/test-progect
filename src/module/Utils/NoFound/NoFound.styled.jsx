@@ -33,3 +33,11 @@ export const ExclamationPoint = styled(BsExclamationTriangle)`
     height: 60px;
   }
 `;
+
+export const Container = styled.div`
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+`;
