@@ -12,14 +12,11 @@ import { Request, useGetCurrentUserMutation } from 'service/redux/api';
 import { getTokenValue } from 'service/redux/auth';
 import { useSelector } from 'react-redux';
 
-// import { Administration } from 'module/Administration/component/Administration/Administration';
 const Layout = loadable('Layout/Layout');
 const HomePage = loadable('module/pages/HomePage');
 const CreateApplication = loadable('module/pages/CreateApplication');
 const ActiveApplication = loadable('module/pages/ActiveApplication');
 const ArchiveList = loadable('module/pages/ArchiveList');
-const CompletedApplication = loadable('module/pages/CompletedApplication');
-const DeletedApplication = loadable('module/pages/DeletedApplication');
 const InProgressApplication = loadable('module/pages/InProgressApplication');
 const Statistics = loadable('module/pages/Statistics');
 
