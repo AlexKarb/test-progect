@@ -6,7 +6,7 @@ export const Container = styled.div`
   @media screen and (min-width: 1024px) {
     padding: 30px 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-left: 0px;
   }
 
