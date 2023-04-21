@@ -19,6 +19,10 @@ export const CloseButton = styled(IoIosCloseCircleOutline).attrs(prop => ({
     color: #5e5e5e;
   }
 
+  &:active {
+    background-color: #475094b8;
+  }
+
   @media screen and (min-width: 768px) {
     width: 45px;
     height: 45px;

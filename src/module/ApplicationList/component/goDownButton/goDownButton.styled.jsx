@@ -22,6 +22,10 @@ export const Button = styled.button.attrs(prop => ({
   &:hover {
     background-color: #aabcf1;
   }
+
+  &:active {
+    background-color: #475094b8;
+  }
 `;
 
 export const DownLine = styled(FiChevronDown)`

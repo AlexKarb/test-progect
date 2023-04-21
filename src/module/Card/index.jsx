@@ -8,10 +8,9 @@ import { ShowMoreButton } from './component/ShowMoreButton/ShowMoreButton';
 import { OptionButton } from 'module/OptionsButton';
 
 export const Card = ({
-  onChange,
   type,
   data: {
-    id = '',
+    _id = '',
     contacts = {},
     typeHelp = [],
     additional = {},
@@ -21,8 +20,6 @@ export const Card = ({
     dataClose = '',
     dataInProgress = '',
     dataCompleted = '',
-    // deletedInfo = '',
-    // status = '',
   },
 }) => {
   const [openMoreInfo, setOpenMoreInfo] = useState(false);
@@ -49,13 +46,7 @@ export const Card = ({
             onClick={() => setOpenMoreInfo(ps => !ps)}
           />
         </Main>
-        <OptionButton
-          delivery={delivery}
-          id={id}
-          contacts={contacts}
-          onChange={onChange}
-          type={type}
-        />
+        <OptionButton delivery={delivery} id={_id} contacts={contacts} type={type} />
       </Block>
       {openMoreInfo && (
         <MoreInfo

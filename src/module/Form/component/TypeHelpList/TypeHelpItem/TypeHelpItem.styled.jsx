@@ -14,3 +14,11 @@ export const Wrapper = styled.div`
     height: 24px;
   }
 `;
+
+export const ErrorText = styled.span`
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  left: 150px;
+  top: 2px;
+`;

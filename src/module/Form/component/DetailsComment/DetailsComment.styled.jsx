@@ -4,7 +4,7 @@ import { Field } from 'formik';
 export const Textarea = styled(Field).attrs(() => ({
   type: 'text',
   component: 'textarea',
-  rows: '4',
+  rows: '3',
 }))`
   padding: 6px;
   border: 1px solid var(--first-color-bg);
@@ -24,7 +24,7 @@ export const Textarea = styled(Field).attrs(() => ({
     }
 
     @media screen and (min-width: 1014px) {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 

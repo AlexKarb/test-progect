@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import { SideBarContext } from '../component/SideBarContext/SideBarContext';
+import { getIsLoggedInValue } from 'service/redux/auth/authSlice';
 
 const mql = window.matchMedia(`(min-width: 1024px)`);
 
 export const useSideBarOpen = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [sidebarDocked, setSidebarDocked] = useState(mql.matches);
+
+  const isLoggedIn = useSelector(getIsLoggedInValue);
 
   useEffect(() => {
     const mediaQueryChanged = () => {
@@ -21,7 +25,11 @@ export const useSideBarOpen = () => {
   });
 
   const attributes = {
-    sidebar: <SideBarContext toClose={() => setSidebarOpen(false)} />,
+    sidebar: isLoggedIn ? (
+      <SideBarContext toClose={() => setSidebarOpen(false)} />
+    ) : (
+      <></>
+    ),
     open: sidebarOpen,
     onSetOpen: setSidebarOpen,
     docked: sidebarDocked,

@@ -7,17 +7,11 @@ export const ChangeTypeModal = ({
   changeType,
   modalIsOpen,
   setIsOpen,
-  action,
   currentPage,
   currentAction,
 }) => {
   return (
-    <ModalWindow
-      changeType={changeType}
-      modalIsOpen={modalIsOpen}
-      setIsOpen={setIsOpen}
-      action={action}
-    >
+    <ModalWindow changeType={changeType} modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}>
       <Text>
         {isDeletedPage(currentPage)
           ? 'Ви дійсно бажаєте відновити заявку?'

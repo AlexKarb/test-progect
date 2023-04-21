@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { getRoleValue, getLoginValue } from 'redux/authSlice';
+import { getRoleValue, getLoginValue } from 'service/redux/auth/authSlice';
 import { Container, UserName, Role } from './UserInfo.styled';
 
 export const UserInfo = () => {

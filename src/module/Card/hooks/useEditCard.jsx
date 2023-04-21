@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { getRoleValue } from 'redux/authSlice';
+import { getRoleValue } from 'service/redux/auth/authSlice';
 import { notifyChange } from 'module/Toaster/Toaster';
 
 export const useEditCard = (setValues, onChange) => {

@@ -10,6 +10,12 @@ export const LogoutButton = styled.button`
   align-items: center;
   color: var(--accent-text-color);
   cursor: pointer;
+  width: 100%;
+  padding: 12px 0px;
+
+  &:active {
+    color: #475094b8;
+  }
 `;
 
 export const IconLogout = styled(FiLogOut)`

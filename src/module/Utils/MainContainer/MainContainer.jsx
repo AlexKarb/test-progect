@@ -12,7 +12,7 @@ export const MainContainer = styled.main`
   background-repeat: no-repeat;
   flex-grow: 1;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 
   @media screen and (min-width: 768px) {
     /* width: 768px; */
@@ -28,6 +28,9 @@ export const MainContainer = styled.main`
   }
 `;
 
-export const MainContainerBg = styled(MainContainer)`
+export const MainContainerWithoutBg = styled(MainContainer)`
+  /* * {
+    outline: 1px solid red;
+  } */
   background-image: none;
 `;

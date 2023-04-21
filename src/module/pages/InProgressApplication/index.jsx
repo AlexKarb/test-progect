@@ -1,12 +1,12 @@
-import { MainContainerBg } from 'module/Utils/MainContainer/MainContainer';
+import { MainContainerWithoutBg } from 'module/Utils/MainContainer/MainContainer';
 import { Title } from 'module/Utils/Title/Title';
 import { ApplicationList } from '../../ApplicationList';
 
 const InProgressApplication = () => (
-  <MainContainerBg>
+  <MainContainerWithoutBg>
     <Title text={'Заявки у роботі'} />
     <ApplicationList type="in progress" />
-  </MainContainerBg>
+  </MainContainerWithoutBg>
 );
 
 export default InProgressApplication;

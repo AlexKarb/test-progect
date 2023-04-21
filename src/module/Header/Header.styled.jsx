@@ -31,8 +31,9 @@ export const Title = styled.p`
     display: block;
     font-size: 24px;
     font-weight: 700;
-    text-shadow: 2px 2px 4px #ffda44;
-    color: #2a006d;
+    /* text-shadow: 2px 2px 4px #ffda44; */
+    /* color: #2a006d; */
+    color: #c1e7ff;
     margin-right: 140px;
   }
 `;

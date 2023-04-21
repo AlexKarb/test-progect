@@ -1,8 +1,8 @@
-import { ExclamationPoint, Text } from './NoFound.styled';
+import { Container, ExclamationPoint, Text } from './NoFound.styled';
 
-export const NoFound = () => (
-  <div>
+export const NoFound = ({ text = 'заявок не знайдено' }) => (
+  <Container>
     <ExclamationPoint />
-    <Text>заявок не знайдено</Text>
-  </div>
+    <Text>{text}</Text>
+  </Container>
 );

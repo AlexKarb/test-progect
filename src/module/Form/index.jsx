@@ -1,4 +1,5 @@
 import { Formik } from 'formik';
+import { useState } from 'react';
 import {
   Button,
   DetailsComment,
@@ -7,22 +8,43 @@ import {
   StyledFormContainer,
 } from './component';
 
-export const Form = ({ onSubmit, initialValues, type }) => {
+import { RequestSchema } from './service/Schema';
+
+export const Form = ({ onSubmit, initialValues, type, isLoading = false, onClose }) => {
+  const [isSubmitClick, setIsSubmitClick] = useState(false);
+
   return (
     <Formik
       initialValues={initialValues}
-      onSubmit={(values, { resetForm }) => {
-        onSubmit(values);
-        resetForm();
+      validationSchema={RequestSchema}
+      onSubmit={async (values, { resetForm }) => {
+        await onSubmit(values);
+        if (type !== 'edit') resetForm();
+        onClose && onClose();
       }}
     >
-      {({ values: { typeHelp } }) => {
+      {({ values, errors, touched }) => {
         return (
           <StyledFormContainer type={type}>
-            <UserData />
-            <TypeHelp selectedTypes={typeHelp} />
-            <DetailsComment />
-            <Button text={type === 'edit' ? 'Зберегти' : 'Зарегеструвати'} />
+            <>
+              <UserData options={{ errors, touched, isSubmitting: isLoading }} />
+
+              <TypeHelp
+                isSubmitClick={isSubmitClick}
+                options={{ errors, isSubmitting: isLoading }}
+                selectedTypes={values.typeHelp}
+              />
+              <DetailsComment />
+
+              <Button
+                onClick={() => setIsSubmitClick(true)}
+                text={(() => {
+                  if (isLoading) return 'Зачекайте...';
+                  if (type !== 'edit' && !isLoading) return 'Зарегеструвати';
+                  if (type === 'edit') return 'Зберегти';
+                })()}
+              />
+            </>
           </StyledFormContainer>
         );
       }}

@@ -17,6 +17,7 @@ export const StyledFormContainer = styled(Form)`
 
   @media screen and (min-width: 768px) {
     max-width: 610px;
+    width: 610px;
     padding: 30px 30px;
   }
 

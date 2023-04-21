@@ -3,6 +3,7 @@ import { Line } from '../../../Utils/Line/Line';
 
 const Container = styled.div`
   padding-bottom: 7px;
+  position: relative;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 20px;

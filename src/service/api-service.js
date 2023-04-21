@@ -9,18 +9,8 @@ export const keysOfTypes = () => [
   'all',
 ];
 
-export const getAllPublications = async () => {
-  const response = await axios.get('/help');
-  return response?.data;
-};
-
-export const getPublicationById = async id => {
-  const response = await axios.get(`/help/${id}`);
-  return response?.data;
-};
-
-export const getSortedPublications = async type => {
-  const data = await getAllPublications();
+export const getSortedPublications = async (type, data) => {
+  if (!data) return;
 
   switch (type) {
     case 'pending':
@@ -43,12 +33,4 @@ export const getSortedPublications = async type => {
 export const getLengthOfSortedPublication = async type => {
   const data = await getSortedPublications(type);
   return data.length;
-};
-
-export const postPublication = async data => {
-  await axios.post('/help', data).then(console.log).catch(console.log);
-};
-
-export const editPublication = async (id, data) => {
-  await axios.put(`/help/${id}`, data).then(console.log).catch(console.log);
 };

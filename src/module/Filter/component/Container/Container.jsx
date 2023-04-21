@@ -18,5 +18,19 @@ export const Container = styled.div`
     align-items: flex-end;
     padding: 0;
     margin: 0;
+
+    ${({ type }) => {
+      if (type === 'completed' || type === 'deleted') {
+        return ' top: 150px;';
+      }
+    }}
+  }
+
+  @media screen and (min-width: 1024px) {
+    ${({ type }) => {
+      if (type === 'completed' || type === 'deleted') {
+        return ' top: 130px;';
+      }
+    }}
   }
 `;

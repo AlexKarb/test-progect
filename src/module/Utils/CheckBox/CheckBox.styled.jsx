@@ -16,12 +16,11 @@ export const CheckBoxLabel = styled.label`
   @media screen and (min-width: 768px) {
     font-size: 22px;
     width: ${({ width = 'auto' }) => (width === '160px' ? '260px' : width)};
-    flex-direction: ${({ type }) =>
-      type === 'filter' ? 'row-reverse' : 'row'};
+    flex-direction: ${({ type }) => (type === 'filter' ? 'row-reverse' : 'row')};
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `;
 
@@ -47,6 +46,10 @@ export const Input = styled(Field)`
   width: 1px !important;
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
+
+  &:focus + ${CheckBoxIcon} {
+    border: 2px solid grey;
+  }
 
   &:checked + ${CheckBoxIcon} {
     background-color: var(--first-color-bg);
